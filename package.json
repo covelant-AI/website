@@ -10,13 +10,13 @@
     "combine-locales": "ts-node scripts/combine-locales.ts"
   },
   "dependencies": {
+    "@prisma/client": "^6.6.0",
     "next": "15.3.1",
+    "next-intl": "^3.6.0",
     "prisma": "^6.6.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-icons": "^5.5.0",
-    "next": "15.3.1",
-    "next-intl": "^3.6.0"
+    "react-icons": "^5.5.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
