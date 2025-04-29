@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslations } from 'next-intl';
 
 export default function BentoBoxGrid() {
-  const t = useTranslations('bentoBox');
+  const t = useTranslations('components.bentoBox');
 
   return (
     <div>
