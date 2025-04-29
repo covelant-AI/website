@@ -1,7 +1,7 @@
 import HeroMain from '@components/HeroMain';
 import WhatAreWe from '@components/WhatAreWe';
 import BentoBox from '@components/BentoBox';
-import ContacSection from '@components/ContactSection';
+import HeroContact from '@components/HeroContact';
 import '../../styles/global.css';
 
 export default function Home() {  
@@ -10,7 +10,7 @@ export default function Home() {
     <HeroMain />
     <WhatAreWe />
     <BentoBox />
-    <ContacSection />
+    <HeroContact />
     </>
   );
 }
