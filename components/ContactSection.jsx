@@ -1,7 +1,7 @@
 import React from 'react';
 import ContactForm from './UI/ContactForm'
 
-export default function ContactSection() {
+export default function ContactSection(props) {
   return (
     <section className="relative w-full flex justify-center py-16 overflow-hidden font-Figtree">
       {/* Background Gradient */}
