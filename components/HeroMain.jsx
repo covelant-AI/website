@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import { useTranslations } from "next-intl";
 export default function HeroMain() {
+  const t = useTranslations('components.heroMain');
   return (
     <div className="relative">
       <section
@@ -11,7 +12,7 @@ export default function HeroMain() {
       >
         <div className="max-w-4xl mx-auto my-80 text-center">
           <Image src="/images/logo.png" alt="Covelant logo" width={579} height={122} />
-          <p className="text-black text-3xl mt-3 max-sm:px-8">The world's first AI sports analytics tool</p>
+          <p className="text-black text-3xl mt-3 max-sm:px-8">{t("subtitle")}</p>
           <Link href="/contact">
         <button className="mt-20 text-3xl px-20 max-sm:px-8 max-sm:text-2xl py-5 bg-[#42B6B1] text-white font-semibold font-Figtree rounded-2xl shadow-md hover:bg-teal-600">
           Contact us
