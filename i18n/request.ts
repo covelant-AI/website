@@ -12,6 +12,7 @@ export default getRequestConfig(async () => {
       approach: {
         intro: (await import(`../app/locales/${locale}/components/approach/intro.json`)).default,
         problems: (await import(`../app/locales/${locale}/components/approach/problems.json`)).default,
+        solution: (await import(`../app/locales/${locale}/components/approach/solution.json`)).default,
       },
     },
   };
