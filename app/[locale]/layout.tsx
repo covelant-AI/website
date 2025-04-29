@@ -4,6 +4,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import "../globals.css";
 import Footer from "@components/Footer";
 import NavigationBar from '@components/NavigationBar';
+import { figtree } from '../fonts';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,7 +32,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${figtree.variable} antialiased`}>
         <NextIntlClientProvider locale={locale}>
           <NavigationBar />
           {children}
