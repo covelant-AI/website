@@ -7,6 +7,7 @@ export default getRequestConfig(async () => {
   const messages = {
     heroMain: (await import(`../app/locales/${locale}/heroMain.json`)).default,
     bentoBox: (await import(`../app/locales/${locale}/bentoBox.json`)).default,
+    whatAreWe: (await import(`../app/locales/${locale}/whatAreWe.json`)).default,
   };
 
   return { 
