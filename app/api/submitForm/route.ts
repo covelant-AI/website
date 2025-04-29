@@ -1,0 +1,19 @@
+import { NextResponse } from "next/server";
+import { PrismaClient } from "@prisma/client";
+
+const prisma = new PrismaClient();
+
+export async function POST(req: Request) {
+  try {
+    const { name, email, message, companyName, inquiryType } = await req.json();
+
+    const inquiry = await prisma.inquiry.create({
+      data: { name, email, message, companyName, inquiryType },
+    });
+
+    return NextResponse.json(inquiry, { status: 201 });
+  } catch (error) {
+    console.error("Error submitting form:", error);
+    return NextResponse.json({ error: "Failed to submit form" }, { status: 500 });
+  }
+}
