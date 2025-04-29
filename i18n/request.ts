@@ -6,6 +6,7 @@ export default getRequestConfig(async () => {
   const locale = headersList.get('x-next-intl-locale') || 'en';
   const messages = {
     heroMain: (await import(`../app/locales/${locale}/heroMain.json`)).default,
+    bentoBox: (await import(`../app/locales/${locale}/bentoBox.json`)).default,
   };
 
   return { 
