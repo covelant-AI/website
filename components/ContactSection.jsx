@@ -56,6 +56,7 @@ export default function ContactSection(props) {
           </div>
           </div>
         {/* Right Side - Form in Card */}
+
         <ContactForm/>
       </div>
     </section>
