@@ -13,6 +13,7 @@ export default getRequestConfig(async () => {
         intro: (await import(`../app/locales/${locale}/components/approach/intro.json`)).default,
         problems: (await import(`../app/locales/${locale}/components/approach/problems.json`)).default,
         solution: (await import(`../app/locales/${locale}/components/approach/solution.json`)).default,
+        contact: (await import(`../app/locales/${locale}/components/approach/contact.json`)).default,
       },
     },
   };
