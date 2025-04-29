@@ -27,3 +27,18 @@ export const Statistics = [
   { percentage: "75%", label: "Brand Retention" },
   { percentage: "32%", label: "Efficiency" },
 ];
+
+export const ContactUsData = [
+  {
+    title: "See the results for yourself :)",
+    description:
+      "Get in contact with a member of our team and we’ll help you answer any further questions and start our journey together.",
+    image: "/images/footer-img-1.png",
+  },
+  {
+    title: "Experience the Impact",
+    description:
+      "Let’s explore how Voidance Technology can elevate your campaigns. Reach out to our team, we’re here to answer your questions and get you started.",
+    image: "/images/footer-img-2.png",
+  }
+]
