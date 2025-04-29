@@ -65,7 +65,7 @@ export default function ContactUsPage() {
         {/* Left Side - Image */}
         <div className="w-full md:w-1/3 relative">
           <Image
-            src="/carousel/b2.png"
+            src="/images/contactUs.png"
             alt="Contact Us"
             layout="fill"
             className="object-cover"
