@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Figtree } from "next/font/google";
 import { NextIntlClientProvider } from 'next-intl';
-import "../globals.css";
+import "./globals.css";
 import Footer from "@components/Footer";
 import NavigationBar from '@components/NavigationBar';
 

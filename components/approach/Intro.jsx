@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import RadialBlurBg from '@components/RadialBlurBg';
+import RadialBlurBg from '@/components/UI/RadialBlurBg';
 
 export default function ApproachIntro() {
     const t = useTranslations('components.approach.intro');

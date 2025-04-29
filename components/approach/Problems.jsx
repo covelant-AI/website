@@ -1,5 +1,5 @@
 import { useTranslations } from 'next-intl';
-import RadialBlurBg from '@components/RadialBlurBg';
+import RadialBlurBg from '@/components/UI/RadialBlurBg';
 export default function Problems() {
     const t = useTranslations('components.approach.problems');
 
