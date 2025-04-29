@@ -1,6 +1,6 @@
-
 generator client {
   provider = "prisma-client-js"
+  output   = "./"
 }
 
 datasource db {
@@ -9,7 +9,7 @@ datasource db {
 }
 
 model Inquiry {
-  id          String  @id @default(uuid())
+  id          String   @id @default(uuid())
   name        String
   email       String
   message     String
@@ -17,4 +17,3 @@ model Inquiry {
   inquiryType String
   createdAt   DateTime @default(now())
 }
-
