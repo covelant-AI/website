@@ -1,6 +1,9 @@
 import React from 'react';
+import { useTranslations } from 'next-intl';
 
 export default function BentoBoxGrid() {
+  const t = useTranslations('bentoBox');
+
   return (
     <div>
       <section className="w-full bg-[#F9F9F9] max-w-5xl mx-auto py-10 flex justify-center relative overflow-hidden">
@@ -8,7 +11,7 @@ export default function BentoBoxGrid() {
           {/* Title */}
           <h2 className="text-9xl max-lg:text-8xl font-Figtree font-semibold tracking-tight text-black
            max-sm:text-6xl text-center mb-6 pt-2">
-            WHY USE COVELANT
+            {t('title')}
           </h2>
 
           {/* Bento Grid Layout */}
@@ -26,9 +29,12 @@ export default function BentoBoxGrid() {
                 backgroundBlendMode: "multiply"
               }}
             >
-              IMAGINE<br />
-              AN AI COACH<br />
-              BY YOUR SIDE<br />
+              {t('leftBox.text').split('\n').map((line, index) => (
+                <React.Fragment key={index}>
+                  {line}
+                  <br />
+                </React.Fragment>
+              ))}
             </div>
 
             {/* Right Column - Stacked Benefits */}
@@ -45,9 +51,9 @@ export default function BentoBoxGrid() {
                   backgroundBlendMode: "multiply"
                 }}
               >
-                <h3 className="font-semibold text-4xl max-sm:text-xl">DIRECT INTEGRATION</h3>
+                <h3 className="font-semibold text-4xl max-sm:text-xl">{t('benefits.directIntegration.title')}</h3>
                 <p className="text-xl max-sm:text-lg max-sm:text-left max-sm:pr-40">
-                  Use our API to integrate voidances into your existing software solutions.
+                  {t('benefits.directIntegration.description')}
                 </p>
               </div>
 
@@ -62,9 +68,9 @@ export default function BentoBoxGrid() {
                   backgroundBlendMode: "multiply"
                 }}
               >
-                <h3 className="font-semibold text-4xl max-sm:text-xl">SKIP RE-WATCHING MATCHES</h3>
+                <h3 className="font-semibold text-4xl max-sm:text-xl">{t('benefits.skipRewatching.title')}</h3>
                 <p className="text-xl max-sm:text-lg max-sm:text-left max-sm:pr-40">
-                  Let our AI do the heavy lifting. No more re-watching matches to find the right moments.
+                  {t('benefits.skipRewatching.description')}
                 </p>
               </div>
 
@@ -77,9 +83,9 @@ export default function BentoBoxGrid() {
                   borderRadius: "18px",
                 }}
               >
-                <h3 className="font-semibold text-4xl max-sm:text-xl">DECREASE COSTS</h3>
+                <h3 className="font-semibold text-4xl max-sm:text-xl">{t('benefits.decreaseCosts.title')}</h3>
                 <p className="text-xl max-sm:text-lg max-sm:text-left max-sm:pr-40">
-                  Save time and money by automating the process of finding tactical flaws in your game.
+                  {t('benefits.decreaseCosts.description')}
                 </p>
               </div>
             </div>
@@ -95,9 +101,9 @@ export default function BentoBoxGrid() {
                   borderRadius: "18px",
                 }}
               >
-                <h3 className="font-semibold text-4xl max-sm:text-xl max-sm:px-20 text-white">TRAIN WITH DATA</h3>
+                <h3 className="font-semibold text-4xl max-sm:text-xl max-sm:px-20 text-white">{t('benefits.trainWithData.title')}</h3>
                 <p className="text-xl max-sm:text-lg max-sm:text-left max-sm:px-20 text-white">
-                  With voidances, you can make informed decisions about your training based on data derived from your matches and analysed by AI.
+                  {t('benefits.trainWithData.description')}
                 </p>
               </div>
 
@@ -113,9 +119,9 @@ export default function BentoBoxGrid() {
                   backgroundBlendMode: "overlay"
                 }}
               >
-                <h3 className="font-semibold text-4xl max-sm:text-xl max-sm:px-20 text-white">INCREASE PREFORMANCE</h3>
+                <h3 className="font-semibold text-4xl max-sm:text-xl max-sm:px-20 text-white">{t('benefits.increasePerformance.title')}</h3>
                 <p className="text-xl max-sm:text-lg max-sm:text-left max-sm:px-20 text-white">
-                  Gain an AI Driven training plans that are tailored to your needs and goals.
+                  {t('benefits.increasePerformance.description')}
                 </p>
               </div>
               
@@ -131,9 +137,9 @@ export default function BentoBoxGrid() {
                   backgroundBlendMode: "overlay"
                 }}
               >
-                <h3 className="font-semibold text-4xl max-sm:text-xl max-sm:px-20 text-white">OUTPLAY COMPETITON</h3>
+                <h3 className="font-semibold text-4xl max-sm:text-xl max-sm:px-20 text-white">{t('benefits.outplayCompetition.title')}</h3>
                 <p className="text-xl max-sm:text-lg max-sm:text-left max-sm:px-20 text-white">
-                  Not only will learn your mistakes but your oponents as well. With voidances, you can outplay your competition by knowing their weaknesses.
+                  {t('benefits.outplayCompetition.description')}
                 </p>
               </div>
             </div>
@@ -151,9 +157,12 @@ export default function BentoBoxGrid() {
                 backgroundBlendMode: "multiply"
               }}
             >
-              IMAGINE YOUR<br />
-              PLAYSTYLE PERFECTED<br />
-              WITH AI<br />
+              {t('rightBox.text').split('\n').map((line, index) => (
+                <React.Fragment key={index}>
+                  {line}
+                  <br />
+                </React.Fragment>
+              ))}
             </div>
           </div>
         </div>
