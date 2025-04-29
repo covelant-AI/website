@@ -7,7 +7,7 @@ export default function ApproachIntro() {
     return (
     <div className="relative">
       <section
-        className=" z-1"
+        className="z-1"
       >
         <div className="mt-[182px] flex flex-col items-center">
             <h1 className="text-[36px] lg:text-[80px] font-bold leading-120% tracking-[-2%] bg-gradient-to-r from-[#000000] to-[#B3C0DF] text-transparent bg-clip-text">{t('title')}</h1>
