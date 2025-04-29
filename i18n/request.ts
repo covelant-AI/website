@@ -5,7 +5,11 @@ export default getRequestConfig(async () => {
   const headersList = await headers();
   const locale = headersList.get('x-next-intl-locale') || 'en';
   const messages = {
-    index: (await import(`../app/locales/${locale}/index.json`)).default,
+    components: {
+      heroMain: (await import(`../app/locales/${locale}/components/heroMain.json`)).default,
+      bentoBox: (await import(`../app/locales/${locale}/components/bentoBox.json`)).default,
+      whatAreWe: (await import(`../app/locales/${locale}/components/whatAreWe.json`)).default,
+    },
   };
 
   return { 

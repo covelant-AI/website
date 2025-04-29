@@ -1,0 +1,35 @@
+{
+  "title": "WARUM COVELANT NUTZEN",
+  "leftBox": {
+    "text": "STELL DIR VOR\nEIN KI-COACH\nAN DEINER SEITE"
+  },
+  "benefits": {
+    "directIntegration": {
+      "title": "DIREKTE INTEGRATION",
+      "description": "Nutze unsere API, um Voidances in deine bestehenden Softwarelösungen zu integrieren."
+    },
+    "skipRewatching": {
+      "title": "KEIN MATCH-REVIEW NÖTIG",
+      "description": "Lass unsere KI die schwere Arbeit übernehmen. Kein erneutes Anschauen von Matches mehr, um die richtigen Momente zu finden."
+    },
+    "decreaseCosts": {
+      "title": "KOSTEN SENKEN",
+      "description": "Spare Zeit und Geld durch die Automatisierung des Prozesses, taktische Schwächen in deinem Spiel zu finden."
+    },
+    "trainWithData": {
+      "title": "MIT DATEN TRAINIEREN",
+      "description": "Mit Voidances kannst du fundierte Entscheidungen über dein Training treffen, basierend auf Daten aus deinen Matches, analysiert von KI."
+    },
+    "increasePerformance": {
+      "title": "LEISTUNG STEIGERN",
+      "description": "Erhalte KI-gesteuerte Trainingspläne, die auf deine Bedürfnisse und Ziele zugeschnitten sind."
+    },
+    "outplayCompetition": {
+      "title": "WETTBEWERBER ÜBERFLÜGELN",
+      "description": "Lerne nicht nur aus deinen Fehlern, sondern auch aus denen deiner Gegner. Mit Voidances kannst du deine Konkurrenz überflügeln, indem du ihre Schwächen kennst."
+    }
+  },
+  "rightBox": {
+    "text": "STELL DIR VOR\nDEIN SPIELSTIL\nPERFEKTIONIERT DURCH KI"
+  }
+} 

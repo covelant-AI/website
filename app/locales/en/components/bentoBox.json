@@ -1,0 +1,35 @@
+{
+  "title": "WHY USE COVELANT",
+  "leftBox": {
+    "text": "IMAGINE\nAN AI COACH\nBY YOUR SIDE"
+  },
+  "benefits": {
+    "directIntegration": {
+      "title": "DIRECT INTEGRATION",
+      "description": "Use our API to integrate voidances into your existing software solutions."
+    },
+    "skipRewatching": {
+      "title": "SKIP RE-WATCHING MATCHES",
+      "description": "Let our AI do the heavy lifting. No more re-watching matches to find the right moments."
+    },
+    "decreaseCosts": {
+      "title": "DECREASE COSTS",
+      "description": "Save time and money by automating the process of finding tactical flaws in your game."
+    },
+    "trainWithData": {
+      "title": "TRAIN WITH DATA",
+      "description": "With voidances, you can make informed decisions about your training based on data derived from your matches and analysed by AI."
+    },
+    "increasePerformance": {
+      "title": "INCREASE PERFORMANCE",
+      "description": "Gain an AI Driven training plans that are tailored to your needs and goals."
+    },
+    "outplayCompetition": {
+      "title": "OUTPLAY COMPETITION",
+      "description": "Not only will learn your mistakes but your opponents as well. With voidances, you can outplay your competition by knowing their weaknesses."
+    }
+  },
+  "rightBox": {
+    "text": "IMAGINE YOUR\nPLAYSTYLE PERFECTED\nWITH AI"
+  }
+} 
