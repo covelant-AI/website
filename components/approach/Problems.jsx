@@ -1,5 +1,5 @@
 import { useTranslations } from 'next-intl';
-
+import RadialBlurBg from '@components/RadialBlurBg';
 export default function Problems() {
     const t = useTranslations('components.approach.problems');
 
@@ -33,7 +33,7 @@ export default function Problems() {
     return (
         <div className="relative">
             <section>
-            <h1 className="text-[80px] font-semibold leading-100% tracking-[-2%] text-[#000000]"
+            <h1 className="text-[24px] lg:text-[80px] font-semibold leading-100% tracking-[-2%] text-[#000000]"
             >{t('title')}</h1>
 
             <div className="relative grid grid-cols-2 xl:grid-cols-3 gap-[25px]">
@@ -48,24 +48,28 @@ export default function Problems() {
                         direction2 = 'bg-linear-to-l'
                     }
 
-                    let className = [direction1, direction2, "from-[#27283E] to-[#A53942] flex flex-col gap-[71px] pl-[28px] pr-[65px] pt-[24px] pb-[36px] rounded-[24px] z-10"].join(' ')
+                    const paddings = "px-[12px] pt-[12px] pb-[16px] lg:pl-[28px] lg:pr-[65px] lg:pt-[24px] lg:pb-[36px]"
+
+                    let className = [direction1, direction2, paddings, "from-[#27283E] to-[#A53942] flex flex-col gap-[16px] lg:gap-[71px] rounded-[12px] lg:rounded-[24px] z-10"].join(' ')
 
                     return (
                         <div
                         key={index}
                         className={className}
                     >
-                        <div className="block relative h-[64px] w-[64px]">
-                            <img className="h-[64px] w-[64px]" src={"/images/hexagonRed.svg"} alt={`icon-${index}`} />
-                            <img className="h-[34px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src={problem.icon} alt={`icon-${index}`} />
+                        <div className="block relative h-[32px] w-[32px] lg:h-[64px] lg:w-[64px]">
+                            <img className="h-[32px] w-[32px] lg:h-[64px] lg:w-[64px]" src={"/images/hexagonRed.svg"} alt={`icon-${index}`} />
+                            <img className="h-[17px] lg:h-[34px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src={problem.icon} alt={`icon-${index}`} />
                         </div>
 
-                        <p className="font-normal text-[24px] tracking-[-2%] text-[#FFFFFF]">{problem.text}</p>
+                        <p className="font-normal text-[14px] lg:text-[24px] tracking-[-2%] text-[#FFFFFF]">{problem.text}</p>
                     </div>
                     )
                 }
                 )}
             </div>
+
+            <RadialBlurBg width={"150vw"} height={"60vh"} rotate={"-9.35deg"} bottom={"0"} left={"-25vw"}/>
 
 
             </section>
