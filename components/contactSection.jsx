@@ -1,5 +1,5 @@
 import React from 'react';
-import ContactForm from './UI/contactForm'
+import ContactForm from './UI/ContactForm'
 
 export default function ContactSection() {
   return (
@@ -55,8 +55,6 @@ export default function ContactSection() {
             ))}
           </div>
           </div>
-
-
         {/* Right Side - Form in Card */}
         <ContactForm/>
       </div>
