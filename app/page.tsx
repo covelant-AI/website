@@ -1,7 +1,7 @@
-import HeroMain from '../components/heroMain';
-import WhatAreWe from '../components/whatAreWe';
-import BentoBox from '../components/bentoBox';
-import ContacSection from '../components/contactSection';
+import HeroMain from '../components/HeroMain';
+import WhatAreWe from '../components/WhatAreWe';
+import BentoBox from '../components/BentoBox';
+import ContacSection from '../components/ContactSection';
 import '../styles/global.css';
 
 export default function Home() {

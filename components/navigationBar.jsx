@@ -2,11 +2,10 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { FiMenu, FiX } from "react-icons/fi"; // Importing icons for Hamburger & Close Button
+import { FiMenu, FiX } from "react-icons/fi"; 
 
 export default function NavigationBar() {
-  const [isOpen, setIsOpen] = useState(false); // State to toggle menu visibility
-
+  const [isOpen, setIsOpen] = useState(false); 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 px-6 lg:px-12 py-2 flex items-center justify-between 
                     backdrop-blur-lg bg-[#F9F9F9]/30 border border-[#F9F9F9]/20 rounded-b-xl">
