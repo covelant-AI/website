@@ -13,9 +13,9 @@ export default function CenteredTextSection() {
       {/* Foreground Text */}
       <div className="relative z-10 max-w-3xl text-black">
         <p className="text-2xl max-sm:text-lg font-semibold leading-relaxed">
-          Covelant understands the challenges agencies face, such as endless negotiations, 
-          content production bottlenecks, and the uncertainty of performance. Voidance Technology 
-          enhances ads, scaling them across creators for better conversions, higher performance, 
+          Covelant understands the challenges coaches face, such as endless re-watching of games, 
+          man power limitation, and the uncertainty of performance. Voidance Technology 
+          enhances your decision making, scaling them across multiple players, higher performance, 
           and lower costs. The result? Faster execution, effortless scaling, and maximum impact.
         </p>
       </div>
