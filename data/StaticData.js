@@ -42,3 +42,41 @@ export const ContactUsData = [
     image: "/images/footer-img-2.png",
   }
 ]
+
+export const pricingData = [
+  {
+    title: "Free Plan",
+    price: "Free",
+    period: "",
+    description: [
+      "Upload up to 2 matches per month",
+      "Single-player analytics dashboards",
+      "1 user account",
+    ],
+  },
+  {
+    title: "Coach Plan",
+    price: "99€",
+    period: "/m",
+    badge: "Most Popular",
+    description: [
+      "Unlimited match uploads",
+      "All standard AI stats",
+      "Multi-player analytics dashboards",
+      "Export analytics to PDF/CSV",
+    ],
+  },
+  {
+    title: "Elite Plan",
+    price: "499€",
+    period: "/m",
+    badge: "Federation",
+    description: [
+      "All Pro features",
+      "No limits on uploads or access",
+      "Priority customer support",
+      "Dedicated onboarding session",
+    ],
+    highlight: ["All Pro features", "No limits on uploads or access"],
+  },
+];
