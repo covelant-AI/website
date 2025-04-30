@@ -1,32 +1,6 @@
 "use client";
 import React, { useState } from "react";
-
-const values = [
-  {
-    title: "Transparency",
-    color: "bg-purple-200",
-    paragraph:
-      "We believe honesty and openness are essential to building trust. We empower users by giving them control over their digital presence, ensuring that every interaction on our platform is clear and straightforward.",
-  },
-  {
-    title: "Innovation",
-    color: "bg-blue-200",
-    paragraph:
-      "At Covelant, we push boundaries with cutting-edge technology to revolutionize advertising. By creating personalized experiences, we aim to make every campaign both impactful and forward-thinking.",
-  },
-  {
-    title: "Integrity",
-    color: "bg-blue-100",
-    paragraph:
-      "Ethical practices are at the heart of our operations. We prioritize respecting user privacy and fostering a trustworthy environment, in order for all parties involved to feel secured and valued.",
-  },
-  {
-    title: "Effectiveness",
-    color: "bg-teal-100",
-    paragraph:
-      "Our focus is on delivering results that matter. Covelant is designed to maximize engagement, ensuring that every campaign achieves measurable success and resonates with its intended audience.",
-  },
-];
+import { values } from "@/data/StaticData"; 
 
 export default function OurValues() {
   const [hoverIndex, setHoverIndex] = useState(null);
@@ -44,8 +18,8 @@ export default function OurValues() {
         {values.map((value, index) => (
           <div
             key={index}
-            className={`relative h-60 w-full md:w-1/4 flex flex-col justify-end items-center p-4 rounded-lg transition-all duration-300 
-            ${value.color} ${
+            className={`relative h-60 w-full md:w-1/4 flex flex-col justify-end items-center p-4 rounded-lg transition-all duration-300 bg-white/30 
+              ${
               hoverIndex === index
                 ? "backdrop-blur-xl bg-opacity-70"
                 : "backdrop-blur-[4px] bg-opacity-50"

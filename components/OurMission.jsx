@@ -28,10 +28,9 @@ export default function OurMission() {
       {/* Foreground Mission Text */}
       <div className="relative z-10 max-w-2xl text-gray-800 md:top-60 max-md:top-60 ">
         <p className="max-sm:text-lg md:text-2xl font-semibold">
-          At Covelant, we aim to increase your campaign’s performance for a
-          fraction of the price. We provide influencer agencies with a tool that
-          boosts team efficiency, saves time, and defeats advertisement
-          avoidance.
+          At Covelant, we aim to increase every athletes performance for a
+          fraction of the price. We provide you with a tool that
+          boosts team efficiency, saves time, and keeps you at the top of your game.
         </p>
       </div>
     </section>
