@@ -1,19 +1,12 @@
 "use client";
 import Image from "next/image";
-import { useState, FormEvent } from "react";
+import { useState } from "react";
 
-interface FormDataFields {
-  name: FormDataEntryValue | null;
-  email: FormDataEntryValue | null;
-  companyName: FormDataEntryValue | null;
-  inquiryType: FormDataEntryValue | null;
-  message: FormDataEntryValue | null;
-}
 
 export default function ContactUsPage() {
   const [submissionStatus, setSubmissionStatus] = useState<string>("");
 
-  const handleSubmit = async (event:any) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
     const formData = new FormData(event.currentTarget);
