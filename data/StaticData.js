@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export const Cards = () => { 
     return [{
       image: "/images/sphere.png",
@@ -102,3 +104,41 @@ export const pricingData = [
     ],
     highlight: ["All Pro features", "No limits on uploads or access"],
   }]
+
+export const adStepsData = () => {
+    return [
+        {
+          imageSrc: "/images/upload.jpg",
+          stepNumber: "1",
+          title: "Upload Matches & Training Session",
+          description: "upload any video footage that is either recorded from your phone or the in build arena cameras, our software is designed to handle both.",
+          bulletPoints: [
+            { icon: <Image src="/icons/megaphone.svg" alt="Icon" width={24} height={24} />, heading: "Any video will work", text: "if you filmed it, you can analyse it" },
+            { icon: <Image src="/icons/starhouse.svg" alt="Icon" width={24} height={24} />, heading: "upload in minutes", text: "upload your footage in minutes" },
+            { icon: <Image src="/icons/optimised.svg" alt="Icon" width={24} height={24} />, heading: "data security", text: "your videos are ecrypted at all times" }
+          ]
+        },
+        {
+          imageSrc: "/images/AI.jpeg",
+          stepNumber: "2",
+          title: "AI Video Analysis",
+          description: "Don't worry about the technical stuff, our AI will analysse everything for you in a matter of minutes.",
+          bulletPoints: [
+            { icon: <Image src="/icons/selection.svg" alt="Icon" width={24} height={24} />, heading: "Targeted selection", text: "Ensure the AI focusses on specific elements to analyse" },
+            { icon: <Image src="/icons/choice.svg" alt="Icon" width={24} height={24} />, heading: "Error and fault detection", text: "Let the AI figure out what went wrong and how to improve" },
+            { icon: <Image src="/icons/twophones.svg" alt="Icon" width={24} height={24} />, heading: "Custimize everything", text: "Easily filter the data you do not want to focuss on what really counts" }
+          ]
+        },
+        {
+          imageSrc: "/images/voidanceReport.jpg",
+          stepNumber: "3",
+          title: "Voidance",
+          description: "With the power of Voidance reports, you can now not only train more effectively, but also predict the future of your game.",
+          bulletPoints: [
+            { icon: <Image src="/icons/faceID.svg" alt="Icon" width={24} height={24} />, heading: "vulnerability detection", text: "Detect where the flaws of an oponents tactics" },
+            { icon: <Image src="/icons/messenger.svg" alt="Icon" width={24} height={24} />, heading: "Coach assist", text: "Gain insightfull tips from our AI and depth of knowledge it can present" },
+            { icon: <Image src="/icons/transition.svg" alt="Icon" width={24} height={24} />, heading: "Instant training", text: "Gain recomended training routines to improve your game for the next match" }
+          ]
+        }
+      ];
+}
