@@ -11,10 +11,10 @@ export default function PricingSection() {
       {/* Toggle */}
       <div className="flex items-center gap-2 mb-10">
         <span className="text-gray-500">Monthly</span>
-        <div className="w-14 h-8 bg-green-200 rounded-full flex items-center px-1">
-          <div className="w-6 h-6 bg-green-500 rounded-full"></div>
+        <div className="w-14 h-8 bg-green-200 rounded-full flex items-center px-1 shadow-inner">
+          <div className="w-6 h-6 bg-[#42B6B1] rounded-full"></div>
         </div>
-        <span className="text-green-600 font-semibold">Yearly</span>
+        <span className="text-[#42B6B1] font-semibold">Yearly</span>
       </div>
 
       {/* Cards */}
