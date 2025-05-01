@@ -3,6 +3,7 @@ import WhatAreWe from '@components/WhatAreWe';
 import BentoBox from '@components/BentoBox';
 import HeroContact from '@components/HeroContact';
 import PricingSection from '@components/PricingSection';
+import ProcessExplained from "@components/ProcessExplained";
 import '../../styles/global.css';
 
 export default function Home() {  
@@ -10,6 +11,7 @@ export default function Home() {
     <>
     <HeroMain />
     <WhatAreWe />
+    <ProcessExplained/>
     <BentoBox />
     <PricingSection />
     <HeroContact />
