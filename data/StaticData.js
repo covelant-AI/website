@@ -43,6 +43,29 @@ export const ContactUsData = [
   }
 ]
 
+export const values = [
+  {
+    title: "Transparency",
+    paragraph:
+      "We believe honesty and openness are essential to building trust. We empower users by giving them control over their digital presence, ensuring that every interaction on our platform is clear and straightforward.",
+  },
+  {
+    title: "Innovation",
+    paragraph:
+      "At Covelant, we push boundaries with cutting-edge technology to revolutionize advertising. By creating personalized experiences, we aim to make every campaign both impactful and forward-thinking.",
+  },
+  {
+    title: "Integrity",
+    paragraph:
+      "Ethical practices are at the heart of our operations. We prioritize respecting user privacy and fostering a trustworthy environment, in order for all parties involved to feel secured and valued.",
+  },
+  {
+    title: "Effectiveness",
+    paragraph:
+      "Our focus is on delivering results that matter. Covelant is designed to maximize engagement, ensuring that every campaign achieves measurable success and resonates with its intended audience.",
+  },
+];
+
 export const pricingData = [
   {
     title: "Free Plan",
@@ -78,5 +101,4 @@ export const pricingData = [
       "Dedicated onboarding session",
     ],
     highlight: ["All Pro features", "No limits on uploads or access"],
-  },
-];
+  }]
