@@ -65,3 +65,40 @@ export const values = [
       "Our focus is on delivering results that matter. Covelant is designed to maximize engagement, ensuring that every campaign achieves measurable success and resonates with its intended audience.",
   },
 ];
+
+export const pricingData = [
+  {
+    title: "Free Plan",
+    price: "Free",
+    period: "",
+    description: [
+      "Upload up to 2 matches per month",
+      "Single-player analytics dashboards",
+      "1 user account",
+    ],
+  },
+  {
+    title: "Coach Plan",
+    price: "99€",
+    period: "/m",
+    badge: "Most Popular",
+    description: [
+      "Unlimited match uploads",
+      "All standard AI stats",
+      "Multi-player analytics dashboards",
+      "Export analytics to PDF/CSV",
+    ],
+  },
+  {
+    title: "Elite Plan",
+    price: "499€",
+    period: "/m",
+    badge: "Federation",
+    description: [
+      "All Pro features",
+      "No limits on uploads or access",
+      "Priority customer support",
+      "Dedicated onboarding session",
+    ],
+    highlight: ["All Pro features", "No limits on uploads or access"],
+  }]
