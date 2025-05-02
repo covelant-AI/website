@@ -8,7 +8,7 @@ export default function NavigationBar() {
   const [isOpen, setIsOpen] = useState(false); 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 px-6 lg:px-12 py-2 flex items-center justify-between 
-                    backdrop-blur-lg bg-[#F9F9F9]/30 border border-[#F9F9F9]/20 rounded-b-xl">
+    backdrop-blur-lg border border-[#F9F9F9]/20 rounded-b-xl">
 
       {/* Logo */}
       <Link href="/">
@@ -18,7 +18,7 @@ export default function NavigationBar() {
       {/* Desktop Navigation Links (Hidden on Small Screens) */}
       <div className="hidden md:flex items-center space-x-8 text-lg font-medium text-black">
         <Link href="/" className="hover:text-[#42B6B1] transition">About us</Link>
-        {/* <Link href="/how-it-works" className="hover:text-[#42B6B1] transition">How it works</Link> */}
+        <Link href="/approach" className="hover:text-[#42B6B1] transition">How it works</Link>
         <Link href="/whyCovelant" className="hover:text-[#42B6B1] transition">Why Covelant?</Link>
 
         {/* Contact Us Button */}
@@ -49,7 +49,7 @@ export default function NavigationBar() {
         {/* Mobile Navigation Links */}
         <div className="flex flex-col items-center space-y-6 text-lg font-medium text-black mt-10">
           <Link href="/" className="hover:text-[#42B6B1] transition" onClick={() => setIsOpen(false)}>About us</Link>
-          {/* <Link href="/how-it-works" className="hover:text-[#42B6B1] transition" onClick={() => setIsOpen(false)}>How it works</Link> */}
+          <Link href="/approach" className="hover:text-[#42B6B1] transition" onClick={() => setIsOpen(false)}>How it works</Link>
           <Link href="/whyCovelant" className="hover:text-[#42B6B1] transition" onClick={() => setIsOpen(false)}>Why Covelant?</Link>
 
           {/* Contact Us Button */}

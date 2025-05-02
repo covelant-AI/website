@@ -1,0 +1,19 @@
+{
+    "title": "Wie wir es lösen",
+    "description": "Unser AI-gestütztes Lösung bringt viele Vorteile für Trainer, indem sie nahezu unendliche Einblicke bietet.",
+
+    "cards": {
+        "1": {
+            "title": "AI-Analyse",
+            "description": "Sparentausenden von Stunden beim Überprüfen und Markieren von Spielen"
+        },
+        "2": {
+            "title": "Aktionsempfehlungen",
+            "description": "Spinraten, Reaktionszeiten, Ausdauer, erhöhen Ihre Trainings"
+        },
+        "3": {
+            "title": "Kein Analyst benötigt",
+            "description": "Entwickelt für Selbstbedienung und Trainerfreundlich."
+        }
+    }
+}

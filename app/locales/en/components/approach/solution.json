@@ -1,0 +1,19 @@
+{
+    "title": "How We Solve It",
+    "description": "Our AI powered solution brings many benefits to coaches offering next level insights.",
+
+    "cards": {
+        "1": {
+            "title": "AI Analysis",
+            "description": "Save countless hours reviewing and bookmarking matches"
+        },
+        "2": {
+            "title": "Actionable Insights",
+            "description": "Spin rates, reaction times, endurance, elevate your training"
+        },
+        "3": {
+            "title": "No Analyst Needed",
+            "description": "Designed to be self-service and coach-friedly."
+        }
+    }
+}
