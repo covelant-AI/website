@@ -5,12 +5,13 @@ import ScalingCards from "@components/ScalingCards";
 import Solution from "@components/approach/Solution";
 import ContactSection from "@components/ContactSection";
 import { useTranslations } from "next-intl";
+import '@styles/global.css';
 
 export default function Approach() {
     const contact_t = useTranslations('components.approach.contact');
     return (
         <>
-        <div className="bg-[#F9F9F9] flex flex-col z-1 gap-y-[80px] lg:gap-y-[160px] px-[10%] overflow-hidden pb-[80px]">
+        <div className="flex flex-col z-1 gap-y-[80px] lg:gap-y-[160px] px-[10%] overflow-hidden pb-[80px]">
             <Intro />
             <Problems />
             <Solution/>
@@ -22,9 +23,6 @@ export default function Approach() {
                 image={"/images/footer-img-1.png"}
             />
         </div>
-
-        {/* TODO: This is for the Footer Bg. Mke it similar to the index page */}
-        <div className="absolute h-[300px] w-full bg-[#F9F9F9]"/>
         </>
     )
 }
