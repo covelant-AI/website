@@ -1,24 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Figtree } from "next/font/google";
+import { geistSans, geistMono, figtree } from "@/lib/fonts";
 import { NextIntlClientProvider } from 'next-intl';
 import "./globals.css";
 import Footer from "@components/Footer";
 import NavigationBar from '@components/NavigationBar';
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-export const figtree = Figtree({
-  variable: '--font-figtree',
-  subsets: ['latin'],
-}) 
 
 export const metadata: Metadata = {
   title: "Create Next App",
