@@ -6,7 +6,7 @@ export default function WhatAreWe() {
   return (
     <>
       <section 
-        className="font-Figtree flex flex-col items-left justify-center min-h-screen px-10 md:px-40  md:mt-1"
+        className="font-Figtree flex flex-col items-left justify-center px-10 md:px-40  md:mt-1"
       >
         <h3 className="text-[#42B6B1] text-3xl md:text-5xl max-sm:text-center font-light mb-9">
           {t('title')}

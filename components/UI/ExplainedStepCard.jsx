@@ -8,7 +8,7 @@ export default function ExplainedStepCard({
   bulletPoints
 }) {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-center gap-10 px-6 md:px-20 lg:px-40 py-16 font-Figtree">
+    <section className="flex flex-col md:flex-row items-center justify-center gap-10 px-6 md:px-20 lg:px-40 py-20 my-20 font-Figtree">
       {/* Left Side - Image Card */}
       <div className="relative w-72 h-96 rounded-xl overflow-hidden shadow-lg">
         <Image 
@@ -26,7 +26,7 @@ export default function ExplainedStepCard({
       
       {/* Right Side - Content */}
       <div className="w-full md:w-1/2">
-        <h2 className="text-6xl max-md:text-4xl font-bold text-black">{title}</h2>
+        <h2 className="text-5xl max-md:text-4xl font-bold text-black">{title}</h2>
         <p className="text-black mt-4">{description}</p>
         
         {/* Bullet Points */}

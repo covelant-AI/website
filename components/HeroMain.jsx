@@ -7,10 +7,11 @@ export default function HeroMain() {
   return (
     <div className="relative">
       <section
-        className="font-Figtree flex flex-col items-center justify-left h-screen 
+        className="font-Figtree flex flex-col items-center justify-left
                    bg-[url('/images/heroBackground.png')] bg-cover bg-center bg-no-repeat after:absolute after:bottom-0 after:left-0 after:w-full after:h-1/3
                    after:bg-gradient-to-b after:from-transparent after:to-[#F9F9F9] overflow-hidden">
-        <div className=" mx-20 my-60 text-left">
+                    
+        <div className=" mx-20 my-60 text-left max-sm:mx-5 max-sm:my-40">
           <h1 className="text-black font-semibold text-4xl mt-3 bg-gradient-to-r from-black to-gray-400 bg-clip-text text-transparent">{t("title")}</h1>
           <p className="text-black font-normal text-xl mt-8">{t("subtitle")}</p>
           <Link href="/contact">
