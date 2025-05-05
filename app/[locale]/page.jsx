@@ -4,7 +4,7 @@ import BentoBox from '@components/BentoBox';
 import HeroContact from '@components/HeroContact';
 import PricingSection from '@components/PricingSection';
 import ProcessExplained from "@components/ProcessExplained";
-import '../../styles/global.css';
+import '../global.css';
 
 export default function Home() {  
   return (

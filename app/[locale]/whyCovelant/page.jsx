@@ -4,7 +4,7 @@ import CenteredTextSection from "@components/CenteredTextSection";
 import OurValues from "@components/OurValues"
 import ContactSection from "@/components/ContactSection"
 import { ContactUsData } from "../../../data/StaticData";
-import '../../../styles/global.css';
+import '../../global.css';
 
 export default function WhyCovelant() {
     return(

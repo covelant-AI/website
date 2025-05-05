@@ -5,7 +5,7 @@ import ScalingCards from "@components/ScalingCards";
 import Solution from "@components/approach/Solution";
 import ContactSection from "@components/ContactSection";
 import { useTranslations } from "next-intl";
-import '@styles/global.css';
+import '../../global.css';
 
 export default function Approach() {
     const contact_t = useTranslations('components.approach.contact');

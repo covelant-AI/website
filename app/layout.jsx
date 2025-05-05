@@ -1,5 +1,5 @@
 import { NextIntlClientProvider } from 'next-intl';
-import "./globals.css";
+import "./global.css";
 import Footer from "@components/Footer";
 import NavigationBar from '@components/NavigationBar';
 
