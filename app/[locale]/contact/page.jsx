@@ -4,7 +4,7 @@ import { useState } from "react";
 
 
 export default function ContactUsPage() {
-  const [submissionStatus, setSubmissionStatus] = useState<string>("");
+  const [submissionStatus, setSubmissionStatus] = useState("");
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -31,7 +31,7 @@ export default function ContactUsPage() {
         const result = await response.json();
         console.log("Form submitted successfully:", result);
         setSubmissionStatus("Your message has been submitted!");
-        event.currentTarget.reset();
+        window.location.href = "/";
       } else {
         console.error("Failed to submit form:", response.statusText);
         setSubmissionStatus("Error submitting your message.");

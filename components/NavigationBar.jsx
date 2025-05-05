@@ -53,11 +53,11 @@ export default function NavigationBar() {
           <Link href="/whyCovelant" className="hover:text-[#42B6B1] transition" onClick={() => setIsOpen(false)}>Why Covelant?</Link>
 
           {/* Contact Us Button */}
-          <Link href="#contact">
-            <button className="px-6 py-2 bg-[#42B6B1] text-white font-semibold rounded-lg shadow-md hover:bg-teal-600 transition" onClick={() => setIsOpen(false)}>
-              Contact us
-            </button>
-          </Link>
+          <Link href="https://calendly.com/omar-badawy/covelant-call">
+          <button className="px-9 py-2 bg-[#42B6B1] text-white font-normal rounded-xl shadow-md hover:bg-teal-600 transition">
+            Book a call
+          </button>
+        </Link>
         </div>
       </div>
     </nav>

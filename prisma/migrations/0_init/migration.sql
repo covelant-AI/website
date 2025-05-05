@@ -10,3 +10,4 @@ CREATE TABLE "Inquiry" (
 
     CONSTRAINT "Inquiry_pkey" PRIMARY KEY ("id")
 );
+
