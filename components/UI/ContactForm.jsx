@@ -16,8 +16,9 @@ export default function ContactForm(){
           inquiryType: formData.get("inquiryType"),
           message: formData.get("message"),
         };
-    
+        console.log("Form data:", data);
         try {
+          
           const response = await fetch("/api/submitForm", {
             method: "POST",
             headers: {
