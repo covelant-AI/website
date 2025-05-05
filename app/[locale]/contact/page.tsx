@@ -4,7 +4,7 @@ import { useState } from "react";
 
 // Define types for the form data
 interface FormData {
-  name: string;
+  name: string ;
   email: string;
   companyName: string | null;
   inquiryType: string;
@@ -19,11 +19,11 @@ export default function ContactUsPage() {
 
     const formData = new FormData(event.currentTarget);
     const data: FormData = {
-      name: formData.get("name") as string,
-      email: formData.get("email") as string,
-      companyName: formData.get("companyName") as string | null,
-      inquiryType: formData.get("inquiryType") as string,
-      message: formData.get("message") as string,
+      name: formData.get("name") as string || "", 
+      email: formData.get("email") as string || "", 
+      companyName: formData.get("companyName") as string | null || null,
+      inquiryType: formData.get("inquiryType") as string || "", 
+      message: formData.get("message") as string || "", 
     };
 
     try {
