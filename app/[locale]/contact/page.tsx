@@ -2,21 +2,28 @@
 import Image from "next/image";
 import { useState } from "react";
 
+// Define types for the form data
+interface FormData {
+  name: string;
+  email: string;
+  companyName: string | null;
+  inquiryType: string;
+  message: string;
+}
 
 export default function ContactUsPage() {
-  
-  const [submissionStatus, setSubmissionStatus] = useState("");
+  const [submissionStatus, setSubmissionStatus] = useState<string>("");
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     const formData = new FormData(event.currentTarget);
-    const data = {
-      name: formData.get("name"),
-      email: formData.get("email"),
-      companyName: formData.get("companyName"),
-      inquiryType: formData.get("inquiryType"),
-      message: formData.get("message"),
+    const data: FormData = {
+      name: formData.get("name") as string,
+      email: formData.get("email") as string,
+      companyName: formData.get("companyName") as string | null,
+      inquiryType: formData.get("inquiryType") as string,
+      message: formData.get("message") as string,
     };
 
     try {
@@ -162,4 +169,5 @@ export default function ContactUsPage() {
     </section>
   );
 }
+
 
