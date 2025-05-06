@@ -7,7 +7,7 @@ export default function ScalingCards() {
     <section className="relative flex flex-col items-center text-center py-16 px-6 font-Figtree">
       
       <h2 className="text-6xl max-md:text-4xl font-bold text-black mb-12">
-        Effortless Scaling with <br /> Voidance Technology
+        Effortless Scaling with <br /> Covelant Tech
       </h2>
       <div className="flex flex-col md:flex-row gap-6 w-full max-w-5xl justify-center">
         {cards.map((card, index) => (

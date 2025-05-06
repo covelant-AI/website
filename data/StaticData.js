@@ -1,33 +1,49 @@
-import Image from "next/image";
-
 export const Cards = () => { 
     return [{
       image: "/images/sphere.png",
       title: "Save Time & Effort",
       description:
-        "No more back-and-forth negotiations or complex content production. Simply choose the right influencers, and Voidance adapts your existing ad in seconds.",
+        "Unlock unparalleled efficiency with AI-powered analysis, automating time-consuming tasks so coaches can focus on what truly matters – winning.",
     },
     {
       image: "/images/coin.png",
       title: "Lower Costs, Higher Returns",
       description:
-        "Instead of producing new content for each influencer, Voidance repurposes a proven ad, drastically reducing production costs while maximizing reach.",
+        "Maximize your investment with AI solutions that cut down on operational costs while delivering game-changing insights to drive superior team performance and better ROI.",
     },
     {
       image: "/images/ven.png",
-      title: "Optimized for Conversions",
+      title: "Optimized for Winning",
       description:
-        "By leveraging a well-crafted, high-performing ad and tailoring it to multiple audiences, Voidance ensures your campaigns scale effectively without losing impact.",
+        "Supercharge your game plan with AI-driven strategies that pinpoint high-impact opportunities, helping your team score more and win bigger.",
     },]
 }
 
 export const Statistics = [
-  { percentage: "700%", label: "Engagement"},
-  { percentage: "60%", label: "Conversions"},
-  { percentage: "62%", label: "Sentiment"},
-  { percentage: "418%", label: "Screen time"},
-  { percentage: "75%", label: "Brand Retention" },
-  { percentage: "32%", label: "Efficiency" },
+  { percentage: "40%", label: "Preformance"},
+  { percentage: "90%", label: "Time Saved"},
+  { percentage: "30%", label: "Analysis Accuracy"},
+  { percentage: "20%", label: "Passing Accuracy"},
+  { percentage: "30%", label: "Shot Accuracy" },
+  { percentage: "8%", label: "Sprint speed" },
+  { percentage: "15%", label: "Touches/minute"},
+  { percentage: "20%", label: "Dribbles Rate"},
+  { percentage: "25%", label: "Defensive Actions"},
+  { percentage: "15%", label: "Raly Win Rate"},
+  { percentage: "10%", label: "Possession %" },
+  { percentage: "20%", label: "Passing Networks" },
+  { percentage: "25%", label: "Attacking Zones"},
+  { percentage: "25%", label: "Defensive Zones"},
+  { percentage: "15%", label: "Expected Goals"},
+  { percentage: "20%", label: "Expected Assists"},
+  { percentage: "30%", label: "Pressure Applied" },
+  { percentage: "20%", label: "Offensive Efficiency" },
+  { percentage: "15%", label: "Transition Speed"},
+  { percentage: "25%", label: "Player Positioning"},
+  { percentage: "40%", label: "Player Movement"},
+  { percentage: "15%", label: "Spacing"},
+  { percentage: "40%", label: "Player Fatigue Levels" },
+  { percentage: "20%", label: "Recovery Time" },
 ];
 
 export const ContactUsData = [
@@ -54,7 +70,7 @@ export const values = [
   {
     title: "Innovation",
     paragraph:
-      "At Covelant, we push boundaries with cutting-edge technology to revolutionize advertising. By creating personalized experiences, we aim to make every campaign both impactful and forward-thinking.",
+      "At Covelant, we push boundaries with cutting-edge technology to revolutionize advertising. By creating personalized experiences, we aim to make every session on our platform both impactful and forward-thinking.",
   },
   {
     title: "Integrity",
@@ -64,7 +80,7 @@ export const values = [
   {
     title: "Effectiveness",
     paragraph:
-      "Our focus is on delivering results that matter. Covelant is designed to maximize engagement, ensuring that every campaign achieves measurable success and resonates with its intended audience.",
+      "Our focus is on delivering results that matter. Covelant is designed to maximize engagement, ensuring that every use of our platform achieves measurable success and resonates with its intended audience.",
   },
 ];
 

@@ -40,7 +40,7 @@ export default function InfiniteCarousel() {
         }}
       ></div>
       <h2 className="text-6xl font-semibold text-black text-left px-96 max-lg:px-2 max-md:text-4xl mb-8 mt-9 border-b border-black pb-4 w-full relative z-10">
-        What Voidance Tech<br/> Can Do for You
+        What Covelant Tech<br/> Can Do for You
       </h2>
       <div className={styles.carousel} ref={carouselRef}>
         <div className={styles.carouselContent}>
