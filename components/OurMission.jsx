@@ -4,7 +4,7 @@ export default function OurMission() {
   return (
     <section className="relative w-full flex justify-center items-center min-h-[50vh] px-6 text-center">
       {/* Background Grid Matrix with Frosted Effect */}
-      <div className="absolute inset-0 grid grid-cols-10 grid-rows-5 gap-2 opacity-60">
+      {/* <div className="absolute inset-0 grid grid-cols-10 grid-rows-5 gap-2 opacity-60">
         {Array.from({ length: 50 }, (_, index) => (
           <div
             key={index}
@@ -13,7 +13,7 @@ export default function OurMission() {
             }`}
           />
         ))}
-      </div>
+      </div> */}
 
       {/* Large Text Behind Grid */}
       <h1 className="absolute text-[9rem] max-md:text-[5rem] font-bold uppercase text-teal-400 opacity-20">
