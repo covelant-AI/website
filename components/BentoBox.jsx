@@ -26,16 +26,27 @@ export default function BentoBoxGrid() {
                 background: "linear-gradient(212deg, #E3E5ED 10.28%, #E1E7FA 67.75%)",
                 backgroundRepeat: "no-repeat",
                 borderRadius: "18px",
-                backgroundBlendMode: "multiply"
+                backgroundBlendMode: "multiply",
+                position: "relative", // Make the parent div position relative for absolute child positioning
+                overflow: "hidden" // Ensure video doesn't overflow the container
               }}
             >
-              {t('leftBox.text').split('\n').map((line, index) => (
-                <React.Fragment key={index}>
-                  {line}
-                  <br />
-                </React.Fragment>
-              ))}
+              {/* Video Element */}
+              <video
+                autoPlay
+                muted
+                loop
+                className="absolute top-0 left-0 w-full h-full object-cover" // Ensures the video covers the div
+                style={{
+                  borderRadius: "18px", // Matches the border radius of the div
+                }}
+              >
+                <source src="/video/abstract2.mp4" type="video/mp4" />
+                {/* Add additional source types if needed */}
+              </video>
+              
             </div>
+
 
             {/* Right Column - Stacked Benefits */}
             <div className="flex flex-col space-y-4">
@@ -146,24 +157,35 @@ export default function BentoBoxGrid() {
 
             {/* Right Column - Customizable Box */}
             <div
-              className="p-4 rounded-lg flex text-5xl items-center justify-center font-semibold text-lg text-center  max-sm:justify-center
-              max-sm:text-left max-sm:px-10 text-5xl max-sm:text-lg"
-              style={{
-                width: "445px",
-                height: "650px",
-                background: "linear-gradient(212deg, #E3E5ED 10.28%, #E1E7FA 67.75%)",
-                backgroundRepeat: "no-repeat",
-                borderRadius: "18px",
-                backgroundBlendMode: "multiply"
-              }}
-            >
-              {t('rightBox.text').split('\n').map((line, index) => (
-                <React.Fragment key={index}>
-                  {line}
-                  <br />
-                </React.Fragment>
-              ))}
+               className="p-4 rounded-lg flex text-5xl items-center justify-center font-semibold text-lg text-center  max-sm:justify-center
+               max-sm:text-left max-sm:px-10 text-5xl max-sm:text-lg"
+               style={{
+                 width: "445px",
+                 height: "650px",
+                 background: "linear-gradient(212deg, #E3E5ED 10.28%, #E1E7FA 67.75%)",
+                 backgroundRepeat: "no-repeat",
+                 borderRadius: "18px",
+                 backgroundBlendMode: "multiply",
+                 position: "relative", // Make the parent div position relative for absolute child positioning
+                 overflow: "hidden" // Ensure video doesn't overflow the container
+               }}>       
+
+               {/* Video Element */}
+               <video
+                 autoPlay
+                 muted
+                 loop
+                 className="absolute top-0 left-0 w-full h-full object-cover" // Ensures the video covers the div
+                 style={{
+                   borderRadius: "18px", // Matches the border radius of the div
+                 }}
+               >
+                 <source src="video/abstract1.mp4" type="video/mp4" />
+                 {/* Add additional source types if needed */}
+               </video>
+              
             </div>
+
           </div>
         </div>
       </section>
