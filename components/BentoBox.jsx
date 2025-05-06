@@ -41,7 +41,7 @@ export default function BentoBoxGrid() {
                   borderRadius: "18px", // Matches the border radius of the div
                 }}
               >
-                <source src="/video/abstract2.mp4" type="video/mp4" />
+                <source src="/video/tennisField.mp4" type="video/mp4" />
                 {/* Add additional source types if needed */}
               </video>
               
@@ -180,7 +180,7 @@ export default function BentoBoxGrid() {
                    borderRadius: "18px", // Matches the border radius of the div
                  }}
                >
-                 <source src="video/abstract1.mp4" type="video/mp4" />
+                 <source src="video/footbalField.mp4" type="video/mp4" />
                  {/* Add additional source types if needed */}
                </video>
               
