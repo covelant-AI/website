@@ -51,7 +51,7 @@ export default function ContactForm(){
                 type="text"
                 name="name" 
                 placeholder="Alex Johnson" 
-                className="w-full px-4 py-4 text-black border shadow-sm rounded-2xl focus:outline-none focus:ring-2 focus:ring-teal-300"
+                className="w-full px-4 py-4 text-black border border-gray-200 shadow-sm rounded-2xl focus:outline-none focus:ring-1 focus:ring-teal-100"
               />
             </div>
 
@@ -61,7 +61,7 @@ export default function ContactForm(){
                 type="email"
                 name="email" 
                 placeholder="alex.johnson@email.com" 
-                className="w-full text-black px-4 py-4 border shadow-sm  rounded-2xl focus:outline-none focus:ring-2 focus:ring-teal-300"
+                className="w-full text-black px-4 py-4 border border-gray-200 shadow-sm  rounded-2xl focus:outline-none focus:ring-1 focus:ring-teal-100"
               />
             </div>
 
@@ -71,13 +71,13 @@ export default function ContactForm(){
                 type="text" 
                 name="companyName"
                 placeholder="NovaTech Solutions" 
-                className="w-full px-4 py-4 border text-black shadow-sm rounded-2xl focus:outline-none focus:ring-2 focus:ring-teal-300"
+                className="w-full px-4 py-4 border border-gray-200 text-black shadow-sm rounded-2xl focus:outline-none focus:ring-1 focus:ring-teal-100"
               />
             </div>
 
             <div>
               <label className="block text-black font-medium font-semibold">Inquiry Type</label>
-              <select className="w-full text-black px-4 py-4 shadow-sm  border rounded-2xl focus:outline-none focus:ring-2 focus:ring-teal-300" name="inquiryType">
+              <select className="w-full text-black px-4 py-4 shadow-sm  border border-gray-200 rounded-2xl focus:outline-none focus:ring-1 focus:ring-teal-100" name="inquiryType">
                 <option className='text-gray-400'>None Selected</option>
                 <option>General Inquiry</option>
                 <option>Partnership</option>
@@ -90,7 +90,7 @@ export default function ContactForm(){
               <textarea 
                 placeholder="Type your message" 
                 name="message"
-                className="w-full min-h-[258px] text-black shadow-sm px-4 py-2 border rounded-2xl focus:outline-none focus:ring-2 focus:ring-teal-300"
+                className="w-full min-h-[258px] border border-gray-200 text-black shadow-sm px-4 py-2 border rounded-2xl focus:outline-none focus:ring-1 focus:ring-teal-100"
                 rows="4"
               ></textarea>
             </div>

@@ -5,7 +5,7 @@ import { pricingData } from "@/data/StaticData";
 
 export default function PricingSection() {
   return (
-    <section className="w-full py-16 px-6 flex flex-col items-center">
+    <section className="w-full py-16 px-6 flex flex-col items-center max-md:mb-140">
       <h2 className="text-4xl font-bold mb-4 text-black">Pricing</h2>
 
       {/* Toggle */}
@@ -18,7 +18,7 @@ export default function PricingSection() {
       </div>
 
       {/* Cards */}
-      <div className="flex flex-col md:flex-row gap-6 w-220 max-w-6xl h-120">
+      <div className="flex flex-col md:flex-row max-md:w-auto gap-6 w-auto max-w-6xl h-120">
         {pricingData.map((plan, index) => (
           <PricingCard key={index} {...plan} />
         ))}
