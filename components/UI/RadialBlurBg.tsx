@@ -1,4 +1,5 @@
 export interface RadialBlurBgProps {
+    background: string;
     width: string;
     height: string;
     rotate: string;
@@ -8,12 +9,12 @@ export interface RadialBlurBgProps {
     right?: number;
 }
 
-export default function RadialBlurBg({ width, height, rotate, top, left, bottom, right }: RadialBlurBgProps) {
+export default function RadialBlurBg({ width, height, rotate, top, left, bottom, right, background }: RadialBlurBgProps) {
     return (
         <div 
-        className="absolute z-0"
+        className="absolute -z-10"
         style={{
-          background: 'radial-gradient(50% 50% at 50% 50%, rgba(8, 113, 151, 0.04) 0%, rgba(0, 180, 173, 0.12) 50%, rgba(176, 199, 255, 0.2) 80%, rgba(176, 199, 255, 0) 100%)',
+          background: background,
           width: width,
           height: height,
           rotate: rotate,

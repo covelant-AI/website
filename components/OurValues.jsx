@@ -6,7 +6,7 @@ export default function OurValues() {
   const [hoverIndex, setHoverIndex] = useState(null);
 
   return (
-    <section className="w-full flex justify-center items-center mb-60 py-12 px-6">
+    <section className="w-full flex justify-center items-center my-60 px-6">
       {/* Outer Container */}
       <div className="relative w-full gap-1 max-w-5xl bg-gray-50 rounded-xl shadow-lg p-8 flex flex-col md:flex-row justify-between">
         {/* "OUR VALUES" Behind Cards */}
