@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 export default function HeroMain() {
   const t = useTranslations('components.heroMain');
   return (
-    <div className="relative">
+    <div className="relative mt-20 pt-10">
       <section
         className="font-Figtree flex flex-col items-center justify-left
                    bg-[url('/images/heroBackground.png')] bg-cover bg-center bg-no-repeat after:absolute after:bottom-0 after:left-0 after:w-full after:h-1/3

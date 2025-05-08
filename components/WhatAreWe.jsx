@@ -13,12 +13,12 @@ export default function WhatAreWe() {
         </h3>
 
         {/* Main Text */}
-        <p className="text-black md:text-3xl xl:text-5xl max-sm:text-2xl max-sm:text-center text-3xl font-semibold mt-4">
+        <p className="text-black md:text-3xl xl:text-4xl max-sm:text-2xl max-sm:text-center text-3xl font-semibold mt-4">
           {t('mainText')}
         </p>
 
         {/* Highlighted Section */}
-        <p className="text-black md:text-3xl xl:text-5xl text-3xl max-sm:text-2xl max-sm:text-center font-semibold mt-10 md:mt-10">
+        <p className="text-black md:text-3xl xl:text-4xl text-3xl max-sm:text-2xl max-sm:text-center font-semibold mt-10 md:mt-10">
           {t('highlightedText.before')}{" "}
           <span className="text-[#42B6B1] font-bold">{t('highlightedText.highlight')}</span>
           {t('highlightedText.after')}
