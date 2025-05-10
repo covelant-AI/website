@@ -87,7 +87,8 @@ export const values = [
 export const pricingData = [
   {
     title: "Free Plan",
-    price: "Free",
+    monthlyPrice: "Free",
+    yearlyPrice: "Free",
     period: "",
     description: [
       "Upload up to 2 matches per month",
@@ -97,7 +98,8 @@ export const pricingData = [
   },
   {
     title: "Coach Plan",
-    price: "99€",
+    monthlyPrice: "99€",
+    yearlyPrice: "899€",
     period: "/m",
     badge: "Most Popular",
     description: [
@@ -109,7 +111,8 @@ export const pricingData = [
   },
   {
     title: "Elite Plan",
-    price: "499€",
+    monthlyPrice: "499€",
+    yearlyPrice: "3,999€",
     period: "/m",
     badge: "Federation",
     description: [

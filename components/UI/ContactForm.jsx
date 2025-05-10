@@ -95,7 +95,7 @@ export default function ContactForm(){
               ></textarea>
             </div>
 
-            <button className="w-full bg-[#42B6B1] text-2xl text-white font-semibold py-3 rounded-2xl hover:bg-teal-600 transition">
+            <button className="w-full bg-[#42B6B1] text-2xl text-white font-semibold py-3 rounded-2xl hover:bg-teal-600 transition ">
               Send
             </button>
             {submissionStatus && (
