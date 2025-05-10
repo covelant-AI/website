@@ -29,7 +29,7 @@ export default function PricingCard({
 
       {/* Price */}
       <div className="text-5xl font-bold bg-gradient-to-r from-black to-gray-400 bg-clip-text text-transparent">
-        ${price}
+        {price}
         <span className="text-base font-medium text-gray-500">{period}</span>
       </div>
 
