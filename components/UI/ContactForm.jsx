@@ -43,15 +43,15 @@ export default function ContactForm(){
       };
 
    return  <>
-    <div className="bg-white shadow-lg rounded-2xl p-8 w-full max-w-lg max-lg:mx-auto">
-          <form className="space-y-6" onSubmit={handleSubmit}>
+    <div className="bg-white shadow-lg rounded-2xl p-8 max-w-lg max-lg:mx-4">
+          <form className="space-y-6 max-lg:px-2 w-auto" onSubmit={handleSubmit}>
             <div>
               <label className="block text-black font-semibold">Full Name</label>
               <input 
                 type="text"
                 name="name" 
                 placeholder="Alex Johnson" 
-                className="w-full px-4 py-4 text-black border border-gray-200 shadow-sm rounded-2xl focus:outline-none focus:ring-1 focus:ring-teal-100"
+                className="w-full pr-40 max-sm:pr-10 pl-4 py-4 text-black border border-gray-200 shadow-sm rounded-2xl focus:outline-none focus:ring-1 focus:ring-teal-100"
               />
             </div>
 
@@ -77,7 +77,7 @@ export default function ContactForm(){
 
             <div>
               <label className="block text-black font-medium font-semibold">Inquiry Type</label>
-              <select className="w-full text-black px-4 py-4 shadow-sm  border border-gray-200 rounded-2xl focus:outline-none focus:ring-1 focus:ring-teal-100" name="inquiryType">
+              <select className="w-full text-black px-4 py-4 shadow-sm  border border-gray-200 rounded-2xl focus:outline-none focus:ring-1 focus:ring-teal-100 appearance-none" name="inquiryType">
                 <option className='text-gray-400'>None Selected</option>
                 <option>General Inquiry</option>
                 <option>Partnership</option>

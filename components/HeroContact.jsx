@@ -56,7 +56,9 @@ export default function HeroContact(props) {
           </div>
           </div>
         {/* Right Side - Form in Card */}
+        <div className='flex justify-center items-center'>
         <ContactForm/>
+        </div>
       </div>
     </section>
   );

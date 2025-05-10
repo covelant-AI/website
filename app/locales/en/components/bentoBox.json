@@ -6,15 +6,15 @@
   "benefits": {
     "directIntegration": {
       "title": "DIRECT INTEGRATION",
-      "description": "Use our API to integrate voidances into your existing software solutions."
+      "description": "Use our API to integrate our AI systems into your existing software solutions for quicker and easier workflows."
     },
     "skipRewatching": {
       "title": "SKIP RE-WATCHING MATCHES",
-      "description": "Let our AI do the heavy lifting. No more re-watching matches to find the right moments."
+      "description": "Let our AI do the heavy lifting. No more re-watching matches or spending hours to find the right moments."
     },
     "decreaseCosts": {
       "title": "DECREASE COSTS",
-      "description": "Save time and money by automating the process of finding tactical flaws in your game."
+      "description": "Save time and money by automating the process of finding tactical flaws in your game with just a few clicks."
     },
     "trainWithData": {
       "title": "TRAIN WITH DATA",
@@ -22,7 +22,7 @@
     },
     "increasePerformance": {
       "title": "INCREASE PERFORMANCE",
-      "description": "Gain an AI Driven training plans that are tailored to your needs and goals."
+      "description": "Gain an AI Driven training plans that are tailored to your needs and goals to optimise your strategy."
     },
     "outplayCompetition": {
       "title": "OUTPLAY COMPETITION",
