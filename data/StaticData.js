@@ -56,7 +56,7 @@ export const ContactUsData = [
   {
     title: "Experience the Impact",
     description:
-      "Let’s explore how Voidance Technology can elevate your campaigns. Reach out to our team, we’re here to answer your questions and get you started.",
+      "Let’s explore how AI Technology can elevate your games. Reach out to our team, we’re here to answer your questions and get you started.",
     image: "/images/footer-img-2.png",
   }
 ]
@@ -70,7 +70,7 @@ export const values = [
   {
     title: "Innovation",
     paragraph:
-      "At Covelant, we push boundaries with cutting-edge technology to revolutionize advertising. By creating personalized experiences, we aim to make every session on our platform both impactful and forward-thinking.",
+      "At Covelant, we push boundaries with cutting-edge technology to revolutionize the sports industry. By creating personalized experiences, we aim to make every session on our platform both impactful and forward-thinking.",
   },
   {
     title: "Integrity",
@@ -80,7 +80,7 @@ export const values = [
   {
     title: "Effectiveness",
     paragraph:
-      "Our focus is on delivering results that matter. Covelant is designed to maximize engagement, ensuring that every use of our platform achieves measurable success and resonates with its intended audience.",
+      "Our focus is on delivering results that matter. Covelant is designed to maximize preformance, ensuring that every use of our platform achieves measurable success and resonates with our users.",
   },
 ];
 
@@ -133,30 +133,30 @@ export const adStepsData = () => {
           description: "upload any video footage that is either recorded from your phone or the in build arena cameras, our software is designed to handle both.",
           bulletPoints: [
             { heading: "Any video will work", text: "if you filmed it, you can analyse it" },
-            { heading: "upload in minutes", text: "upload your footage in minutes" },
-            { heading: "data security", text: "your videos are ecrypted at all times" }
+            { heading: "Upload in minutes", text: "upload your footage in minutes" },
+            { heading: "Data security", text: "your videos are ecrypted at all times" }
           ]
         },
         {
-          imageSrc: "/images/AI.jpeg",
+          imageSrc: "/images/AI.jpg",
           stepNumber: "2",
           title: "AI Video Analysis",
-          description: "Don't worry about the technical stuff, our AI will analysse everything for you in a matter of minutes.",
+          description: "Don't worry about the technical stuff, our AI will analyze everything for you in a matter of minutes.",
           bulletPoints: [
             { heading: "Targeted selection", text: "Ensure the AI focusses on specific elements to analyse" },
             { heading: "Error and fault detection", text: "Let the AI figure out what went wrong and how to improve" },
-            { heading: "Custimize everything", text: "Easily filter the data you do not want to focuss on what really counts" }
+            { heading: "Customize everything", text: "Easily filter the data you do not want to focus on what really counts" }
           ]
         },
         {
           imageSrc: "/images/voidanceReport.jpg",
           stepNumber: "3",
-          title: "Voidance",
-          description: "With the power of Voidance reports, you can now not only train more effectively, but also predict the future of your game.",
+          title: "Immediately improve",
+          description: "With the power of AI reports, you can now not only train more effectively, but also predict the future of your game.",
           bulletPoints: [
-            { heading: "vulnerability detection", text: "Detect where the flaws of an oponents tactics" },
+            { heading: "Vulnerability detection", text: "Detect where the flaws of an opponent's tactics" },
             { heading: "Coach assist", text: "Gain insightfull tips from our AI and depth of knowledge it can present" },
-            { heading: "Instant training", text: "Gain recomended training routines to improve your game for the next match" }
+            { heading: "Instant training", text: "Gain recommended training routines to improve your game for the next match" }
           ]
         }
       ];

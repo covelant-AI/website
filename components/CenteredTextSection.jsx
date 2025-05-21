@@ -22,7 +22,7 @@ export default function CenteredTextSection() {
       <div className="relative z-10 max-w-3xl text-black mt-10">
         <p className="text-2xl max-sm:text-lg font-semibold leading-relaxed">
           Covelant understands the challenges coaches face, such as endless re-watching of games, 
-          man power limitation, and the uncertainty of performance. Voidance Technology 
+          man power limitation, and the uncertainty of performance. Our technology enchances 
           enhances your decision making, scaling them across multiple players, higher performance, 
           and lower costs. The result? Faster execution, effortless scaling, and maximum impact.
         </p>

@@ -6,7 +6,7 @@
   "benefits": {
     "directIntegration": {
       "title": "DIRECT INTEGRATION",
-      "description": "Use our API to integrate our AI systems into your existing software solutions for quicker and easier workflows."
+      "description": "Easily connect our AI systems to your existing tools, making your workflows faster and more efficient."
     },
     "skipRewatching": {
       "title": "SKIP RE-WATCHING MATCHES",
@@ -18,7 +18,7 @@
     },
     "trainWithData": {
       "title": "TRAIN WITH DATA",
-      "description": "With voidances, you can make informed decisions about your training based on data derived from your matches and analysed by AI."
+      "description": "Use data-driven insights to make smarter training decisions and improve performance based on match analysis."
     },
     "increasePerformance": {
       "title": "INCREASE PERFORMANCE",
@@ -26,7 +26,7 @@
     },
     "outplayCompetition": {
       "title": "OUTPLAY COMPETITION",
-      "description": "Not only will learn your mistakes but your opponents as well. With voidances, you can outplay your competition by knowing their weaknesses."
+      "description": " Not only will you learn from your mistakes, but also from your opponents'. With our insights, you can outplay the competition by identifying their weaknesses"
     }
   },
   "rightBox": {

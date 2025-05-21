@@ -34,9 +34,11 @@ export default function BentoBoxGrid() {
                 autoPlay
                 muted
                 loop
-                className="absolute top-0 left-0 w-full h-full object-cover" // Ensures the video covers the div
+                className="absolute top-0 left-0 w-full h-full object-cover pointer-events-none select-none" 
                 style={{
-                  borderRadius: "18px", // Matches the border radius of the div
+                   pointerEvents: "none",
+                   userSelect: "none",
+                   borderRadius: "18px" 
                 }}
               >
                 <source src="/video/tennisField.mp4" type="video/mp4" />
@@ -172,8 +174,10 @@ export default function BentoBoxGrid() {
                  autoPlay
                  muted
                  loop
-                 className="absolute top-0 left-0 w-full h-full object-cover" // Ensures the video covers the div
+                 className="absolute top-0 left-0 w-full h-full object-cover pointer-events-none select-none" 
                  style={{
+                   pointerEvents: "none",
+                   userSelect: "none",
                    borderRadius: "18px", // Matches the border radius of the div
                  }}
                >
