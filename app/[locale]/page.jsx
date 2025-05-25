@@ -4,6 +4,7 @@ import BentoBox from '@components/BentoBox';
 import HeroContact from '@components/HeroContact';
 import PricingSection from '@components/PricingSection';
 import ProcessExplained from "@components/ProcessExplained";
+import Awards from '@components/UI/Awards';
 import Credits from '@components/UI/credits';
 import '../global.css';
 
@@ -14,6 +15,7 @@ export default function Home() {
     <WhatAreWe />
     <ProcessExplained/>
     <BentoBox />
+    <Awards/>
     <PricingSection />
     <Credits/>
     <HeroContact />
