@@ -1,18 +1,18 @@
 export const Cards = () => { 
     return [{
-      image: "/images/sphere.png",
+      image: "https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2Fsphere.png?alt=media&token=672360d9-0587-489e-a8d9-4686ca288524",
       title: "Save Time & Effort",
       description:
         "Unlock unparalleled efficiency with AI-powered analysis, automating time-consuming tasks so coaches can focus on what truly matters – winning.",
     },
     {
-      image: "/images/coin.png",
+      image: "https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2Fcoin.png?alt=media&token=1bcabb2a-82a4-4ab3-bec9-66939aa38ee4",
       title: "Lower Costs, Higher Returns",
       description:
         "Maximize your investment with AI solutions that cut down on operational costs while delivering game-changing insights to drive superior team performance and better ROI.",
     },
     {
-      image: "/images/ven.png",
+      image: "https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2Fven.png?alt=media&token=c9b2f6fc-990d-4c19-88a9-c7eafb013c75",
       title: "Optimized for Winning",
       description:
         "Supercharge your game plan with AI-driven strategies that pinpoint high-impact opportunities, helping your team score more and win bigger.",
@@ -51,13 +51,13 @@ export const ContactUsData = [
     title: "See the results for yourself :)",
     description:
       "Get in contact with a member of our team and we’ll help you answer any further questions and start our journey together.",
-    image: "/images/footer-img-1.png",
+    image: "https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2Ffooter-img-1.png?alt=media&token=b7acb823-a415-4c8c-b842-e7616c245d8b",
   },
   {
     title: "Experience the Impact",
     description:
       "Let’s explore how AI Technology can elevate your games. Reach out to our team, we’re here to answer your questions and get you started.",
-    image: "/images/footer-img-2.png",
+    image: "https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2Ffooter-img-2.png?alt=media&token=f824e483-abb4-4e34-ad26-5cfa8bc4ba00",
   }
 ]
 
@@ -127,7 +127,7 @@ export const pricingData = [
 export const adStepsData = () => {
     return [
         {
-          imageSrc: "/images/upload.jpg",
+          imageSrc: "https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2Fupload.jpg?alt=media&token=5a1bcb52-0a7d-4f2e-83a8-e2c3d1ee0916",
           stepNumber: "1",
           title: "Upload Matches & Training Session",
           description: "upload any video footage that is either recorded from your phone or the in build arena cameras, our software is designed to handle both.",
@@ -138,7 +138,7 @@ export const adStepsData = () => {
           ]
         },
         {
-          imageSrc: "/images/AI.jpg",
+          imageSrc: "https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2FAI.jpg?alt=media&token=07dcb22a-dd6d-485e-83b5-b0ff275d5931",
           stepNumber: "2",
           title: "AI Video Analysis",
           description: "Don't worry about the technical stuff, our AI will analyze everything for you in a matter of minutes.",
@@ -149,7 +149,7 @@ export const adStepsData = () => {
           ]
         },
         {
-          imageSrc: "/images/voidanceReport.jpg",
+          imageSrc: "https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2FvoidanceReport.jpg?alt=media&token=7d7766cb-8bfc-403a-844c-230b0ebb9003",
           stepNumber: "3",
           title: "Immediately improve",
           description: "With the power of AI reports, you can now not only train more effectively, but also predict the future of your game.",

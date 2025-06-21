@@ -9,7 +9,7 @@ import '../../global.css';
 export default function WhyCovelant() {
     return(
         <>
-        <section className="relative overflow-x-hidden">
+        <section className="overflow-hidden">
         <HeroWhy/>
         <OurMission/>
         <CenteredTextSection/>

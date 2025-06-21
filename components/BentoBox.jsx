@@ -56,7 +56,7 @@ export default function BentoBoxGrid() {
                 style={{
                   width: "auto",
                   height: "269px",
-                  background: "linear-gradient(212deg, #FFF 10.28%, #E2E6F5 61.84%), url('/images/b1.png')",
+                  background: "linear-gradient(212deg, #FFF 10.28%, #E2E6F5 61.84%), url('https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2Fb1.png?alt=media&token=867ff400-c9ee-462b-b21b-e543267d3182')",
                   backgroundRepeat: "no-repeat",
                   borderRadius: "18px",
                   backgroundBlendMode: "multiply"
@@ -73,7 +73,7 @@ export default function BentoBoxGrid() {
                 style={{
                   width: "auto",
                   height: "269px",
-                  background: "linear-gradient(212deg, #E3E5ED 10.28%, #E1E7FA 67.75%), url('/images/b2.png')",
+                  background: "linear-gradient(212deg, #E3E5ED 10.28%, #E1E7FA 67.75%), url('https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2Fb2.png?alt=media&token=4966c85c-caeb-43b0-a504-88d04f87d507')",
                   backgroundRepeat: "no-repeat",
                   borderRadius: "18px",
                   backgroundBlendMode: "multiply"
@@ -123,7 +123,7 @@ export default function BentoBoxGrid() {
                 style={{
                   width: "auto",
                   height: "269px",
-                  background: "linear-gradient(191deg, #C1CBEA 7.15%, #595980 119.3%), url('/images/b3.png')",
+                  background: "linear-gradient(191deg, #C1CBEA 7.15%, #595980 119.3%), url('https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2Fb3.png?alt=media&token=8eab7b42-f435-470a-afe5-26de30fbfb2f')",
                   borderRadius: "18px",
                   backgroundRepeat: "no-repeat",
                   backgroundPosition: "bottom center",
@@ -141,7 +141,7 @@ export default function BentoBoxGrid() {
                 style={{
                   width: "auto",
                   height: "269px",
-                  background: "radial-gradient(199.24% 188.81% at 12.92% -47.15%, #B2BEED 0%, #595980 66.56%), url('/images/b4.png')",
+                  background: "radial-gradient(199.24% 188.81% at 12.92% -47.15%, #B2BEED 0%, #595980 66.56%), url('https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2Fb4.png?alt=media&token=c1d7f2b6-0d46-43a4-bad8-60725b1cf0b2')",
                   borderRadius: "18px",
                   backgroundRepeat: "no-repeat",
                   backgroundPosition: "bottom center",

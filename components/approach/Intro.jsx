@@ -15,7 +15,9 @@ export default function ApproachIntro() {
                 {t('description')}
             </p>
         </div>
-        <Image className="mask-b-from-20% mask-b-to-110% max-w-[75vw]" src="/images/macbookMockup1.png" alt="mackbook mockup 1" width={1021} height={662} />
+        <Image className="mask-b-from-20% mask-b-to-110% max-w-[75vw]" 
+        src="https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2FmacbookMockup1.png?alt=media&token=0dc2cd93-702f-4714-b796-0a6058973e0c" 
+        alt="mackbook mockup 1" width={1021} height={662} />
       
         <RadialBlurBg background={'radial-gradient(50% 50% at 50% 50%, rgba(8, 113, 151, 0.04) 0%, rgba(0, 180, 173, 0.12) 50%, rgba(176, 199, 255, 0.2) 80%, rgba(176, 199, 255, 0) 100%)'} 
         width={"150vw"} height={"150vh"} rotate={"-9.35deg"} top={"-50vh"} left={"-25vw"}/>
