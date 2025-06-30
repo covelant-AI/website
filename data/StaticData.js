@@ -56,7 +56,7 @@ export const ContactUsData = [
   {
     title: "Experience the Impact",
     description:
-      "Let’s explore how AI Technology can elevate your games. Reach out to our team, we’re here to answer your questions and get you started.",
+      "Let’s explore how AI Technology can elevate your games. Reach out to our team. We’re here to answer your questions and get you started.",
     image: "https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2Ffooter-img-2.png?alt=media&token=f824e483-abb4-4e34-ad26-5cfa8bc4ba00",
   }
 ]
@@ -75,12 +75,12 @@ export const values = [
   {
     title: "Integrity",
     paragraph:
-      "Ethical practices are at the heart of our operations. We prioritize respecting user privacy and fostering a trustworthy environment, in order for all parties involved to feel secured and valued.",
+      "Ethical practices are at the heart of our operations. We prioritize respecting user privacy and fostering a trustworthy environment, in order for all parties involved to feel secure and valued.",
   },
   {
     title: "Effectiveness",
     paragraph:
-      "Our focus is on delivering results that matter. Covelant is designed to maximize preformance, ensuring that every use of our platform achieves measurable success and resonates with our users.",
+      "Our focus is on delivering results that matter. Covelant is designed to maximize performance, ensuring that every use of our platform achieves measurable success and resonates with our users.",
   },
 ];
 
@@ -130,22 +130,22 @@ export const adStepsData = () => {
           imageSrc: "https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2Fupload.jpg?alt=media&token=5a1bcb52-0a7d-4f2e-83a8-e2c3d1ee0916",
           stepNumber: "1",
           title: "Upload Matches & Training Session",
-          description: "upload any video footage that is either recorded from your phone or the in build arena cameras, our software is designed to handle both.",
+          description: "Upload any video footage recorded from your phone or built-in arena cameras; our software is designed to handle both.",
           bulletPoints: [
             { heading: "Any video will work", text: "if you filmed it, you can analyse it" },
             { heading: "Upload in minutes", text: "upload your footage in minutes" },
-            { heading: "Data security", text: "your videos are ecrypted at all times" }
+            { heading: "Data security", text: "your videos are encrypted at all times" }
           ]
         },
         {
           imageSrc: "https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2FAI.jpg?alt=media&token=07dcb22a-dd6d-485e-83b5-b0ff275d5931",
           stepNumber: "2",
           title: "AI Video Analysis",
-          description: "Don't worry about the technical stuff, our AI will analyze everything for you in a matter of minutes.",
+          description: "Don't worry about the technical stuff, our AI will analyse everything for you in a matter of minutes.",
           bulletPoints: [
-            { heading: "Targeted selection", text: "Ensure the AI focusses on specific elements to analyse" },
+            { heading: "Targeted selection", text: "Ensure the AI focuses on specific elements to analyse" },
             { heading: "Error and fault detection", text: "Let the AI figure out what went wrong and how to improve" },
-            { heading: "Customize everything", text: "Easily filter the data you do not want to focus on what really counts" }
+            { heading: "Customise  everything", text: "Easily filter the data, customise tags and focus on what really counts" }
           ]
         },
         {
@@ -154,7 +154,7 @@ export const adStepsData = () => {
           title: "Immediately improve",
           description: "With the power of AI reports, you can now not only train more effectively, but also predict the future of your game.",
           bulletPoints: [
-            { heading: "Vulnerability detection", text: "Detect where the flaws of an opponent's tactics" },
+            { heading: "Scouting reports", text: "Detect weaknesses in your opponents strategy." },
             { heading: "Coach assist", text: "Gain insightfull tips from our AI and depth of knowledge it can present" },
             { heading: "Instant training", text: "Gain recommended training routines to improve your game for the next match" }
           ]

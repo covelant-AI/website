@@ -5,7 +5,6 @@ import HeroContact from '@components/HeroContact';
 import PricingSection from '@components/PricingSection';
 import ProcessExplained from "@components/ProcessExplained";
 import Awards from '@components/UI/Awards';
-import Credits from '@components/UI/credits';
 import '../global.css';
 
 export default function Home() {  
@@ -17,7 +16,6 @@ export default function Home() {
     <BentoBox />
     <Awards/>
     <PricingSection />
-    <Credits/>
     <HeroContact />
     </>
   );

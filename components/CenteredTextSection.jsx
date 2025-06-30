@@ -12,7 +12,7 @@ export default function CenteredTextSection() {
       {/* Foreground Mission Text */}
       <div className=" z-10 max-w-2xl text-gray-800 md:top-60 ">
         <p className="max-sm:text-lg text-2xl font-semibold">
-          At Covelant, we aim to increase every athletes performance for a
+          At Covelant, we aim to increase every athlete’s performance for a
           fraction of the price. We provide you with a tool that
           boosts team efficiency, saves time, and keeps you at the top of your game.
         </p>
@@ -22,7 +22,7 @@ export default function CenteredTextSection() {
       <div className="relative z-10 max-w-3xl text-black mt-10">
         <p className="text-2xl max-sm:text-lg font-semibold leading-relaxed">
           Covelant understands the challenges coaches face, such as endless re-watching of games, 
-          man power limitation, and the uncertainty of performance. Our technology enchances 
+          manpower limitation, and the uncertainty of performance. Our technology 
           enhances your decision making, scaling them across multiple players, higher performance, 
           and lower costs. The result? Faster execution, effortless scaling, and maximum impact.
         </p>

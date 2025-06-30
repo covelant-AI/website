@@ -27,7 +27,7 @@ export default function HeroContact(props) {
         {/* Left Side - Text */}
         <div className="flex flex-col justify-top text-black">
           <p className="text-2xl font-bold leading-tight max-lg:text-xl max-lg:px-4">
-          Covalent can elevate an athlete's performance by providing insights into their strengths and areas for improvement, 
+          Covalent can elevate athletic performance by providing insights into their strengths and areas for improvement. 
           Our goal is to make this technology accessible at an affordable price, enabling athletes and coaches to strive for excellence and reach their full potential.
           </p>
           <p className="text-2xl font-bold mt-4 max-lg:text-xl max-lg:px-4">
