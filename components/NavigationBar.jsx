@@ -22,7 +22,7 @@ export default function NavigationBar() {
         <Link href="/whyCovelant" className="hover:text-[#42B6B1] transition">Why Covelant</Link>
 
         {/* Contact Us Button */}
-        <Link href="https://calendly.com/omar-badawy/covelant-call">
+        <Link href="https://calendly.com/raul-cuza-covelant/30min?month=2025-07">
           <button className="px-9 py-2 bg-[#42B6B1] text-white font-normal rounded-xl shadow-md hover:bg-teal-600 transition">
             Book a call
           </button>

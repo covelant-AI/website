@@ -46,7 +46,7 @@ export default function PricingSection() {
         {pricingData.map((plan) => {
           // pick the right price + label
           const price = isYearly ? plan.yearlyPrice : plan.monthlyPrice
-          const period = isYearly ? '/yr' : '/mo'
+          const period = isYearly ? '/Mo -30%' : '/Mo'
 
           return (
             <PricingCard
@@ -56,6 +56,7 @@ export default function PricingSection() {
               description={plan.description}
               highlight={plan.highlight}
               price={price}
+              previousPrice={plan.previousPrice}
               period={period}
             />
           )
