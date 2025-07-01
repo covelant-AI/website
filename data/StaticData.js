@@ -109,6 +109,7 @@ export const pricingData = [
       "Full AI report/match",
       "Multi-player collaboration toolkit",
       "Personal analytics & data tracking",
+      "Automatic Dead time cut away",
     ],
   },
   {
