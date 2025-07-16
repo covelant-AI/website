@@ -10,7 +10,7 @@ export default function ContactForm() {
     setLoading(true);
     setSubmissionStatus("");
 
-    const formData = new FormData(event.target);
+    const formData = new FormData(event.currentTarget);
     const data = {
       name: formData.get("name"),
       email: formData.get("email"),
@@ -22,7 +22,9 @@ export default function ContactForm() {
     try {
       const response = await fetch("/api/submitForm", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify(data),
       });
 

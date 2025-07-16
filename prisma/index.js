@@ -133,7 +133,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "C:\\Covelant\\website\\website\\prisma",
+      "value": "C:\\covelant\\website\\prisma",
       "fromEnvVar": null
     },
     "config": {
@@ -147,7 +147,7 @@ const config = {
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "C:\\Covelant\\website\\website\\prisma\\schema.prisma",
+    "sourceFilePath": "C:\\covelant\\website\\prisma\\schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
@@ -161,12 +161,11 @@ const config = {
     "db"
   ],
   "activeProvider": "postgresql",
-  "postinstall": false,
   "inlineDatasources": {
     "db": {
       "url": {
         "fromEnvVar": "DATABASE_URL",
-        "value": null
+        "value": "postgresql://CovelantDB_owner:npg_uLb4OhFZQGc8@ep-rapid-rain-a93x2fos-pooler.gwc.azure.neon.tech/CovelantDB?sslmode=require"
       }
     }
   },
