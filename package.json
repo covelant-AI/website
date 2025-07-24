@@ -10,7 +10,7 @@
     "combine-locales": "ts-node scripts/combine-locales.ts"
   },
   "dependencies": {
-    "@prisma/client": "^6.7.0",
+    "@prisma/client": "^6.12.0",
     "browserslist": "^4.24.5",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -32,7 +32,7 @@
     "eslint": "^9",
     "eslint-config-next": "15.3.1",
     "postcss": "^8.5.3",
-    "prisma": "^6.7.0",
+    "prisma": "^6.12.0",
     "tailwindcss": "^4.1.5",
     "tw-animate-css": "^1.3.4",
     "typescript": "^5"
