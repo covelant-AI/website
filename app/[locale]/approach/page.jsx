@@ -20,7 +20,7 @@ export default function Approach() {
             <ContactSection 
                 title={contact_t('title')}
                 description={contact_t('description')}
-                image={"/images/footer-img-1.png"}
+                image={"https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2Ffooter-img-1.png?alt=media&token=b7acb823-a415-4c8c-b842-e7616c245d8b"}
             />
         </div>
         </>
