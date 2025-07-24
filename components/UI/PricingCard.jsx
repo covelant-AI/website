@@ -11,7 +11,7 @@ export default function PricingCard({
   highlight = [], 
 }) {
   return (
-    <div className="relative bg-white rounded-xl shadow-lg p-6 w-full md:w-1/3 flex flex-col items-start gap-4">
+    <div className="relative bg-white rounded-xl shadow-lg p-6 w-full lg:w-1/3 flex flex-col items-start gap-4">
       {/* Badge */}
       {badge && (
         <div
@@ -37,7 +37,7 @@ export default function PricingCard({
         {title == "Elite Tier"? 
           <span className="text-base font-medium text-gray-500">{period=="/Mo -30%"? "/Mo -20%": period}</span>
           :
-          <span className="text-base font-medium text-gray-500">{price=="Free"? "/Mo": period}</span>
+          <span className="text-base font-medium text-gray-500">{price=="Free" || price=="Federation+"? "": "/Mo"}</span>
         }
       </div>
 
@@ -65,7 +65,7 @@ export default function PricingCard({
       </ul>
 
       {/* CTA */}
-      <Link href="https://app.covelant.com/sign-up" className="mt-auto w-full text-center">
+      <Link href="https://www.covelant.com/contact" className="mt-auto w-full text-center">
         <button className="w-full p-2 border border-black text-black font-semibold rounded-xl
                            hover:bg-[#42B6B1] hover:border-[#42B6B1] hover:text-white transition">
           Get Started
