@@ -1,14 +1,18 @@
 "use client";
-import React from "react";
 import { useState } from "react";
 import PricingCard from "./UI/PricingCard";
 import { pricingData } from "@/data/StaticData"; 
+import RadialBlurBg from "@/components/UI/RadialBlurBg";
+
 
 export default function PricingSection() {
   const [isWeekly, setIsWeekly] = useState(false)
 
   return (
-    <section className="w-full py-16 px-9 flex flex-col items-center">
+    <section className="relative w-full py-16 px-9 flex flex-col items-center">
+      <RadialBlurBg className="" background={'radial-gradient(50% 50% at 50% 50%, rgba(123, 161, 255, 0.24) 56%, rgba(0, 180, 173, 0.14) 78%, rgba(176, 199, 255, 0.00) 100%)'} 
+              width={"80%"} height={"40vh"} rotate={"-32.12deg"} top={"30vh"} left={"10vw"}/>
+
       <h2 className="text-4xl font-bold mb-4 text-black">Pricing</h2>
 
       {/* Toggle */}

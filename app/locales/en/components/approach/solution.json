@@ -12,8 +12,8 @@
             "description": "Spin rates, reaction times, endurance, elevate your training"
         },
         "3": {
-            "title": "No Analyst Needed",
-            "description": "Designed to be self-service and coach-friendly."
+            "title": "Dead Time Skip",
+            "description": "Save hours by automatically removing  non-gameplay footage"
         }
     }
 }

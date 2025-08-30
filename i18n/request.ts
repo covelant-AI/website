@@ -15,6 +15,11 @@ export default getRequestConfig(async () => {
         solution: (await import(`../app/locales/${locale}/components/approach/solution.json`)).default,
         contact: (await import(`../app/locales/${locale}/components/approach/contact.json`)).default,
       },
+      faq:{
+        intro: (await import(`../app/locales/${locale}/components/faq/intro.json`)).default,
+        faqList: (await import(`../app/locales/${locale}/components/faq/faqList.json`)).default,
+        contact: (await import(`../app/locales/${locale}/components/faq/contact.json`)).default,
+      }
     },
   };
 

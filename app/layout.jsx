@@ -1,6 +1,7 @@
 import { NextIntlClientProvider } from 'next-intl';
 import Footer from "@components/Footer";
 import NavigationBar from '@components/NavigationBar';
+import {getMessages} from 'next-intl/server';
 
 
 export const metadata = {
@@ -10,11 +11,12 @@ export const metadata = {
 
 export default async function RootLayout({ children, params }) {
   const { locale } = await params;
+    const messages = await getMessages();
 
   return (
     <html lang={locale}>
       <body className="geistSans variable geistMono variable figtree variable antialiased">
-        <NextIntlClientProvider locale={locale}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           <NavigationBar />
           {children}
           <Footer/>
