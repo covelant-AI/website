@@ -22,10 +22,10 @@ export default function HeroMain() {
             <h1 className="text-black font-semibold text-5xl mt-3 bg-gradient-to-r from-black to-gray-400 bg-clip-text text-transparent">
               The world's first AI sports analytics tool</h1>
             <p className="text-black font-normal text-xl mt-8">Elevate your game, trusted by coaches and players to boost performance, outsmart rivals, and win more.</p>
-            <Link href="/contact">
+            <Link href="https://app.covelant.com/sign-up">
             <button className="mt-10 text-xl px-10 max-sm:px-8 max-sm:text-2xl py-2 bg-[#42B6B1] 
-              text-white font-normal font-Figtree rounded-xl shadow-md hover:bg-teal-600">
-              Contact us
+              text-white font-normal font-Figtree rounded-xl shadow-md hover:bg-teal-600 hover:cursor-pointer">
+              Sign Up Now
             </button>
             </Link>
           </div>

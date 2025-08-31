@@ -2,10 +2,7 @@
 import Link from 'next/link';
 import {useTranslations} from 'next-intl';
 
-export default function Contact({
-  text = 'If you have any other question feel free to contact us directly with the button below',
-  buttonText = 'Contact us',
-}) {
+export default function Contact() {
       const t = useTranslations('components.faq.contact');
   return (
     <section className={`w-full py-10 flex flex-col items-center gap-4`}>

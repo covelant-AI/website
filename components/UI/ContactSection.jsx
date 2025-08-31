@@ -4,7 +4,7 @@ import RadialBlurBg from '@/components/UI/RadialBlurBg';
 
 export default function ContactSection({title, description, image}) { 
   return (
-    <section className="relative mt-80 mb-20 flex flex-col md:flex-row items-center justify-between px-6 md:px-16  max-w-6xl mx-auto">
+    <section className="relative mt-20 mb-20 flex flex-col md:flex-row items-center justify-between px-6 md:px-16  max-w-6xl mx-auto">
       {/* Left Side - Text & Button */}
       <div className="w-full md:w-1/2 text-left ">
         <h2 className="text-6xl font-bold text-black mb-4">

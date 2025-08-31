@@ -14,7 +14,7 @@ export default function PricingCard({
   const isFederation = title === "Federation Plan" || price === "Federation+";
   const ctaHref = isFederation
     ? "https://calendly.com/raul-cuza-covelant/30min?month=2025-07" 
-    : "https://app.covelant.com";                     
+    : "https://app.covelant.com/sign-up";                     
 
   const ctaText = isFederation ? "Get Quote" : "Get Started";
 

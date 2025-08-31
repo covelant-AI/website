@@ -9,7 +9,8 @@ export default function TimelineScroll() {
         <div>
           <p className="mb-8 text-sm font-semibold text-neutral-800 md:text-lg ">
             Covelant started with a simple question from founders Omar Badawy and Nicolo Forti: “What would happen if AI watched a sports match?” 
-            Could it understand what’s going on and if it can, could it even predict who might win before the match begins? That spark turned into experiments that turner into something they didn't imagine.
+            Could it understand what’s going on and if it can, could it even predict who might win before the match begins? That spark turned into experiments that
+            turned into something they didn't imagine.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img

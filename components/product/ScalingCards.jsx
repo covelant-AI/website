@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Cards } from "@/data/StaticData";
+import Link from "next/link";
 
 export default function ScalingCards() {
   const cards = Cards();
@@ -9,6 +10,13 @@ export default function ScalingCards() {
       <h2 className="text-6xl max-md:text-4xl font-bold text-black mb-12">
         Effortless Scaling with <br /> Covelant Tech
       </h2>
+            <div className="mb-10">
+        <Link href={"https://app.covelant.com/sign-up"} className="inline-block">
+          <span className="inline-flex items-center justify-center rounded-lg bg-[#42B6B1] px-7 py-2 text-white font-semibold hover:brightness-95 hover:scale-[1.05] transition">
+            Try Sideline Now
+          </span>
+        </Link>
+      </div>
       <div className="flex flex-col md:flex-row gap-6 w-full max-w-5xl justify-center">
         {cards.map((card, index) => (
           <div
