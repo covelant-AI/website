@@ -1,6 +1,5 @@
 "use client";
 import { cn } from "@/lib/utils";
-import React from "react";
 import { motion } from "motion/react";
 import { AuroraBackground } from "@components/UI/AuroraBackground";
 import Link from "next/link";

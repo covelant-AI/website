@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl"
 
 export default function Solution() {
-    const t = useTranslations('components.approach.solution');
+    const t = useTranslations('components.product.solution');
 
     //TODO: Handle Responsiveness
     return (

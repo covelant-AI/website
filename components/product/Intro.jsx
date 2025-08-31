@@ -3,7 +3,7 @@ import Image from 'next/image';
 import RadialBlurBg from '@/components/UI/RadialBlurBg';
 
 export default function ApproachIntro() {
-    const t = useTranslations('components.approach.intro');
+    const t = useTranslations('components.product.intro');
     return (
     <div className="relative">
       <section

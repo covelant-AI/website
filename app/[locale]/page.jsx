@@ -1,10 +1,10 @@
-import HeroMain from '@components/HeroMain';
-import WhatAreWe from '@components/WhatAreWe';
-import BentoBox from '@components/BentoBox';
-import HeroContact from '@components/HeroContact';
-import PricingSection from '@components/PricingSection';
-import ProcessExplained from "@components/ProcessExplained";
-import Awards from '@components/UI/Awards';
+import HeroMain from '@components/mainPage/HeroMain';
+import WhatAreWe from '@components/mainPage/WhatAreWe';
+import BentoBox from '@components/mainPage/BentoBox';
+import HeroContact from '@components/mainPage/HeroContact';
+import PricingSection from '@components/mainPage/PricingSection';
+import ProcessExplained from "@components/mainPage/ProcessExplained";
+import Awards from '@components/mainPage/Awards';
 import '../global.css';
 
 export default function Home() {  
