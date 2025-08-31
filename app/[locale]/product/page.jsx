@@ -1,9 +1,9 @@
-import Intro from "@components/approach/Intro";
-import Problems from "@components/approach/Problems";
-import InfiniteCarousel from "@components/InfiniteCarousel";
-import ScalingCards from "@components/ScalingCards";
-import Solution from "@components/approach/Solution";
-import ContactSection from "@components/ContactSection";
+import Intro from "@components/product/Intro";
+import Problems from "@components/product/Problems";
+import InfiniteCarousel from "@components/product/InfiniteCarousel";
+import ScalingCards from "@components/product/ScalingCards";
+import Solution from "@components/product/Solution";
+import ContactSection from "@components/UI/ContactSection";
 import { useTranslations } from "next-intl";
 import '../../global.css';
 

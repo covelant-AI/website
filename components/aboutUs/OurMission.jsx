@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function OurMission() {
   return (
     <section className="relative w-full flex justify-center items-center min-h-[50vh] px-6 text-center">

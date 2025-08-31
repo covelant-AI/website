@@ -1,6 +1,6 @@
 import { NextIntlClientProvider } from 'next-intl';
-import Footer from "@components/Footer";
-import NavigationBar from '@components/NavigationBar';
+import Footer from "@/components/UI/Footer";
+import NavigationBar from '@/components/UI/NavigationBar';
 import {getMessages} from 'next-intl/server';
 
 

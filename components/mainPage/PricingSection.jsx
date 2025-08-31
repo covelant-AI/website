@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import PricingCard from "./UI/PricingCard";
+import PricingCard from "../UI/PricingCard";
 import { pricingData } from "@/data/StaticData"; 
 import RadialBlurBg from "@/components/UI/RadialBlurBg";
 

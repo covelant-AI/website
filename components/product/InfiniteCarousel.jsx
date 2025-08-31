@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef } from "react";
 import Image from "next/image";
-import styles from "../styles/InfiniteCarousel.module.css";
+import styles from "@styles/InfiniteCarousel.module.css";
 import { Statistics } from "@/data/StaticData";
 
 export default function InfiniteCarousel() {
@@ -13,7 +13,7 @@ export default function InfiniteCarousel() {
 
     const scroll = () => {
       if (carousel) {
-        carousel.scrollLeft += 1;
+        carousel.scrollLeft += 0.2;
         if (carousel.scrollLeft >= carousel.scrollWidth / 2) {
           carousel.scrollLeft = 0;
         }

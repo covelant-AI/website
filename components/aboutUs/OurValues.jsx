@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import  { useState } from "react";
 import { values } from "@/data/StaticData"; 
 
 export default function OurValues() {
@@ -28,7 +28,7 @@ export default function OurValues() {
             onMouseLeave={() => setHoverIndex(null)}
           >
             {/* Hover Effect: Centered Paragraph */}
-            <div className="absolute inset-0 flex justify-center items-center p-4">
+            <div className="absolute inset-0 flex justify-center items-center p-4 hover:cursor-default ">
               {hoverIndex === index ? (
                 <p className="text-md text-black font-normal text-center max-sm:text-sm">{value.paragraph}</p>
               ) : (

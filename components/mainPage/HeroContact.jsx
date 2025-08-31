@@ -1,5 +1,4 @@
-import React from 'react';
-import ContactForm from './UI/ContactForm'
+import ContactForm from '../UI/ContactForm'
 
 export default function HeroContact(props) {
   return (

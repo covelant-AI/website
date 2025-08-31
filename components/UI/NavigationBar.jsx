@@ -17,9 +17,8 @@ export default function NavigationBar() {
 
       {/* Desktop Navigation Links (Hidden on Small Screens) */}
       <div className="hidden lg:flex items-center space-x-8 text-lg font-medium text-black">
-        <Link href="/" className="hover:text-[#42B6B1] transition">About us</Link>
-        <Link href="/approach" className="hover:text-[#42B6B1] transition">How it works</Link>
-        <Link href="/whyCovelant" className="hover:text-[#42B6B1] transition">Why Covelant</Link>
+        <Link href="/product" className="hover:text-[#42B6B1] transition">Products</Link>
+        <Link href="/About-Us" className="hover:text-[#42B6B1] transition">About Us</Link>
         <Link href="/faq" className="hover:text-[#42B6B1] transition">FAQ</Link>
 
         <Link
@@ -68,9 +67,8 @@ export default function NavigationBar() {
 
         {/* Mobile Navigation Links */}
         <div className="flex flex-col items-center space-y-6 text-lg font-medium text-black mt-10">
-          <Link href="/" className="hover:text-[#42B6B1] transition" onClick={() => setIsOpen(false)}>About us</Link>
-          <Link href="/approach" className="hover:text-[#42B6B1] transition" onClick={() => setIsOpen(false)}>How it works</Link>
-          <Link href="/whyCovelant" className="hover:text-[#42B6B1] transition" onClick={() => setIsOpen(false)}>Why Covelant</Link>
+          <Link href="/product" className="hover:text-[#42B6B1] transition" onClick={() => setIsOpen(false)}>Products</Link>
+          <Link href="/About-Us" className="hover:text-[#42B6B1] transition" onClick={() => setIsOpen(false)}>About Us</Link>
           <Link href="/faq" className="hover:text-[#42B6B1] transition">FAQ</Link>
           <Link
             href="https://chat.whatsapp.com/BbLNETgnyOj4vmYpxEB5Gk" // ← your WhatsApp group link

@@ -1,5 +1,5 @@
-import ExplainedStepCard from './UI/ExplainedStepCard';
-import { adStepsData } from '../data/StaticData';
+import ExplainedStepCard from '../UI/ExplainedStepCard';
+import { adStepsData } from '../../data/StaticData';
 
 export default function ProcessExplained() {
   const steps = adStepsData(); // Call the function to get the array
