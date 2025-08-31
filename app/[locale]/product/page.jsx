@@ -8,7 +8,7 @@ import { useTranslations } from "next-intl";
 import '../../global.css';
 
 export default function Approach() {
-    const contact_t = useTranslations('components.approach.contact');
+    const contact_t = useTranslations('components.product.contact');
     return (
         <>
         <div className="flex flex-col z-1 gap-y-[80px] lg:gap-y-[160px] px-[10%] overflow-hidden pb-[80px]">
