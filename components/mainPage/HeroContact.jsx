@@ -1,6 +1,8 @@
 import ContactForm from '../UI/ContactForm'
+import { useTranslations } from "next-intl";
 
-export default function HeroContact(props) {
+export default function HeroContact() {
+  const t = useTranslations('components.heroContact');
   return (
     <section className="relative w-full flex justify-center py-16 overflow-hidden font-Figtree">
       {/* Background Gradient */}
@@ -26,11 +28,10 @@ export default function HeroContact(props) {
         {/* Left Side - Text */}
         <div className="flex flex-col justify-top text-black">
           <p className="text-2xl font-bold leading-tight max-lg:text-xl max-lg:px-4">
-          Covalent can elevate athletic performance by providing insights into their strengths and areas for improvement. 
-          Our goal is to make this technology accessible at an affordable price, enabling athletes and coaches to strive for excellence and reach their full potential.
+            {t('message')}
           </p>
           <p className="text-2xl font-bold mt-4 max-lg:text-xl max-lg:px-4">
-            Let’s talk about how we can elevate your athletes performance.
+            {t('subMessage')}
           </p>
            {/* Signature Image */}
            <img 

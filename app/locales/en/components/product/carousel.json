@@ -1,0 +1,30 @@
+{
+  "title1": "What Covelant",
+  "title2": "Can Do For You",
+  "stats": [
+    { "label": "Performance" },
+    { "label": "Time Saved" },
+    { "label": "Analysis Accuracy" },
+    { "label": "Passing Accuracy" },
+    { "label": "Shot Accuracy" },
+    { "label": "Sprint speed" },
+    { "label": "Touches/minute" },
+    { "label": "Dribbles Rate" },
+    { "label": "Defensive Actions" },
+    { "label": "Rally Win Rate" },
+    { "label": "Possession %" },
+    { "label": "Passing Networks" },
+    { "label": "Attacking Zones" },
+    { "label": "Defensive Zones" },
+    { "label": "Expected Goals" },
+    { "label": "Expected Assists" },
+    { "label": "Pressure Applied" },
+    { "label": "Offensive Efficiency" },
+    { "label": "Transition Speed" },
+    { "label": "Player Positioning" },
+    { "label": "Player Movement" },
+    { "label": "Spacing" },
+    { "label": "Player Fatigue Levels" },
+    { "label": "Recovery Time" }
+  ]
+}

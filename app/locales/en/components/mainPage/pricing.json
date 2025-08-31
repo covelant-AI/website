@@ -1,0 +1,42 @@
+{
+  "free": {
+    "title": "Free Plan",
+    "monthlyPrice": "Free",
+    "yearlyPrice": "Free",
+    "desc": [
+      "Free sign up credits",
+      "Sideline Tag manager",
+      "Dead time skip",
+      "Pay as Go option"
+    ]
+  },
+  "athlete": {
+    "title": "Athlete Plan",
+    "monthlyPrice": "12.99€",
+    "yearlyPrice": "3.75€",
+    "desc": [
+      "Full access to Sideline",
+      "500 Analysis credits",
+      "AI Match reports",
+      "Free update rollouts",
+      "Whoop integration",
+      "Individual analytics & data tracking",
+      "Feature request voting"
+    ]
+  },
+  "federation": {
+    "title": "Federation Plan",
+    "monthlyPrice": "Federation+",
+    "yearlyPrice": "Federation+",
+    "desc": [
+      "Full access to Sideline",
+      "Negotionable pricing",
+      "Enterprise discounts",
+      "Personalised Account system",
+      "Dedicated support",
+      "Licensed custom features",
+      "3rd party Integration",
+      "API access"
+    ]
+  }
+}

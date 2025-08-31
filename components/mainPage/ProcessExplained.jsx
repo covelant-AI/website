@@ -1,8 +1,10 @@
 import ExplainedStepCard from '../UI/ExplainedStepCard';
 import { adStepsData } from '../../data/StaticData';
+import { useTranslations } from 'next-intl';
 
 export default function ProcessExplained() {
-  const steps = adStepsData(); // Call the function to get the array
+  const t = useTranslations('components.processSteps'); 
+  const steps = adStepsData(t); 
 
   return (
     <>

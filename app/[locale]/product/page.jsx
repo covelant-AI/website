@@ -10,7 +10,6 @@ import '../../global.css';
 export default function Approach() {
     const contact_t = useTranslations('components.product.contact');
     return (
-        <>
         <div className="flex flex-col z-1 gap-y-[80px] lg:gap-y-[160px] px-[10%] overflow-hidden">
             <Intro />
             <Problems />
@@ -23,6 +22,5 @@ export default function Approach() {
                 image={"https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2Ffooter-img-1.png?alt=media&token=b7acb823-a415-4c8c-b842-e7616c245d8b"}
             />
         </div>
-        </>
     )
 }

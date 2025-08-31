@@ -3,7 +3,6 @@ import { useTranslations } from "next-intl"
 export default function Solution() {
     const t = useTranslations('components.product.solution');
 
-    //TODO: Handle Responsiveness
     return (
         <div>
             <h1 className="text-[24px] md:text-[80px] font-semibold leading-100% tracking-[-2%] text-[#000000]">{t('title')}</h1>

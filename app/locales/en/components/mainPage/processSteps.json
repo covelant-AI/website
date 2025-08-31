@@ -1,0 +1,29 @@
+{
+  "step1": {
+    "title": "Upload Matches & Training Session",
+    "description": "Upload any video footage recorded from your phone or built-in arena cameras; our software is designed to handle both.",
+    "bullets": [
+      { "heading": "Any video will work", "text": "if you filmed it, you can analyse it" },
+      { "heading": "Upload in minutes", "text": "upload your footage in minutes" },
+      { "heading": "Data security", "text": "your videos are encrypted at all times" }
+    ]
+  },
+  "step2": {
+    "title": "AI Video Analysis",
+    "description": "Don't worry about the technical stuff, our AI will analyse everything for you in a matter of minutes.",
+    "bullets": [
+      { "heading": "Targeted selection", "text": "Ensure the AI focuses on specific elements to analyse" },
+      { "heading": "Error and fault detection", "text": "Let the AI figure out what went wrong and how to improve" },
+      { "heading": "Customise everything", "text": "Easily filter the data, customise tags and focus on what really counts" }
+    ]
+  },
+  "step3": {
+    "title": "Immediately improve",
+    "description": "With the power of AI reports, you can now not only train more effectively, but also predict the future of your game.",
+    "bullets": [
+      { "heading": "Scouting reports", "text": "Detect weaknesses in your opponent's strategy." },
+      { "heading": "Coach assist", "text": "Gain insightful tips from our AI and depth of knowledge it can present" },
+      { "heading": "Instant training", "text": "Gain recommended training routines to improve your game for the next match" }
+    ]
+  }
+}

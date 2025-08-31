@@ -182,7 +182,6 @@ export default function BentoBoxGrid() {
                  }}
                >
                  <source src="video/bento2.mp4" type="video/mp4" />
-                 {/* Add additional source types if needed */}
                </video>
               
             </div>

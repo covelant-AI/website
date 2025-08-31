@@ -1,4 +1,8 @@
+import { useTranslations } from "next-intl";
+
 export default function OurMission() {
+  const t = useTranslations('components.aboutUs.ourMission');
+  
   return (
     <section className="relative w-full flex justify-center items-center min-h-[50vh] px-6 text-center">
       {/* Background Grid Matrix with Frosted Effect */}
@@ -15,7 +19,7 @@ export default function OurMission() {
 
       {/* Large Text Behind Grid */}
       <h1 className="absolute text-[9rem] max-md:text-[5rem] font-bold uppercase text-teal-400 opacity-20">
-        OUR MISSION
+        {t('title')}
       </h1>
 
       {/* Background Image Positioned Correctly */}

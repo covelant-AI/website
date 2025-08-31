@@ -3,10 +3,10 @@
 import React from 'react';
 import {useTranslations} from 'next-intl';
 
-// Add your keys here (q1, q2, ...). Keep it simple.
+
 const KEYS = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7', 'q8', 'q9', 'q10'];
 
-export default function FaqList({ className = '' }) {
+export default function FaqList() {
   const t = useTranslations('components.faq.faqList');
   const [open, setOpen] = React.useState({});
   const toggle = (k) => setOpen((s) => ({ ...s, [k]: !s[k] }));

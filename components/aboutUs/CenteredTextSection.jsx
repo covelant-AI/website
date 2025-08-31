@@ -1,7 +1,10 @@
 import React from "react";
 import RadialBlurBg from '@/components/UI/RadialBlurBg';
+import { useTranslations } from "next-intl";
 
 export default function CenteredTextSection() {
+  const t = useTranslations('components.aboutUs.centeredTextSection');
+
   return (
     <div className="relative">
     <section className="w-full flex flex-col justify-center items-center gap-9 text-center my-10 max-sm:my-2 ">
@@ -12,19 +15,14 @@ export default function CenteredTextSection() {
       {/* Foreground Mission Text */}
       <div className=" z-10 max-w-2xl text-gray-800 md:top-60 ">
         <p className="max-sm:text-lg text-2xl font-semibold">
-          At Covelant, we aim to increase every athlete’s performance for a
-          fraction of the price. We provide you with a tool that
-          boosts team efficiency, saves time, and keeps you at the top of your game.
+          {t('paragraph1')}
         </p>
       </div>
 
       {/* Foreground Text */}
       <div className="relative z-10 max-w-3xl text-black mt-10">
         <p className="text-2xl max-sm:text-lg font-semibold leading-relaxed">
-          Covelant understands the challenges coaches face, such as endless re-watching of games, 
-          manpower limitation, and the uncertainty of performance. Our technology 
-          enhances your decision making, scaling them across multiple players, higher performance, 
-          and lower costs. The result? Faster execution, effortless scaling, and maximum impact.
+          {t('paragraph2')}
         </p>
       </div>
     </section>

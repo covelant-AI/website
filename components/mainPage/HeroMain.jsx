@@ -2,9 +2,11 @@
 import { cn } from "@/lib/utils";
 import { motion } from "motion/react";
 import { AuroraBackground } from "@components/UI/AuroraBackground";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 export default function HeroMain() {
+  const t = useTranslations('components.heroMain');
   return (
     <>
     <AuroraBackground>
@@ -20,12 +22,12 @@ export default function HeroMain() {
         <section className="font-Figtree flex flex-col items-center justify-center overflow-hidden relative z-20">
           <div className=" mx-20 my-60 text-left max-sm:mx-5 max-sm:my-40">
             <h1 className="text-black font-semibold text-5xl mt-3 bg-gradient-to-r from-black to-gray-400 bg-clip-text text-transparent">
-              The world's first AI sports analytics tool</h1>
-            <p className="text-black font-normal text-xl mt-8">Elevate your game, trusted by coaches and players to boost performance, outsmart rivals, and win more.</p>
+              {t('title')}</h1>
+            <p className="text-black font-normal text-xl mt-8">{t('subtitle')}</p>
             <Link href="https://app.covelant.com/sign-up">
             <button className="mt-10 text-xl px-10 max-sm:px-8 max-sm:text-2xl py-2 bg-[#42B6B1] 
               text-white font-normal font-Figtree rounded-xl shadow-md hover:bg-teal-600 hover:cursor-pointer">
-              Sign Up Now
+              {t('buttonText')}
             </button>
             </Link>
           </div>

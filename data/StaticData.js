@@ -1,23 +1,23 @@
-export const Cards = () => { 
-    return [{
-      image: "https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2Fsphere.png?alt=media&token=672360d9-0587-489e-a8d9-4686ca288524",
-      title: "Save Time & Effort",
-      description:
-        "Unlock unparalleled efficiency with AI-powered analysis, automating time-consuming tasks so coaches can focus on what truly matters – winning.",
-    },
-    {
-      image: "https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2Fcoin.png?alt=media&token=1bcabb2a-82a4-4ab3-bec9-66939aa38ee4",
-      title: "Lower Costs, Higher Returns",
-      description:
-        "Maximize your investment with AI solutions that cut down on operational costs while delivering game-changing insights to drive superior team performance and better ROI.",
-    },
-    {
-      image: "https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2Fven.png?alt=media&token=c9b2f6fc-990d-4c19-88a9-c7eafb013c75",
-      title: "Optimised for Winning",
-      description:
-        "Supercharge your game plan with AI-driven strategies that pinpoint high-impact opportunities, helping your team score more and win bigger.",
-    },]
-}
+export const getCards = (t) => [
+  {
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2Fsphere.png?alt=media&token=672360d9-0587-489e-a8d9-4686ca288524",
+    title: t("cards.0.title"),
+    description: t("cards.0.description"),
+  },
+  {
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2Fcoin.png?alt=media&token=1bcabb2a-82a4-4ab3-bec9-66939aa38ee4",
+    title: t("cards.1.title"),
+    description: t("cards.1.description"),
+  },
+  {
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2Fven.png?alt=media&token=c9b2f6fc-990d-4c19-88a9-c7eafb013c75",
+    title: t("cards.2.title"),
+    description: t("cards.2.description"),
+  },
+];
 
 export const Statistics = [
   { percentage: "40%", label: "Preformance"},
@@ -46,128 +46,267 @@ export const Statistics = [
   { percentage: "20%", label: "Recovery Time" },
 ];
 
-export const ContactUsData = [
-  {
-    title: "See the results for yourself :)",
-    description:
-      "Get in contact with a member of our team and we’ll help you answer any further questions and start our journey together.",
-    image: "https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2Ffooter-img-1.png?alt=media&token=b7acb823-a415-4c8c-b842-e7616c245d8b",
-  },
-  {
-    title: "Experience the Impact",
-    description:
-      "Let’s explore how AI Technology can elevate your games. Reach out to our team. We’re here to answer your questions and get you started.",
-    image: "https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2Ffooter-img-2.png?alt=media&token=f824e483-abb4-4e34-ad26-5cfa8bc4ba00",
-  }
-]
+export const getStatistics = (t) =>
+  Statistics.map((s, i) => ({
+    percentage: s.percentage,
+    label: t(`stats.${i}.label`), // localized label
+}));
 
-export const values = [
+export const getValues = (t) => [
   {
-    title: "Transparency",
-    paragraph:
-      "We believe honesty and openness are essential to building trust. We empower users by giving them control over their digital presence, ensuring that every interaction on our platform is clear and straightforward.",
+    title: t("values.0.title"),
+    paragraph: t("values.0.paragraph"),
   },
   {
-    title: "Innovation",
-    paragraph:
-      "At Covelant, we push boundaries with cutting-edge technology to revolutionize the sports industry. By creating personalized experiences, we aim to make every session on our platform both impactful and forward-thinking.",
+    title: t("values.1.title"),
+    paragraph: t("values.1.paragraph"),
   },
   {
-    title: "Integrity",
-    paragraph:
-      "Ethical practices are at the heart of our operations. We prioritize respecting user privacy and fostering a trustworthy environment, in order for all parties involved to feel secure and valued.",
+    title: t("values.2.title"),
+    paragraph: t("values.2.paragraph"),
   },
   {
-    title: "Effectiveness",
-    paragraph:
-      "Our focus is on delivering results that matter. Covelant is designed to maximize performance, ensuring that every use of our platform achieves measurable success and resonates with our users.",
+    title: t("values.3.title"),
+    paragraph: t("values.3.paragraph"),
   },
 ];
 
-export const pricingData = [
+export const getPricingData = (t) => [
   {
-    title: "Free Plan",
-    monthlyPrice: "Free",
-    yearlyPrice: "Free",
-    period: "",
+    title: t('free.title'),
+    monthlyPrice: t('free.monthlyPrice'),   // e.g., "Free"
+    yearlyPrice:  t('free.yearlyPrice'),    // e.g., "Free"
+    period: '',                             
     description: [
-      "Free sign up credits",
-      "Sideline Tag manager",
-      "Dead time skip",
-      "Pay as Go option",
+      t('free.desc.0'),
+      t('free.desc.1'),
+      t('free.desc.2'),
+      t('free.desc.3'),
     ],
   },
   {
-    title: "Athlete Plan",
-    monthlyPrice: "12.99€",
-    previousPrice: "",
-    yearlyPrice: "3.75€",
-    period: "/m",
-    badge: "",
+    title: t('athlete.title'),
+    monthlyPrice: t('athlete.monthlyPrice'), // "12.99€"
+    previousPrice: '',
+    yearlyPrice:  t('athlete.yearlyPrice'),  // "3.75€"
+    period: '/m',
+    badge: '',
     description: [
-      "Full access to Sideline",
-      "500 Analysis credits",
-      "AI Match reports",
-      "Free update rollouts",
-      "Whoop integration",
-      "Individual analytics & data tracking",
-      "Feature request voting",
+      t('athlete.desc.0'),
+      t('athlete.desc.1'),
+      t('athlete.desc.2'),
+      t('athlete.desc.3'),
+      t('athlete.desc.4'),
+      t('athlete.desc.5'),
+      t('athlete.desc.6'),
     ],
   },
-    {
-    title: "Federation Plan",
-    monthlyPrice: "Federation+",
-    previousPrice: "",
-    yearlyPrice: "Federation+",
-    period: "",
-    badge: "",
+  {
+    title: t('federation.title'),
+    monthlyPrice: t('federation.monthlyPrice'), // "Federation+"
+    previousPrice: '',
+    yearlyPrice:  t('federation.yearlyPrice'),  // "Federation+"
+    period: '',
+    badge: '',
     description: [
-      "Full access to Sideline",
-      "Negotionable pricing",
-      "Enterprise discounts",
-      "Personalised Account system",
-      "Dedicated support",
-      "Licensed custom features",
-      "3rd party Integration",
-      "API access",
+      t('federation.desc.0'),
+      t('federation.desc.1'),
+      t('federation.desc.2'),
+      t('federation.desc.3'),
+      t('federation.desc.4'),
+      t('federation.desc.5'),
+      t('federation.desc.6'),
     ],
   },
-]
+];
 
-export const adStepsData = () => {
-    return [
-        {
-          imageSrc: "https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2Fupload.jpg?alt=media&token=5a1bcb52-0a7d-4f2e-83a8-e2c3d1ee0916",
-          stepNumber: "1",
-          title: "Upload Matches & Training Session",
-          description: "Upload any video footage recorded from your phone or built-in arena cameras; our software is designed to handle both.",
-          bulletPoints: [
-            { heading: "Any video will work", text: "if you filmed it, you can analyse it" },
-            { heading: "Upload in minutes", text: "upload your footage in minutes" },
-            { heading: "Data security", text: "your videos are encrypted at all times" }
-          ]
-        },
-        {
-          imageSrc: "https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2FAI.jpg?alt=media&token=07dcb22a-dd6d-485e-83b5-b0ff275d5931",
-          stepNumber: "2",
-          title: "AI Video Analysis",
-          description: "Don't worry about the technical stuff, our AI will analyse everything for you in a matter of minutes.",
-          bulletPoints: [
-            { heading: "Targeted selection", text: "Ensure the AI focuses on specific elements to analyse" },
-            { heading: "Error and fault detection", text: "Let the AI figure out what went wrong and how to improve" },
-            { heading: "Customise  everything", text: "Easily filter the data, customise tags and focus on what really counts" }
-          ]
-        },
-        {
-          imageSrc: "https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2FtennisArial.jpg?alt=media&token=36c68600-c392-42af-898b-9e89f6b6c8d7",
-          stepNumber: "3",
-          title: "Immediately improve",
-          description: "With the power of AI reports, you can now not only train more effectively, but also predict the future of your game.",
-          bulletPoints: [
-            { heading: "Scouting reports", text: "Detect weaknesses in your opponents strategy." },
-            { heading: "Coach assist", text: "Gain insightfull tips from our AI and depth of knowledge it can present" },
-            { heading: "Instant training", text: "Gain recommended training routines to improve your game for the next match" }
-          ]
-        }
-      ];
-}
+export const adStepsData = (t) => {
+  return [
+    {
+      imageSrc:
+        "https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2Fupload.jpg?alt=media&token=5a1bcb52-0a7d-4f2e-83a8-e2c3d1ee0916",
+      stepNumber: "1",
+      title: t('step1.title'),
+      description: t('step1.description'),
+      bulletPoints: [
+        { heading: t('step1.bullets.0.heading'), text: t('step1.bullets.0.text') },
+        { heading: t('step1.bullets.1.heading'), text: t('step1.bullets.1.text') },
+        { heading: t('step1.bullets.2.heading'), text: t('step1.bullets.2.text') },
+      ],
+    },
+    {
+      imageSrc:
+        "https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2FAI.jpg?alt=media&token=07dcb22a-dd6d-485e-83b5-b0ff275d5931",
+      stepNumber: "2",
+      title: t('step2.title'),
+      description: t('step2.description'),
+      bulletPoints: [
+        { heading: t('step2.bullets.0.heading'), text: t('step2.bullets.0.text') },
+        { heading: t('step2.bullets.1.heading'), text: t('step2.bullets.1.text') },
+        { heading: t('step2.bullets.2.heading'), text: t('step2.bullets.2.text') },
+      ],
+    },
+    {
+      imageSrc:
+        "https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2FtennisArial.jpg?alt=media&token=36c68600-c392-42af-898b-9e89f6b6c8d7",
+      stepNumber: "3",
+      title: t('step3.title'),
+      description: t('step3.description'),
+      bulletPoints: [
+        { heading: t('step3.bullets.0.heading'), text: t('step3.bullets.0.text') },
+        { heading: t('step3.bullets.1.heading'), text: t('step3.bullets.1.text') },
+        { heading: t('step3.bullets.2.heading'), text: t('step3.bullets.2.text') },
+      ],
+    },
+  ];
+};
+
+export const getTimelineData = (t) => [
+  {
+    title: t("items.0.title"),
+    content: (
+      <div>
+        <p className="mb-8 text-sm font-semibold text-neutral-800 md:text-lg">
+          {t("items.0.paragraph")}
+        </p>
+        <div className="grid grid-cols-2 gap-4">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2Fabout%20us%2F20230622_121813.jpg?alt=media&token=51d6114c-a8c3-4dfb-bcbd-4101dd36077b"
+            alt="startup template"
+            width={500}
+            height={500}
+            className="h-60 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-80"
+          />
+        </div>
+      </div>
+    ),
+  },
+  {
+    title: t("items.1.title"),
+    content: (
+      <div>
+        <p className="mb-8 text-sm font-semibold text-neutral-800 md:text-lg">
+          {t("items.1.paragraph")}
+        </p>
+        <div className="grid grid-cols-2 gap-4">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2Fabout%20us%2F20250711_191016.jpg?alt=media&token=8542c9b8-191f-4a54-a036-2d0be7a38f3c"
+            alt="hero template"
+            width={500}
+            height={500}
+            className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+          />
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2Fabout%20us%2F20250705_183350.jpg?alt=media&token=6d7da1ae-3ade-40be-b7c7-2edb80949a14"
+            alt="feature template"
+            width={500}
+            height={500}
+            className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+          />
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2Fabout%20us%2F20250503_183605.jpg?alt=media&token=b94e41a6-fb96-4b3b-8a03-3af2adb11397"
+            alt="bento template"
+            width={500}
+            height={500}
+            className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+          />
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2Fabout%20us%2F20250709_212311.jpg?alt=media&token=7aaabf05-278c-46d3-8b05-6f94137f4c60"
+            alt="cards template"
+            width={500}
+            height={500}
+            className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+          />
+        </div>
+      </div>
+    ),
+  },
+  {
+    title: t("items.2.title"),
+    content: (
+      <div>
+        <p className="mb-4 text-xs font-semibold text-neutral-800 md:text-lg">
+          {t("items.2.paragraph")}
+        </p>
+        <div className="grid grid-cols-2 gap-4">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2Fabout%20us%2FScreenshot%202025-08-31%20143600.png?alt=media&token=ba9d5b2f-4f3f-4e4c-9074-0dfdee174679"
+            alt="feature template"
+            width={500}
+            height={500}
+            className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+          />
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2Fabout%20us%2FLinkedin%208%20(2).jpg?alt=media&token=3e698aed-961f-456b-b3ce-4726e098d2ba"
+            alt="hero template"
+            width={500}
+            height={500}
+            className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+          />
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2Fabout%20us%2Fproduct.png?alt=media&token=374cd765-8bef-4d72-b691-a1ed5914e7dc"
+            alt="bento template"
+            width={500}
+            height={500}
+            className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+          />
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2Fabout%20us%2Fisometric.png?alt=media&token=7ea06456-3575-48c7-9206-615779075ad9"
+            alt="bento template"
+            width={500}
+            height={500}
+            className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+          />
+        </div>
+      </div>
+    ),
+  },
+];
+
+export const teamData = [
+  {
+    title: "Eric Steffen",
+    jobTitle: "Product Manager",
+    image: "./images/member3.png",
+    className: "absolute top-20 right-[35%] rotate-[2deg]",
+    Link: "https://www.linkedin.com/in/eric-steffen-18ba79253/",
+  },
+  {
+    title: "Amit Amanna",
+    jobTitle: "CTO",
+    image: "./images/member5.jpeg",
+    className: "absolute top-5 left-[40%] rotate-[8deg]",
+    Link: "https://www.linkedin.com/in/amit-amanna-54a151152/",
+  },
+  {
+    title: "Raul Cuza",
+    jobTitle: "Account Executive",
+    image: "./images/member4.png",
+    className: "absolute top-32 left-[55%] rotate-[10deg]",
+    Link: "https://www.linkedin.com/in/raul-cuza-ba9b841bb/",
+  },
+  {
+    title: "Nicolò Forti",
+    jobTitle: "CDO",
+    image: "./images/member2.png",
+    className: "absolute top-40 left-[25%] rotate-[-7deg]",
+    Link: "https://www.linkedin.com/in/nicol%C3%B2-forti-47698019b/",
+  },
+  {
+    title: "Omar Badawy",
+    jobTitle: "CEO",
+    image: "./images/member1.jpeg",
+    className: "absolute top-10 left-[20%] rotate-[-5deg]",
+    Link: "https://www.linkedin.com/in/osbadawy",
+  },
+];
+
+export const getTeamData = (t) =>
+  teamData.map((m, i) => ({
+    ...m,
+    // If you want names fixed, keep `title: m.title`. If you want them translatable, use the next line:
+    title: t.optional ? t(`members.${i}.name`) : m.title, // (or just `t(\`members.${i}.name\`)` if you will translate names)
+    jobTitle: t(`members.${i}.role`), // e.g., "Chief Technology Officer" in other languages
+  }));
+
+

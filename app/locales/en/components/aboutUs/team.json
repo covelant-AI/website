@@ -1,0 +1,16 @@
+{
+  "heading": "Meet Our Team",
+  "subheading": "The driving force behind Covelant's success",
+  "quote": {
+    "text": "When you see a good move, look for a better one.",
+    "author": "Emanuel Lasker"
+  },
+  "cta": "LinkedIn Profile",
+  "members": [
+    { "name": "Eric Steffen", "role": "Product Manager" },
+    { "name": "Amit Amanna", "role": "CTO" },
+    { "name": "Raul Cuza", "role": "Account Executive" },
+    { "name": "Nicolò Forti", "role": "CDO" },
+    { "name": "Omar Badawy", "role": "CEO" }
+  ]
+}

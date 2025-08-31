@@ -1,12 +1,15 @@
 "use client";
 import { useState } from "react";
 import PricingCard from "../UI/PricingCard";
-import { pricingData } from "@/data/StaticData"; 
+import { getPricingData } from "@/data/StaticData"; 
 import RadialBlurBg from "@/components/UI/RadialBlurBg";
+import { useTranslations } from 'next-intl';
 
 
 export default function PricingSection() {
   const [isWeekly, setIsWeekly] = useState(false)
+  const t = useTranslations('components.pricing');
+  const plans = getPricingData(t); 
 
   return (
     <section className="relative w-full py-16 px-9 flex flex-col items-center">
@@ -47,7 +50,7 @@ export default function PricingSection() {
           
       {/* Cards */}
       <div className="flex flex-col lg:flex-row gap-4 max-w-8xl max-sm:max-w-[400px] min-h-[550px] ">
-        {pricingData.map((plan) => {
+        {plans.map((plan) => {
           // pick the right price + label
           const price = isWeekly ? plan.yearlyPrice : plan.monthlyPrice
           const period = isWeekly ? '/week' : '/Mo'

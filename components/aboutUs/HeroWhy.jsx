@@ -1,7 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export default function HeroWhy() {
+  const t = useTranslations('components.aboutUs.heroWhy');
   return (
     <section className="relative w-full flex justify-center items-center overflow-hidden">
 
@@ -12,11 +14,11 @@ export default function HeroWhy() {
         {/* Left Column */}
         <div className="max-w-2xl w-full text-left md:w-3/5 md:text-left text-center max-md:mt-40">
           <h1 className="text-3xl md:text-4xl xl:text-6xl font-Figtree font-normal text-black leading-snug mb-8">
-            The Story behind the Product
+            {t('title')}
           </h1>
           <Link href="/product">
             <button className="bg-[#42B6B1] text-[#F9F9F9] font-semibold text-lg px-10 py-3 rounded-2xl shadow-md hover:bg-teal-600 transition duration-300">
-              View Sideline
+              {t('buttonText')}
             </button>
           </Link>
         </div>
