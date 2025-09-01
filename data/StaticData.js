@@ -171,7 +171,7 @@ export const getTimelineData = (t) => [
         </p>
         <div className="grid grid-cols-2 gap-4">
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2Fabout%20us%2F20230622_121813.jpg?alt=media&token=51d6114c-a8c3-4dfb-bcbd-4101dd36077b"
+            src="https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2Fabout%20us%2F20240729_160048.jpg?alt=media&token=01bdfa1d-eeaf-4fbe-a831-6850e00c1d2f"
             alt="startup template"
             width={500}
             height={500}
