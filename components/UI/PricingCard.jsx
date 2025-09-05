@@ -10,7 +10,7 @@ export default function PricingCard({
   highlight = [],
   bgVariant = "default", 
 }) {
- const isFederationBg = bgVariant === "federation" || price === "Federation+" || title === "Federation Plan";
+  const isFederationBg = bgVariant === "federation" || price === "Federation+" || title === "Federation Plan";
   const isFederation = title === "Federation Plan" || price === "Federation+";
   const ctaHref = isFederation
     ? "https://calendly.com/raul-cuza-covelant/30min?month=2025-07" 
@@ -60,7 +60,7 @@ export default function PricingCard({
           </span>
         ) : (
           <span className="text-base font-medium text-gray-500">
-            {price === "Free" || price === "Federation+" ? "" : "/Mo"}
+            {price === "Free" || price === "Federation+" ? "" :  period}
           </span>
         )}
       </div>

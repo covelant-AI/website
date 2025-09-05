@@ -89,7 +89,7 @@ export const getPricingData = (t) => [
     monthlyPrice: t('athlete.monthlyPrice'), // "12.99€"
     previousPrice: '',
     yearlyPrice:  t('athlete.yearlyPrice'),  // "3.75€"
-    period: '/m',
+    period: '/w',
     badge: '',
     description: [
       t('athlete.desc.0'),

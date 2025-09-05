@@ -53,7 +53,7 @@ export default function PricingSection() {
         {plans.map((plan) => {
           // pick the right price + label
           const price = isWeekly ? plan.yearlyPrice : plan.monthlyPrice
-          const period = isWeekly ? '/week' : '/Mo'
+          const period = isWeekly ? '/Week' : '/Mo'
 
           return (
             <PricingCard
