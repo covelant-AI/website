@@ -41,7 +41,7 @@ export default function HeroContact() {
           />
          {/* Profile Bubbles */}
           <div className="flex mt-6 max-lg:px-4">
-            {["member4.png", "member3.png", "member2.png", "member1.jpeg"].map((member, index) => (
+            {["member5.jpeg","member4.png", "member3.png", "member2.png", "member1.jpeg",].map((member, index) => (
               <div
                 key={index}
                 className={`w-14 h-14 border-2 border-[#E7E7E7] rounded-full bg-gray-300 ${index !== 0 ? "-ml-7" : ""}`}
