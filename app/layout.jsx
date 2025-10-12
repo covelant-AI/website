@@ -119,6 +119,14 @@ export default async function RootLayout({ children, params }) {
           <header role="banner" aria-label="Primary">
             <NavigationBar />
           </header>
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-S6W5SMQV8D"></script>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments)}
+            gtag('js', new Date());
+            
+            gtag('config', 'G-S6W5SMQV8D');
+          </script>
 
           <main id="main">{children}</main>
 
