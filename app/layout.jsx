@@ -1,4 +1,4 @@
-// app/[locale]/layout.tsx (or .jsx)
+// app/[locale]/layout.tsx
 import { NextIntlClientProvider } from 'next-intl';
 import Footer from "@/components/UI/Footer";
 import NavigationBar from '@/components/UI/NavigationBar';
@@ -105,11 +105,29 @@ export default async function RootLayout({ children, params }) {
 
   return (
     <html lang={locale}>
-      <body className="geistSans variable geistMono variable figtree variable antialiased">
-        {/* Skip link for a11y (also helps Core Web Vitals/UX) */}
-        <a href="#main" className="sr-only focus:not-sr-only">Skip to content</a>
+      <head>
+        {/* Google Tag Manager */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-S6W5SMQV8D"
+        />
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-S6W5SMQV8D');
+          `}
+        </Script>
+      </head>
 
-        {/* JSON-LD */}
+      <body className="geistSans variable geistMono variable figtree variable antialiased">
+        {/* Skip link for a11y */}
+        <a href="#main" className="sr-only focus:not-sr-only">
+          Skip to content
+        </a>
+
+        {/* JSON-LD structured data */}
         <Script id="ld-org" type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgLd) }} />
         <Script id="ld-website" type="application/ld+json"
@@ -119,14 +137,6 @@ export default async function RootLayout({ children, params }) {
           <header role="banner" aria-label="Primary">
             <NavigationBar />
           </header>
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-S6W5SMQV8D"></script>
-          <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments)}
-            gtag('js', new Date());
-            
-            gtag('config', 'G-S6W5SMQV8D');
-          </script>
 
           <main id="main">{children}</main>
 
@@ -138,3 +148,4 @@ export default async function RootLayout({ children, params }) {
     </html>
   );
 }
+
