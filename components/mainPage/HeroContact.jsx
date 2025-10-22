@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 export default function HeroContact() {
   const t = useTranslations('components.heroContact');
   return (
-    <section className="relative w-full flex justify-center py-16 overflow-hidden font-Figtree">
+    <section className="relative w-full flex justify-center overflow-hidden font-Figtree">
       {/* Background Gradient */}
       <div
         className="absolute"

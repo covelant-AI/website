@@ -1,68 +1,96 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function Awards() {
-    return(
-        <section className="flex flex-col items-center justify-center gap-10 px-6 lg:px-40 py-10 my-10 md:mb-40 font-Figtree overflow-hidden">
-            <div className="flex flex-row max-md:flex-wrap">
-                <Image
-                    src="/awards/leaf1.png"
-                    alt="Awards"
-                    width={200}
-                    height={300}
-                    className='max-md:hidden'
-                    />
-                <Image
-                    src="/awards/mit.svg"
-                    alt="Awards"
-                    width={400}
-                    height={400}
-                    />
-                    <Image
-                    src="/awards/leaf.png"
-                    alt="Awards"
-                    width={200}
-                    height={300}
-                    className='max-md:hidden'
-                    />
+  return (
+    <section className="flex flex-col items-center justify-center gap-2 px-4 md:px-20 lg:px-40 font-Figtree overflow-hidden py-10">
+      <div className="flex flex-row justify-center py-10">
+        <h2 className="text-4xl font-semibold">Awards</h2>
+      </div>
+
+      <section className="flex flex-col items-center justify-center gap-10 px-4 md:px-10 md:mb-20 font-Figtree overflow-hidden">
+        {/* Main row */}
+        <div className="flex w-full flex-col md:flex-row items-start justify-between md:gap-12">
+          
+          {/* --- Left Award --- */}
+          <div className="w-full md:w-full px-2 flex flex-col items-center justify-start">
+            <div className="w-full">
+              <Image
+                src="/awards/award1.png"
+                alt="MIT Global AI Hackathon Winners"
+                width={1200}
+                height={600}
+                className="w-full h-auto"
+                priority
+              />
             </div>
-            <div className='flex flex-row items-center justify-center gap-8 max-md:flex-wrap'>
-                <Image
-                    src="/awards/openAi.png"
-                    alt="Award 2"
-                    width={130}
-                    height={130}
-                />
-                <Image
-                    src="/awards/akamai.png"
-                    alt="Award 1"
-                    width={100}
-                    height={100}
-                />
-                <Image
-                    src="/awards/MITAiClub.png"
-                    alt="Award 3"
-                    width={130}
-                    height={130}
-                />
-                <Image
-                    src="/awards/N.png"
-                    alt="Award 4"
-                    width={50}
-                    height={50}
-                />
-                <Image
-                    src="/awards/scaleAi.png"
-                    alt="Award 5"
-                    width={100}
-                    height={100}
-                />
-                <Image
-                    src="/awards/mitSloan.png"
-                    alt="Award 6"
-                    width={100}
-                    height={100}
-                />
+
+            {/* Logos */}
+            <div className="mt-4 flex w-full flex-row flex-wrap items-center justify-center gap-4 sm:gap-6">
+              {[
+                "/awards/openAi.png",
+                "/awards/akamai.png",
+                "/awards/MITAiClub.png",
+                "/awards/N.png",
+                "/awards/scaleAi.png",
+                "/awards/mitSloan.png",
+              ].map((src, idx) => (
+                <div
+                  key={idx}
+                  className="flex-shrink-0 w-[22%] sm:w-[18%] md:w-[14%] lg:w-[12%] min-w-[70px] flex items-center justify-center"
+                >
+                  <Image
+                    src={src}
+                    alt={`Logo ${idx}`}
+                    width={120}
+                    height={120}
+                    className="w-full h-auto object-contain"
+                  />
+                </div>
+              ))}
             </div>
-        </section>
-    )
+          </div>
+
+          {/* --- Right Award --- */}
+          <div className="w-full md:w-full px-2 flex flex-col items-center justify-start mt-10 md:mt-0">
+            <div className="w-full">
+              <Image
+                src="/awards/award2.png"
+                alt="BlockJam Hackathon Winners"
+                width={1200}
+                height={600}
+                className="w-full h-auto"
+              />
+            </div>
+
+            {/* Logos */}
+            <div className="mt-4 flex w-full flex-row flex-wrap items-center justify-center gap-4 sm:gap-6 opacity-80">
+              {[
+                "/awards/thetaEuroCon.png",
+                "/awards/thetaEdgeCloud.png",
+                "/awards/aws.png",
+                "/awards/happyFriday.png",
+                "/awards/openTheta.png",
+                "/awards/theta.png",
+                "/awards/arksite.png",
+              ].map((src, idx) => (
+                <div
+                  key={idx}
+                  className="flex-shrink-0 w-[22%] sm:w-[18%] md:w-[14%] lg:w-[12%] min-w-[70px] flex items-center justify-center"
+                >
+                  <Image
+                    src={src}
+                    alt={`Logo ${idx}`}
+                    width={100}
+                    height={100}
+                    className="w-full h-auto object-contain"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  );
 }
+
