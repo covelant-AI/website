@@ -1,78 +1,99 @@
-import { useTranslations } from 'next-intl';
-import RadialBlurBg from '@/components/UI/RadialBlurBg';
+"use client";
+import Image from "next/image";
+import GlowingEffect from "@/components/UI/GlowingEffect";
+
 export default function Problems() {
-    const t = useTranslations('components.product.problems');
+  return (
+    <section className="w-full flex flex-col items-center justify-center">
+      {/* Section Title */}
+      <h2 className="font-Figtree text-center text-2xl font-semibold text-black dark:text-white md:text-4xl mb-10">
+        Why other tools don’t work
+      </h2>
 
-    const problems = [
-        {
-            text: t('c1'),
-            icon: '/images/timer.svg',
-        },
-        {
-            text: t('c2'),
-            icon: '/images/exclamationMark.svg',
-        },
-        {
-            text: t('c3'),
-            icon: '/images/growthIcon.svg',
-        },
-        {
-            text: t('c4'),
-            icon: '/images/lock.svg',
-        },
-        {
-            text: t('c5'),
-            icon: '/images/money.svg',
-        },
-        {
-            text: t('c6'),
-            icon: '/images/settings.svg',
-        },
-    ]
+      {/* Bento Grid */}
+      <ul className="grid w-full grid-cols-1 grid-rows-none gap-4 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[34rem] xl:grid-rows-2">
+        <GridItem
+          area="md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]"
+          icon="/icons/problem/clock.svg"
+          title="Manual analysis"
+          description="Endless hours watching match footage over and over again"
+        />
 
-    return (
-        <div className="relative">
-            <section>
-            <h1 className="text-[24px] md:text-[80px] font-semibold leading-100% tracking-[-2%] text-[#000000]"
-            >{t('title')}</h1>
+        <GridItem
+          area="md:[grid-area:1/7/2/13] xl:[grid-area:2/1/3/5]"
+          icon="/icons/problem/gear.svg"
+          title="Costly software licenses"
+          description="Traditional tools are designed for well funded teams with analysts"
+        />
 
-            <div className="relative grid grid-cols-2 xl:grid-cols-3 gap-[25px]">
-                {problems.map((problem, index) => {
-                    let direction1 = 'xl:bg-linear-to-b'
-                    let direction2 = 'bg-linear-to-r'
-                    
-                    if(index >= 3){
-                        direction1 = 'xl:bg-linear-to-t'
-                    }
-                    if(index % 2 != 0) {
-                        direction2 = 'bg-linear-to-l'
-                    }
+        <GridItem
+          area="md:[grid-area:2/1/3/7] xl:[grid-area:1/5/3/8]"
+          icon="/icons/problem/lock.svg"
+          title="Masters degree needed"
+          description="Complex interfaces and steep learning curves limit usability"
+        />
 
-                    const paddings = "px-[12px] pt-[12px] pb-[16px] md:pl-[28px] md:pr-[65px] md:pt-[24px] md:pb-[36px]"
+        <GridItem
+          area="md:[grid-area:2/7/3/13] xl:[grid-area:1/8/2/13]"
+          icon="/icons/problem/graph.svg"
+          title="Missed opportunities"
+          description="Critical moments missed without data support"
+        />
 
-                    let className = [direction1, direction2, paddings, "from-[#27283E] to-[#A53942] flex flex-col gap-[16px] md:gap-[71px] rounded-[12px] md:rounded-[24px] z-10"].join(' ')
-
-                    return (
-                        <div
-                        key={index}
-                        className={className}
-                    >
-                        <div className="block relative h-[32px] w-[32px] md:h-[64px] md:w-[64px]">
-                            <img className="h-[32px] w-[32px] md:h-[64px] md:w-[64px]" src={"/images/hexagonRed.svg"} alt={`icon-${index}`} />
-                            <img className="h-[17px] md:h-[34px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src={problem.icon} alt={`icon-${index}`} />
-                        </div>
-
-                        <p className="font-normal text-[14px] md:text-[24px] tracking-[-2%] text-[#FFFFFF]">{problem.text}</p>
-                    </div>
-                    )
-                }
-                )}
-            </div>
-
-            <RadialBlurBg width={"150vw"} height={"60vh"} rotate={"-9.35deg"} bottom={"0"} left={"-25vw"}/>
-
-
-            </section>
-        </div>
-    );
+        <GridItem
+          area="md:[grid-area:3/1/4/13] xl:[grid-area:2/8/3/13]"
+          icon="/icons/problem/money.svg"
+          title="Was never built for you"
+          description="Limited access to professional-level analytics"
+        />
+      </ul>
+      <div
+        className="absolute w-[1175.016px] h-[350.11px] rotate-[-20.046deg] flex-shrink-0 rounded-full top-[200%]"
+        style={{
+          background:
+            "radial-gradient(50% 50% at 50% 50%, rgba(123, 161, 255, 0.28) 56%, rgba(0, 180, 173, 0.16) 78%, rgba(176, 199, 255, 0.00) 100%)",
+          filter: "blur(50px)",
+        }}
+      />
+    </section>
+  );
 }
+
+const GridItem = ({ area, icon, title, description }) => {
+  return (
+    <li className={`min-h-[14rem] list-none ${area}`}>
+      <div className="relative h-full rounded-2xl border p-2 md:rounded-3xl md:p-3">
+        <GlowingEffect
+          blur={0}
+          borderWidth={3}
+          spread={80}
+          glow={true}
+          disabled={false}
+          proximity={64}
+          inactiveZone={0.01}
+        />
+        <div className="border-0.75 relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl p-6 md:p-6 dark:shadow-[0px_0px_27px_0px_#2D2D2D]">
+          <div className="relative flex flex-1 flex-col justify-between gap-3">
+            <div className="w-fit rounded-lg p-2">
+              <Image
+                src={icon}
+                alt={title}
+                width={34}
+                height={34}
+                className="dark:invert"
+              />
+            </div>
+            <div className="space-y-3">
+              <h3 className="-tracking-4 pt-0.5 font-sans text-xl/[1.375rem] font-semibold text-balance text-black md:text-2xl/[1.875rem] dark:text-white">
+                {title}
+              </h3>
+              <h2 className="font-sans text-sm/[1.125rem] text-black md:text-base/[1.375rem] dark:text-neutral-400 [&_b]:md:font-semibold [&_strong]:md:font-semibold">
+                {description}
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  );
+};

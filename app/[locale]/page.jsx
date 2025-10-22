@@ -5,6 +5,8 @@ import HeroContact from '@components/mainPage/HeroContact';
 import PricingSection from '@components/mainPage/PricingSection';
 import ProcessExplained from "@components/mainPage/ProcessExplained";
 import Awards from '@components/mainPage/Awards';
+import Partners from '@components/mainPage/Partners';
+import Community from '@/components/mainPage/Community';
 import Script from "next/script";
 import '../global.css';
 
@@ -51,9 +53,10 @@ export default function Home() {
       <WhatAreWe />
       <ProcessExplained />
       <BentoBox />
-      <Awards />
-      {/* If PricingSection lists plans, consider Product/Offer JSON-LD within that component */}
       <PricingSection />
+      <Community />
+      <Partners />
+      <Awards />
       <HeroContact />
     </>
   );

@@ -1,48 +1,38 @@
 "use client";
-import { cn } from "@/lib/utils";
-import { motion } from "motion/react";
-import { AuroraBackground } from "@components/UI/AuroraBackground";
-import { useTranslations } from "next-intl";
+import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
+import heroCourt from "../../public/icons/heroCourt.svg";
+import RadialBlurBg from "@/components/UI/RadialBlurBg";
 
 export default function HeroMain() {
-  const t = useTranslations('components.heroMain');
+  const t = useTranslations("components.heroMain");
+
   return (
-    <>
-    <AuroraBackground>
-      <motion.div
-        initial={{ opacity: 0.0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.3,
-          duration: 0.8,
-          ease: "easeInOut",
-        }}
-        className="">
-        <section className="font-Figtree flex flex-col items-center justify-center overflow-hidden relative z-20">
-          <div className=" mx-20 my-60 text-left max-sm:mx-5 max-sm:my-40">
-            <h1 className="text-black font-semibold text-5xl mt-3 bg-gradient-to-r from-black to-gray-400 bg-clip-text text-transparent">
-              {t('title')}</h1>
-            <p className="text-black font-normal text-xl mt-8">{t('subtitle')}</p>
-            <Link href="https://app.covelant.com/sign-up">
-            <button className="mt-10 text-xl px-10 max-sm:px-8 max-sm:text-2xl py-2 bg-[#42B6B1] 
-              text-white font-normal font-Figtree rounded-xl shadow-md hover:bg-teal-600 hover:cursor-pointer">
-              {t('buttonText')}
-            </button>
-            </Link>
-          </div>
-        </section>
-      </motion.div>
-    </AuroraBackground>
-      <div
-        className={cn(
-            "absolute inset-0",
-            "[background-size:100px_100px]",
-            "[background-image:linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
-            "dark:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)] z-1",
-        )}/>
-    </>
+    <section className="font-Figtree mx-auto max-w-6xl px-4 py-24 text-center">
+      <RadialBlurBg className="" background={'radial-gradient(50% 50% at 50% 50%, rgba(123, 161, 255, 0.24) 56%, rgba(0, 180, 173, 0.14) 78%, rgba(176, 199, 255, 0.00) 100%)'} 
+              width={"120%"} height={"40vh"} rotate={"-12.12deg"} top={"55vh"} left={"-10vw"}/>
+      <h1 className="font-semibold tracking-tight text-4xl sm:text-5xl md:text-6xl leading-tight bg-gradient-to-b from-black to-gray-500 bg-clip-text text-transparent mt-20 pb-1">
+        {t("title")}
+      </h1>
+      <p className="mt-5 text-gray-700 text-sm sm:text-xl sm:px-20 px-4">
+        {t("subtitle")}
+      </p>
+
+      <Link href="https://app.covelant.com/sign-up" className="inline-block">
+        <button className="mt-8 rounded-xl bg-[#42B6B1] px-8 py-3 text-white text-lg shadow-md hover:bg-teal-600">
+          {t("buttonText")}
+        </button>
+      </Link>
+
+      <div className="mt-16 flex justify-center">
+        <Image
+          src={heroCourt}
+          alt="Tennis court illustration"
+          priority
+          className="w-full max-w-4xl h-auto scale-120"
+        />
+      </div>
+    </section>
   );
 }
-
-
