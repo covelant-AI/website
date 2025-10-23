@@ -9,10 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "combine-locales": "ts-node scripts/combine-locales.ts",
-    "prisma:generate": "prisma generate",
-    "prisma:deploy": "prisma migrate deploy",
-    "clean": "rimraf node_modules/.prisma .prisma .next || true",
-    "postinstall": "prisma generate"
+    "migrate": "npx prisma generate && npx prisma migrate deploy"
   },
   "dependencies": {
     "@prisma/client": "^6.12.0",
