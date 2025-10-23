@@ -9,9 +9,9 @@ export default function HeroMain() {
   const t = useTranslations("components.heroMain");
 
   return (
-    <section className="font-Figtree mx-auto max-w-6xl px-4 py-24 text-center">
+    <section className="font-Figtree mx-auto max-w-6xl px-4 py-24 text-center overflow-hidden relative">
       <RadialBlurBg className="" background={'radial-gradient(50% 50% at 50% 50%, rgba(123, 161, 255, 0.24) 56%, rgba(0, 180, 173, 0.14) 78%, rgba(176, 199, 255, 0.00) 100%)'} 
-              width={"120%"} height={"40vh"} rotate={"-12.12deg"} top={"55vh"} left={"-10vw"}/>
+              width={"100%"} height={"40vh"} rotate={"-12.12deg"} top={"55vh"} left={"0vw"}/>
       <h1 className="font-semibold tracking-tight text-4xl sm:text-5xl md:text-6xl leading-tight bg-gradient-to-b from-black to-gray-500 bg-clip-text text-transparent mt-20 pb-1">
         {t("title")}
       </h1>

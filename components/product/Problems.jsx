@@ -4,7 +4,7 @@ import GlowingEffect from "@/components/UI/GlowingEffect";
 
 export default function Problems() {
   return (
-    <section className="w-full flex flex-col items-center justify-center">
+    <section className="w-full flex flex-col items-center justify-center relative overflow-hidden isolate">
       {/* Section Title */}
       <h2 className="font-Figtree text-center text-2xl font-semibold text-black dark:text-white md:text-4xl mb-10">
         Why other tools don’t work
@@ -18,28 +18,24 @@ export default function Problems() {
           title="Manual analysis"
           description="Endless hours watching match footage over and over again"
         />
-
         <GridItem
           area="md:[grid-area:1/7/2/13] xl:[grid-area:2/1/3/5]"
           icon="/icons/problem/gear.svg"
           title="Costly software licenses"
           description="Traditional tools are designed for well funded teams with analysts"
         />
-
         <GridItem
           area="md:[grid-area:2/1/3/7] xl:[grid-area:1/5/3/8]"
           icon="/icons/problem/lock.svg"
           title="Masters degree needed"
           description="Complex interfaces and steep learning curves limit usability"
         />
-
         <GridItem
           area="md:[grid-area:2/7/3/13] xl:[grid-area:1/8/2/13]"
           icon="/icons/problem/graph.svg"
           title="Missed opportunities"
           description="Critical moments missed without data support"
         />
-
         <GridItem
           area="md:[grid-area:3/1/4/13] xl:[grid-area:2/8/3/13]"
           icon="/icons/problem/money.svg"
@@ -47,21 +43,13 @@ export default function Problems() {
           description="Limited access to professional-level analytics"
         />
       </ul>
-      <div
-        className="absolute w-[1175.016px] h-[350.11px] rotate-[-20.046deg] flex-shrink-0 rounded-full top-[200%]"
-        style={{
-          background:
-            "radial-gradient(50% 50% at 50% 50%, rgba(123, 161, 255, 0.28) 56%, rgba(0, 180, 173, 0.16) 78%, rgba(176, 199, 255, 0.00) 100%)",
-          filter: "blur(50px)",
-        }}
-      />
     </section>
   );
 }
 
 const GridItem = ({ area, icon, title, description }) => {
   return (
-    <li className={`min-h-[14rem] list-none ${area}`}>
+    <li className={`min-h[14rem] list-none ${area}`}>
       <div className="relative h-full rounded-2xl border p-2 md:rounded-3xl md:p-3">
         <GlowingEffect
           blur={0}
