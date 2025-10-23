@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev --turbopack --hostname 0.0.0.0",
     "build": "next build",
+    "dbGen": "npm run prisma:generate && npm run prisma:deploy",
     "start": "next start",
     "lint": "next lint",
     "combine-locales": "ts-node scripts/combine-locales.ts"
