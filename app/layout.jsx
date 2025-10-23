@@ -4,6 +4,7 @@ import Footer from "@/components/UI/Footer";
 import NavigationBar from '@/components/UI/NavigationBar';
 import { getMessages } from 'next-intl/server';
 import Script from "next/script";
+import "./global.css";
 
 export const viewport = {
   themeColor: '#6EB6B3',
