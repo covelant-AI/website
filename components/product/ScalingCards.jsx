@@ -14,7 +14,7 @@ export default function ScalingCards() {
       </h2>
 
       <div className="mb-10">
-        <Link href="https://app.covelant.com/sign-up" className="inline-block">
+        <Link href="https://calendly.com/raul-cuza-covelant/30min?month=2025-07" className="inline-block">
           <span className="inline-flex items-center justify-center rounded-lg bg-[#42B6B1] px-7 py-2 text-white font-semibold hover:brightness-95 hover:scale-[1.05] transition">
             {t("cta")}
           </span>

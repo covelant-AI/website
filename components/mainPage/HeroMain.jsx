@@ -19,11 +19,11 @@ export default function HeroMain() {
         {t("subtitle")}
       </p>
 
-      <Link href="https://app.covelant.com/sign-up" className="inline-block">
+      {/* <Link href="https://app.covelant.com/sign-up" className="inline-block">
         <button className="mt-8 rounded-xl bg-[#42B6B1] px-8 py-3 text-white text-lg shadow-md hover:bg-teal-600">
           {t("buttonText")}
         </button>
-      </Link>
+      </Link> */}
 
       <div className="mt-16 flex justify-center">
         <Image

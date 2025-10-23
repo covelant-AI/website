@@ -44,7 +44,7 @@ export default function ContactUsPage() {
   };
 
   return (
-    <section className="relative flex justify-center items-center min-h-screen py-20 px-6 md:px-20 lg:px-40 bg-[#F9F9F9] overflow-hidden font-Figtree">
+    <section className="relative flex justify-center items-center min-h-screen px-6 md:px-20 lg:px-40 bg-[#F9F9F9] overflow-hidden font-Figtree mt-8">
       {/* Background Gradient */}
       <div
         className="absolute w-[2083.718px] h-[1152.138px] -rotate-[9.35deg] flex-shrink-0 rounded-full"
