@@ -1,0 +1,29 @@
+{
+  "step1": {
+    "title": "Spiele und Trainingseinheiten hochladen",
+    "description": "Lade beliebiges Videomaterial hoch, das du mit deinem Handy oder mit integrierten Arena-Kameras aufgenommen hast – unsere Software ist für beides ausgelegt.",
+    "bullets": [
+      { "heading": "Jedes Video funktioniert", "text": "Wenn du es gefilmt hast, kannst du es analysieren" },
+      { "heading": "Upload in Minuten", "text": "Lade dein Videomaterial in wenigen Minuten hoch" },
+      { "heading": "Datensicherheit", "text": "Deine Videos sind jederzeit verschlüsselt" }
+    ]
+  },
+  "step2": {
+    "title": "KI-Videoanalyse",
+    "description": "Mach dir keine Sorgen um die Technik – unsere KI analysiert alles für dich in nur wenigen Minuten.",
+    "bullets": [
+      { "heading": "Gezielte Auswahl", "text": "Stelle sicher, dass die KI sich auf bestimmte Elemente der Analyse konzentriert" },
+      { "heading": "Fehler- und Störungs­erkennung", "text": "Lass die KI herausfinden, was schiefgelaufen ist und wie du dich verbessern kannst" },
+      { "heading": "Alles anpassbar", "text": "Filtere die Daten, passe Tags an und konzentriere dich auf das, was wirklich zählt" }
+    ]
+  },
+  "step3": {
+    "title": "Sofort verbessern",
+    "description": "Mit der Kraft von KI-Berichten kannst du nicht nur effektiver trainieren, sondern auch den Verlauf deines Spiels vorhersagen.",
+    "bullets": [
+      { "heading": "Scouting-Berichte", "text": "Erkenne Schwächen in der Strategie deines Gegners." },
+      { "heading": "Coach-Assistenz", "text": "Erhalte wertvolle Tipps von unserer KI und ihrer tiefgehenden Analysefähigkeit" },
+      { "heading": "Sofortiges Training", "text": "Erhalte empfohlene Trainingsroutinen, um dein Spiel für das nächste Match zu verbessern" }
+    ]
+  }
+}

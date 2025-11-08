@@ -1,4 +1,13 @@
 {
+  "section": {
+    "heading": "Pricing",
+    "monthly": "Monthly",
+    "weekly": "Weekly",
+    "period": {
+      "monthly": "/Mo",
+      "weekly": "/Week"
+    }
+  },
   "free": {
     "title": "Free Plan",
     "monthlyPrice": "Free",
@@ -30,12 +39,12 @@
     "yearlyPrice": "Federation+",
     "desc": [
       "Full access to Sideline",
-      "Negotionable pricing",
+      "Negotiable pricing",
       "Enterprise discounts",
-      "Personalised Account system",
+      "Personalised account system",
       "Dedicated support",
       "Licensed custom features",
-      "3rd party Integration",
+      "3rd party integration",
       "API access"
     ]
   }

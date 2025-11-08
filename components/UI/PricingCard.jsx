@@ -16,7 +16,7 @@ export default function PricingCard({
     ? "https://calendly.com/raul-cuza-covelant/30min?month=2025-07" 
     : "https://covelant.com/contact";                     
 
-  const ctaText = isFederation ? "Get Quote" : "Get Started";
+  const ctaText = isFederation ? "Get Quote" : "Whitelist Now";
 
   return (
     <div className="relative overflow-hidden rounded-xl shadow-lg p-6 w-full lg:w-1/3 flex flex-col items-start gap-4 bg-white border-2 border-gray-100">
