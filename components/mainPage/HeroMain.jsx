@@ -6,7 +6,7 @@ import heroCourt from "../../public/icons/heroCourt.svg";
 import RadialBlurBg from "@/components/UI/RadialBlurBg";
 
 export default function HeroMain() {
-  const t = useTranslations("components.heroMain");
+  const t = useTranslations("components.mainPage.heroMain");
 
   return (
     <section className="font-Figtree mx-auto max-w-6xl px-4 py-34 text-center overflow-hidden relative">

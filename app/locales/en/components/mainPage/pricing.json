@@ -47,5 +47,10 @@
       "3rd party integration",
       "API access"
     ]
-  }
+  },
+  "pricing": "Pricing",
+  "monthly": "Monthly",
+  "weekly": "Weekly",
+  "/week": "/Week",
+  "/mo": "/Mo"
 }

@@ -1,0 +1,56 @@
+{
+  "section": {
+    "heading": "Preise",
+    "monthly": "Monatlich",
+    "weekly": "Wöchentlich",
+    "period": {
+      "monthly": "/Monat",
+      "weekly": "/Woche"
+    }
+  },
+  "free": {
+    "title": "Kostenloser Plan",
+    "monthlyPrice": "Kostenlos",
+    "yearlyPrice": "Kostenlos",
+    "desc": [
+      "Kostenlose Startguthaben",
+      "Sideline Tag-Manager",
+      "Überspringen von Leerlaufzeiten",
+      "Pay-as-you-go-Option"
+    ]
+  },
+  "athlete": {
+    "title": "Athleten-Plan",
+    "monthlyPrice": "12,99€",
+    "yearlyPrice": "3,75€",
+    "desc": [
+      "Voller Zugriff auf Sideline",
+      "500 Analyseguthaben",
+      "KI-Spielberichte",
+      "Kostenlose Updates",
+      "Whoop-Integration",
+      "Individuelle Analysen und Datenverfolgung",
+      "Abstimmung über Funktionswünsche"
+    ]
+  },
+  "federation": {
+    "title": "Verbands-Plan",
+    "monthlyPrice": "Federation+",
+    "yearlyPrice": "Federation+",
+    "desc": [
+      "Voller Zugriff auf Sideline",
+      "Verhandelbare Preisgestaltung",
+      "Rabatte für Unternehmen",
+      "Personalisierte Kontoverwaltung",
+      "Engagierter Support",
+      "Lizensierte, angepasste Funktionen",
+      "Integration von Drittanbietern",
+      "API-Zugriff"
+    ]
+  },
+  "pricing": "Preise",
+  "monthly": "Monatlich",
+  "weekly": "Wöchentlich",
+  "/week": "/Woche",
+  "/mo": "/Monat"
+}

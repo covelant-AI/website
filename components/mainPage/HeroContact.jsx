@@ -2,7 +2,7 @@ import ContactForm from '../UI/ContactForm'
 import { useTranslations } from "next-intl";
 
 export default function HeroContact() {
-  const t = useTranslations('components.heroContact');
+  const t = useTranslations('components.mainPage.heroContact');
   return (
     <section className="relative w-full flex justify-center overflow-hidden font-Figtree">
       {/* Background Gradient */}

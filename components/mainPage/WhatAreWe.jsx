@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl';
 
 export default function WhatAreWe() {
-  const t = useTranslations('components.whatAreWe');
+  const t = useTranslations('components.mainPage.whatAreWe');
 
   return (
     <>

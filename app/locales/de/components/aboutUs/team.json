@@ -1,0 +1,16 @@
+{
+  "heading": "Lernen Sie unser Team kennen",
+  "subheading": "Die treibende Kraft hinter dem Erfolg von Covelant",
+  "quote": {
+    "text": "Wenn du einen guten Zug siehst, suche nach einem besseren.",
+    "author": "Emanuel Lasker"
+  },
+  "cta": "LinkedIn-Profil",
+  "members": [
+    { "name": "Eric Steffen", "role": "Produktmanager" },
+    { "name": "Amit Amanna", "role": "CTO" },
+    { "name": "Raul Cuza", "role": "Account Executive" },
+    { "name": "Nicolò Forti", "role": "CDO" },
+    { "name": "Omar Badawy", "role": "CEO" }
+  ]
+}

@@ -1,10 +1,13 @@
 import Image from "next/image";
+import { useTranslations } from 'next-intl';
 
 export default function Awards() {
+  const t = useTranslations('components.mainPage.community');
+
   return (
     <section className="flex flex-col items-center justify-center gap-2 px-4 md:px-20 lg:px-40 font-Figtree overflow-hidden py-10">
       <div className="flex flex-row justify-center py-10">
-        <h2 className="text-4xl font-semibold">Awards</h2>
+        <h2 className="text-4xl font-semibold">{t("Awards")}</h2>
       </div>
 
       <section className="flex flex-col items-center justify-center gap-10 px-4 md:px-10 md:mb-20 font-Figtree overflow-hidden">

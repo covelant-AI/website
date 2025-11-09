@@ -1,0 +1,12 @@
+{
+  "links": {
+    "product": "Products",
+    "about": "About Us",
+    "faq": "FAQ"
+  },
+  "buttons": {
+    "community": "Join Community",
+    "communityAria": "Join our Facebook group",
+    "call": "Book a call"
+  }
+}

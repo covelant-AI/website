@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslations } from 'next-intl';
 
 export default function BentoBoxGrid() {
-  const t = useTranslations('components.bentoBox');
+  const t = useTranslations('components.mainPage.bentoBox');
 
   return (
       <section className="w-full bg-[#F9F9F9] max-w-4xl mx-auto py-10 flex justify-center relative overflow-hidden">

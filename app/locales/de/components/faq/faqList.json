@@ -1,0 +1,42 @@
+{
+  "q1": {
+    "title": "Wie richte ich die Kamera ein, um meine Spiele aufzuzeichnen?",
+    "description": "Die Kamera sollte mindestens 7 Meter von der Mittellinie des Spielfelds entfernt und mindestens 3 Meter hoch positioniert sein."
+  },
+  "q2": {
+    "title": "Benötige ich spezielle Ausrüstung?",
+    "description": "Nein, eine Handykamera reicht völlig aus!"
+  },
+  "q3": {
+    "title": "Welche Sportarten werden unterstützt?",
+    "description": "Derzeit nur Tennis – Tischtennis und Padel folgen in Kürze."
+  },
+  "q4": {
+    "title": "Kann ich dies während Turnieren verwenden?",
+    "description": "Absolut! Wir empfehlen allen unseren Nutzern, die App während ihrer Spiele zu verwenden, um die besten Ergebnisse zu erzielen."
+  },
+  "q5": {
+    "title": "Benötige ich eine Internetverbindung?",
+    "description": "Ja, eine Internetverbindung ist erforderlich, um die App nutzen zu können."
+  },
+  "q6": {
+    "title": "Wie lange dauert die Analyse?",
+    "description": "Die Analysezeit hängt von der Videolänge ab. Als Faustregel gilt: 1 Stunde Videomaterial entspricht etwa 40 Minuten Analysezeit."
+  },
+  "q7": {
+    "title": "Ich kann mein Video nicht hochladen",
+    "description": "Bitte schließen Sie den Tab und öffnen Sie einen neuen. Laden Sie das Video erneut hoch und warten Sie, bis der Upload zu 100 % abgeschlossen ist, bevor Sie auf „Weiter“ klicken. Wenn das Problem weiterhin besteht, kontaktieren Sie bitte unser Support-Team über die Schaltfläche „Kontaktieren Sie uns“ unten oder senden Sie uns eine Direktnachricht in unserer WhatsApp-Gruppe."
+  },
+  "q8": {
+    "title": "Warum finde ich meinen Trainer oder Athleten nicht?",
+    "description": "Stellen Sie sicher, dass die Person, nach der Sie suchen, bereits registriert ist. Wenn nicht, senden Sie ihr bitte einen manuellen Einladungslink."
+  },
+  "q9": {
+    "title": "Warum sehe ich meine KI-Berichte noch nicht?",
+    "description": "KI-Berichte sind derzeit noch nicht verfügbar. Wir benachrichtigen Sie, sobald diese Funktion gestartet wird."
+  },
+  "q10": {
+    "title": "Wie erhalte ich Credits?",
+    "description": "Gehen Sie den Upload-Prozess durch. Wenn Sie zur Seite mit den KI-Funktionen gelangen, klicken Sie auf das + Symbol und wählen Sie dort entweder die Pay-as-you-go-Option oder das 12,99€-Abonnement, um weitere Credits zu erwerben."
+  }
+}

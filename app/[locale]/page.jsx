@@ -10,8 +10,7 @@ import Community from '@/components/mainPage/Community';
 import Script from "next/script";
 import '../global.css';
 
-export const dynamic = 'force-static';
-export const revalidate = 86400; // daily rebuild
+export const revalidate = 86400; 
 
 export default function Home() {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.covelant.com';

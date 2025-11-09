@@ -1,0 +1,30 @@
+{
+  "title1": "Was Covelant",
+  "title2": "Für Sie Tun Kann",
+  "stats": [
+    { "label": "Leistung" },
+    { "label": "Gesparte Zeit" },
+    { "label": "Analysegenauigkeit" },
+    { "label": "Passgenauigkeit" },
+    { "label": "Schussgenauigkeit" },
+    { "label": "Sprintgeschwindigkeit" },
+    { "label": "Ballberührungen/Minute" },
+    { "label": "Dribbelrate" },
+    { "label": "Defensive Aktionen" },
+    { "label": "Rallye-Siegquote" },
+    { "label": "Ballbesitz %" },
+    { "label": "Passnetzwerke" },
+    { "label": "Angriffszonen" },
+    { "label": "Defensivzonen" },
+    { "label": "Erwartete Tore" },
+    { "label": "Erwartete Assists" },
+    { "label": "Ausgeübter Druck" },
+    { "label": "Offensive Effizienz" },
+    { "label": "Übergangsgeschwindigkeit" },
+    { "label": "Spielerpositionierung" },
+    { "label": "Spielerbewegung" },
+    { "label": "Abstände" },
+    { "label": "Spielermüdigkeitsgrad" },
+    { "label": "Erholungszeit" }
+  ]
+}

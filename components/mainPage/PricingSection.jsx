@@ -8,7 +8,7 @@ import { useTranslations } from 'next-intl';
 
 export default function PricingSection() {
   const [isWeekly, setIsWeekly] = useState(false)
-  const t = useTranslations('components.pricing');
+  const t = useTranslations('components.mainPage.pricing');
   const plans = getPricingData(t); 
 
   return (
@@ -16,12 +16,12 @@ export default function PricingSection() {
       <RadialBlurBg className="" background={'radial-gradient(50% 50% at 50% 50%, rgba(123, 161, 255, 0.24) 56%, rgba(0, 180, 173, 0.14) 78%, rgba(176, 199, 255, 0.00) 100%)'} 
               width={"80%"} height={"40vh"} rotate={"-32.12deg"} top={"30vh"} left={"10vw"}/>
 
-      <h2 className="text-4xl font-bold mb-4 text-black">Pricing</h2>
+      <h2 className="text-4xl font-bold mb-4 text-black">{t("pricing")}</h2>
 
       {/* Toggle */}
       <div className="flex items-center gap-2 mb-10">
         <span className={isWeekly ? 'text-gray-500' : 'text-gray-700'}>
-          Monthly
+          {t("monthly")}
         </span>
 
       <div
@@ -44,7 +44,7 @@ export default function PricingSection() {
       </div>
 
         <span className={isWeekly ? 'text-[#B59F00] font-semibold' : 'text-[#16803D] font-semibold'}>
-          Weekly
+          {t("weekly")}
         </span>
       </div>
           
@@ -53,7 +53,7 @@ export default function PricingSection() {
         {plans.map((plan) => {
           // pick the right price + label
           const price = isWeekly ? plan.yearlyPrice : plan.monthlyPrice
-          const period = isWeekly ? '/Week' : '/Mo'
+          const period = isWeekly ? t('/week') : t('/mo') 
 
           return (
             <PricingCard
