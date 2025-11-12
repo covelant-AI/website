@@ -1,9 +1,23 @@
 {
-    "title": "The Problems",
-    "c1": "Endloser Ansehen von Match-Footage",
-    "c2": "Kritische Momente ohne Datenunterstützung",
-    "c3": "Keine objektiven Metriken zur Verbesserung der Athleten",
-    "c4": "Begrenzter Zugang zu professionellen Analysewerkzeugen",
-    "c5": "Teams mit Analysten",
-    "c6": "Komplexe Schnittstellen, die zu Zeitverlust führen"
+    "title": "Warum andere Tools nicht funktionieren",
+    "manualAnalysis": {
+    "title": "Manuelle Analyse",
+    "description": "Endlose Stunden, in denen man sich immer wieder Spielaufnahmen anschaut"
+    },
+    "costlySoftwareLicenses": {
+    "title": "Teure Softwarelizenzen",
+    "description": "Traditionelle Tools sind für gut finanzierte Teams mit Analysten konzipiert"
+    },
+    "mastersDegreeNeeded": {
+    "title": "Masterabschluss erforderlich",
+    "description": "Komplexe Benutzeroberflächen und steile Lernkurven schränken die Nutzbarkeit ein"
+    },
+    "missedOpportunities": {
+    "title": "Verpasste Chancen",
+    "description": "Ohne Datenunterstützung werden entscheidende Momente übersehen"
+    },
+    "wasNeverBuiltForYou": {
+    "title": "Wurde nie für dich entwickelt",
+    "description": "Eingeschränkter Zugang zu Analysen auf Profi-Niveau"
+    }
 }
