@@ -7,6 +7,7 @@ import { getTeamData } from "@/data/StaticData";
 export default function Team() {
   const t = useTranslations("components.aboutUs.team");
   const items = getTeamData(t); 
+  console.log(items);
 
   return (
     <section className="my-20">

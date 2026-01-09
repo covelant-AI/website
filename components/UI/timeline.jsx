@@ -1,6 +1,7 @@
 "use client";;
 import { useScroll, useTransform, motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
 
 export const Timeline = ({
   data
@@ -8,7 +9,7 @@ export const Timeline = ({
   const ref = useRef(null);
   const containerRef = useRef(null);
   const [height, setHeight] = useState(0);
-
+  const t = useTranslations('components.aboutUs.timeline');
   useEffect(() => {
     if (ref.current) {
       const rect = ref.current.getBoundingClientRect();
@@ -30,12 +31,13 @@ export const Timeline = ({
       ref={containerRef}>
       <div className="max-w-7xl mx-auto py-10 px-4 md:px-8 lg:px-10">
         <h2 className="text-lg md:text-4xl mb-4 text-black font-bold max-w-4xl">
-          Our Journey
+          {t('title')}
         </h2>
         <p
           className="text-neutral-700 dark:text-neutral-300 text-md md:text-lg font-semibold">
-          Covelant is on a mission to transform sports with AI. Here’s a look at our journey so far and how we got to where we are today.<br/>
-          We are extremely grateful to everyone who has supported us along the way, all the long nights, the hard work, and the belief in our vision that has brought us here.
+          {t('description1')}
+          <br/>
+          {t('description2')}
         </p>
       </div>
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
