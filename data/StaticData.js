@@ -278,6 +278,13 @@ export const teamData = [
     className: "absolute top-5 left-[40%] rotate-[8deg]",
     Link: "https://www.linkedin.com/in/amit-amanna-54a151152/",
   },
+    {
+    title: "Omar Badawy",
+    jobTitle: "CEO",
+    image: "./images/member1.jpeg",
+    className: "absolute top-10 left-[20%] rotate-[-5deg]",
+    Link: "https://www.linkedin.com/in/osbadawy",
+  },
   {
     title: "Raul Cuza",
     jobTitle: "Account Executive",
@@ -291,13 +298,6 @@ export const teamData = [
     image: "./images/member2.png",
     className: "absolute top-40 left-[25%] rotate-[-7deg]",
     Link: "https://www.linkedin.com/in/nicol%C3%B2-forti-47698019b/",
-  },
-  {
-    title: "Omar Badawy",
-    jobTitle: "CEO",
-    image: "./images/member1.jpeg",
-    className: "absolute top-10 left-[20%] rotate-[-5deg]",
-    Link: "https://www.linkedin.com/in/osbadawy",
   },
 ];
 
