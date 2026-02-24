@@ -1,3 +1,3 @@
-import { POST as submitForm } from './handler'
+import { POST as submitForm } from "./handler";
 
-export { submitForm  as POST }
+export { submitForm as POST };

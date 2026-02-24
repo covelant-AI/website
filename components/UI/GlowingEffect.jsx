@@ -25,7 +25,8 @@ const GlowingEffect = memo(function GlowingEffect({
   const handleMove = useCallback(
     (e) => {
       if (!containerRef.current) return;
-      if (animationFrameRef.current) cancelAnimationFrame(animationFrameRef.current);
+      if (animationFrameRef.current)
+        cancelAnimationFrame(animationFrameRef.current);
 
       animationFrameRef.current = requestAnimationFrame(() => {
         const element = containerRef.current;
@@ -36,7 +37,10 @@ const GlowingEffect = memo(function GlowingEffect({
         if (e) lastPosition.current = { x: mouseX, y: mouseY };
 
         const center = [left + width * 0.5, top + height * 0.5];
-        const distanceFromCenter = Math.hypot(mouseX - center[0], mouseY - center[1]);
+        const distanceFromCenter = Math.hypot(
+          mouseX - center[0],
+          mouseY - center[1],
+        );
         const inactiveRadius = 0.5 * Math.min(width, height) * inactiveZone;
 
         if (distanceFromCenter < inactiveRadius) {
@@ -53,9 +57,11 @@ const GlowingEffect = memo(function GlowingEffect({
         element.style.setProperty("--active", isActive ? "1" : "0");
         if (!isActive) return;
 
-        const currentAngle = parseFloat(element.style.getPropertyValue("--start")) || 0;
+        const currentAngle =
+          parseFloat(element.style.getPropertyValue("--start")) || 0;
         const targetAngle =
-          (180 * Math.atan2(mouseY - center[1], mouseX - center[0])) / Math.PI + 90;
+          (180 * Math.atan2(mouseY - center[1], mouseX - center[0])) / Math.PI +
+          90;
 
         const angleDiff = ((targetAngle - currentAngle + 180) % 360) - 180;
         const newAngle = currentAngle + angleDiff;
@@ -63,11 +69,12 @@ const GlowingEffect = memo(function GlowingEffect({
         animate(currentAngle, newAngle, {
           duration: movementDuration,
           ease: [0.16, 1, 0.3, 1],
-          onUpdate: (value) => element.style.setProperty("--start", String(value)),
+          onUpdate: (value) =>
+            element.style.setProperty("--start", String(value)),
         });
       });
     },
-    [inactiveZone, proximity, movementDuration]
+    [inactiveZone, proximity, movementDuration],
   );
 
   useEffect(() => {
@@ -76,10 +83,13 @@ const GlowingEffect = memo(function GlowingEffect({
     const onPointerMove = (e) => handleMove(e);
 
     window.addEventListener("scroll", onScroll, { passive: true });
-    document.body.addEventListener("pointermove", onPointerMove, { passive: true });
+    document.body.addEventListener("pointermove", onPointerMove, {
+      passive: true,
+    });
 
     return () => {
-      if (animationFrameRef.current) cancelAnimationFrame(animationFrameRef.current);
+      if (animationFrameRef.current)
+        cancelAnimationFrame(animationFrameRef.current);
       window.removeEventListener("scroll", onScroll);
       document.body.removeEventListener("pointermove", onPointerMove);
     };
@@ -93,7 +103,7 @@ const GlowingEffect = memo(function GlowingEffect({
           "pointer-events-none absolute -inset-px hidden rounded-[inherit] border opacity-0 transition-opacity",
           glow && "opacity-100",
           variant === "white" && "border-white",
-          disabled && "!block"
+          disabled && "!block",
         )}
       />
 
@@ -126,7 +136,7 @@ const GlowingEffect = memo(function GlowingEffect({
           glow && "opacity-100",
           blur > 0 && "blur-[var(--blur)]",
           className,
-          disabled && "!hidden"
+          disabled && "!hidden",
         )}
       >
         <div
@@ -140,7 +150,7 @@ const GlowingEffect = memo(function GlowingEffect({
             // Mask for directional halo
             "after:[mask-clip:padding-box,border-box]",
             "after:[mask-composite:intersect]",
-            "after:[mask-image:linear-gradient(#0000,#0000),conic-gradient(from_calc((var(--start)-var(--spread))*1deg),#0000_0deg,#fff,#0000_calc(var(--spread)*2deg))]"
+            "after:[mask-image:linear-gradient(#0000,#0000),conic-gradient(from_calc((var(--start)-var(--spread))*1deg),#0000_0deg,#fff,#0000_calc(var(--spread)*2deg))]",
           )}
         />
       </div>

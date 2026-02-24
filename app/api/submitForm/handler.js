@@ -1,19 +1,25 @@
 import { NextResponse } from "next/server";
-import { PrismaClient } from "@/generated/prisma";
-
-const prisma = new PrismaClient();
 
 export async function POST(req) {
   try {
-   const { name, email, message, companyName, inquiryType } = await req.json();
+    const { name, email, message, companyName, inquiryType } = await req.json();
 
-  const inquiry = await prisma.inquiry.create({
-    data: { name, email, message, companyName, inquiryType },
-  });
+    if (!name || !email || !message || !inquiryType) {
+      return NextResponse.json(
+        { error: "Missing required fields" },
+        { status: 400 },
+      );
+    }
 
-    return NextResponse.json(inquiry, { status: 201 });
+    return NextResponse.json(
+      { ok: true, name, email, message, companyName, inquiryType },
+      { status: 201 },
+    );
   } catch (error) {
     console.error("Error submitting form:", error);
-    return NextResponse.json({ error: "Failed to submit form" }, { status: 500 });
+    return NextResponse.json(
+      { error: "Failed to submit form" },
+      { status: 500 },
+    );
   }
 }

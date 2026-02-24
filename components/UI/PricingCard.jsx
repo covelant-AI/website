@@ -2,19 +2,22 @@ import Link from "next/link";
 
 export default function PricingCard({
   title,
-  badge,          
-  price,          
-  period, 
-  previousPrice,        
-  description,    
+  badge,
+  price,
+  period,
+  previousPrice,
+  description,
   highlight = [],
-  bgVariant = "default", 
+  bgVariant = "default",
 }) {
-  const isFederationBg = bgVariant === "federation" || price === "Federation+" || title === "Federation Plan";
+  const isFederationBg =
+    bgVariant === "federation" ||
+    price === "Federation+" ||
+    title === "Federation Plan";
   const isFederation = title === "Federation Plan" || price === "Federation+";
   const ctaHref = isFederation
-    ? "https://calendly.com/raul-cuza-covelant/30min?month=2025-07" 
-    : "https://covelant.com/contact";                     
+    ? "https://calendly.com/raul-cuza-covelant/30min?month=2025-07"
+    : "https://covelant.com/contact";
 
   const ctaText = isFederation ? "Get Quote" : "Whitelist Now";
 
@@ -60,7 +63,7 @@ export default function PricingCard({
           </span>
         ) : (
           <span className="text-base font-medium text-gray-500">
-            {price === "Free" || price === "Federation+" ? "" :  period}
+            {price === "Free" || price === "Federation+" ? "" : period}
           </span>
         )}
       </div>
@@ -73,11 +76,19 @@ export default function PricingCard({
         {description.map((item, idx) => (
           <li key={idx} className="flex items-start gap-2">
             <span
-              className={title === "Free Tier" ? "text-gray-500 font-bold" : "text-blue-500 font-bold"}
+              className={
+                title === "Free Tier"
+                  ? "text-gray-500 font-bold"
+                  : "text-blue-500 font-bold"
+              }
             >
               ✓
             </span>
-            <span className={highlight.includes(item) ? "text-yellow-600 font-semibold" : ""}>
+            <span
+              className={
+                highlight.includes(item) ? "text-yellow-600 font-semibold" : ""
+              }
+            >
               {item}
             </span>
           </li>

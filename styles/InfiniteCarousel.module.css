@@ -1,62 +1,67 @@
 .container {
-    position: relative;
-    width: 100%;
-    /* overflow: hidden; */
-    padding: 50px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  position: relative;
+  width: 100%;
+  /* overflow: hidden; */
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  max-width: 1200px;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+}
+
+.carouselContent {
+  display: flex;
+  flex-wrap: nowrap;
+  animation: scroll 200s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
   }
-  
-  .carousel {
-    display: flex;
-    overflow: hidden;
-    white-space: nowrap;
-    width: 100%;
-    max-width: 1200px;
-    mask-image: linear-gradient(to right, transparent, white 20%, white 80%, transparent);
+  to {
+    transform: translateX(-50%);
   }
-  
-  .carouselContent {
-    display: flex;
-    flex-wrap: nowrap;
-    animation: scroll 200s linear infinite;
-  }
-  
-  @keyframes scroll {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-50%);
-    }
-  }
-  
-  .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    height: 100px;
-    margin: 0 50px;
-    font-family: "Figtree", sans-serif;
-    font-weight: bold;
-  }
-  
-  .icon {
-    font-size: 24px;
-    color: black;
-  }
-  
-  .percentage {
-    font-size: 50px;
-    font-weight: bold;
-    color: black;
-  }
-  
-  .label {
-    font-size: 26px;
-    color: black;
-  }
-  
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 100px;
+  margin: 0 50px;
+  font-family: "Figtree", sans-serif;
+  font-weight: bold;
+}
+
+.icon {
+  font-size: 24px;
+  color: black;
+}
+
+.percentage {
+  font-size: 50px;
+  font-weight: bold;
+  color: black;
+}
+
+.label {
+  font-size: 26px;
+  color: black;
+}

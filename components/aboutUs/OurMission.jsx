@@ -1,8 +1,8 @@
 import { useTranslations } from "next-intl";
 
 export default function OurMission() {
-  const t = useTranslations('components.aboutUs.ourMission');
-  
+  const t = useTranslations("components.aboutUs.ourMission");
+
   return (
     <section className="relative w-full flex justify-center items-center min-h-[50vh] px-6 text-center">
       {/* Background Grid Matrix with Frosted Effect */}
@@ -19,11 +19,12 @@ export default function OurMission() {
 
       {/* Large Text Behind Grid */}
       <h1 className="absolute text-[9rem] max-md:text-[5rem] font-bold uppercase text-teal-400 opacity-20">
-        {t('title')}
+        {t("title")}
       </h1>
 
       {/* Background Image Positioned Correctly */}
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-6xl h-[250px] bg-cover bg-center z-0"
+      <div
+        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-6xl h-[250px] bg-cover bg-center z-0"
         style={{ backgroundImage: "url('/images/backgroundFrosted.png')" }}
       ></div>
     </section>

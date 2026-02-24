@@ -29,20 +29,6 @@
 /build
 
 # ────────────────
-# 🔥 Prisma & database artifacts
-# ────────────────
-# Prisma engine binaries and generated clients
-.prisma/
-node_modules/.prisma/
-generated/
-prisma/generated/
-generated/prisma/
-# Optional local SQLite databases
-*.db
-*.sqlite
-*.sqlite-journal
-
-# ────────────────
 # 🧰 Misc
 # ────────────────
 .DS_Store

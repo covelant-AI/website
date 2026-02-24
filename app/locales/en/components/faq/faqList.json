@@ -1,12 +1,42 @@
 {
-  "q1": { "title": "How do I set up the camera to record my matches?", "description": "The Camera should be atleast 7 meters away from the court center line and atleast 3 meters high" },
-  "q2": { "title": "Do I need special equipment?", "description": "No, a mobile camera is all you need!" },
-  "q3": { "title": "Which sports are supported?", "description": "Currently only Tennis with Table Tennis and padle coming soon." },
-  "q4": { "title": "Can I use this during tournaments?", "description": "Absolutly! we encourage all our users to use the app during their matches to get the best results." },
-  "q5": { "title": "Do I need an internet connection?", "description": "Yes internet connection is required in order to use the app" },
-  "q6": { "title": "How long does the analysis take?", "description": "Depending on the length of the video analysis timing may vary, however usual rule of thumb is 1 hour of footage is about 40 minutes of analysis time" },
-  "q7": { "title": "I can't upload my Video", "description": "Please try closing the tab and opening a new one, then proceed to upload the video again and wait untill upload is 100% complete before clicking on the next button. If you still run into the same problem please contact our support team aby using the Contact Us button bellow or leave us a direct message in our whats app group" },
-  "q8": { "title": "Why can't I find my coach or athlete", "description": "Make sure that the person you are trying to search for is already signed up. If they are not yet try sending them a manual invite Link" },
-  "q9": { "title": "Why can't I see my AI reports yet", "description": "AI reports are not available yet, we will notify you soon when we launch it" },
-  "q10": { "title": "How do I get credits?", "description": "Go through the upload flow and when you reach the AI feature selection page click the + icon from there select either the Pay As You Go option or the 12.99 subscription to buy more credits" }
+  "q1": {
+    "title": "How do I set up the camera to record my matches?",
+    "description": "The Camera should be atleast 7 meters away from the court center line and atleast 3 meters high"
+  },
+  "q2": {
+    "title": "Do I need special equipment?",
+    "description": "No, a mobile camera is all you need!"
+  },
+  "q3": {
+    "title": "Which sports are supported?",
+    "description": "Currently only Tennis with Table Tennis and padle coming soon."
+  },
+  "q4": {
+    "title": "Can I use this during tournaments?",
+    "description": "Absolutly! we encourage all our users to use the app during their matches to get the best results."
+  },
+  "q5": {
+    "title": "Do I need an internet connection?",
+    "description": "Yes internet connection is required in order to use the app"
+  },
+  "q6": {
+    "title": "How long does the analysis take?",
+    "description": "Depending on the length of the video analysis timing may vary, however usual rule of thumb is 1 hour of footage is about 40 minutes of analysis time"
+  },
+  "q7": {
+    "title": "I can't upload my Video",
+    "description": "Please try closing the tab and opening a new one, then proceed to upload the video again and wait untill upload is 100% complete before clicking on the next button. If you still run into the same problem please contact our support team aby using the Contact Us button bellow or leave us a direct message in our whats app group"
+  },
+  "q8": {
+    "title": "Why can't I find my coach or athlete",
+    "description": "Make sure that the person you are trying to search for is already signed up. If they are not yet try sending them a manual invite Link"
+  },
+  "q9": {
+    "title": "Why can't I see my AI reports yet",
+    "description": "AI reports are not available yet, we will notify you soon when we launch it"
+  },
+  "q10": {
+    "title": "How do I get credits?",
+    "description": "Go through the upload flow and when you reach the AI feature selection page click the + icon from there select either the Pay As You Go option or the 12.99 subscription to buy more credits"
+  }
 }

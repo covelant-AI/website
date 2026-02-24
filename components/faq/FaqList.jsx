@@ -1,21 +1,19 @@
+"use client";
+import React from "react";
+import { useTranslations } from "next-intl";
 
-'use client';
-import React from 'react';
-import {useTranslations} from 'next-intl';
-
-
-const KEYS = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7', 'q8', 'q9', 'q10'];
+const KEYS = ["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8", "q9", "q10"];
 
 export default function FaqList() {
-  const t = useTranslations('components.faq.faqList');
+  const t = useTranslations("components.faq.faqList");
   const [open, setOpen] = React.useState({});
   const toggle = (k) => setOpen((s) => ({ ...s, [k]: !s[k] }));
 
   return (
     <section
       className={[
-        'mx-auto w-full max-w-3xl rounded-3xl bg-white/95 shadow-[0_8px_40px_rgba(0,0,0,0.06)] ring-1 ring-black/5'
-      ].join(' ')}
+        "mx-auto w-full max-w-3xl rounded-3xl bg-white/95 shadow-[0_8px_40px_rgba(0,0,0,0.06)] ring-1 ring-black/5",
+      ].join(" ")}
     >
       <ul className="divide-y divide-gray-200">
         {KEYS.map((k, i) => {
@@ -35,9 +33,9 @@ export default function FaqList() {
                   <span className="absolute h-[2px] w-5 rounded bg-black " />
                   <span
                     className={[
-                      'absolute w-[2px] h-5 rounded bg-black origin-center transition-transform',
-                      isOpen ? 'scale-y-0' : 'scale-y-100',
-                    ].join(' ')}
+                      "absolute w-[2px] h-5 rounded bg-black origin-center transition-transform",
+                      isOpen ? "scale-y-0" : "scale-y-100",
+                    ].join(" ")}
                   />
                 </span>
               </button>
@@ -45,9 +43,11 @@ export default function FaqList() {
               <div
                 id={`faq-panel-${i}`}
                 className={[
-                  'grid transition-all duration-300 ease-in-out',
-                  isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0',
-                ].join(' ')}
+                  "grid transition-all duration-300 ease-in-out",
+                  isOpen
+                    ? "grid-rows-[1fr] opacity-100"
+                    : "grid-rows-[0fr] opacity-0",
+                ].join(" ")}
               >
                 <div className="overflow-hidden px-6 pb-6 pr-10">
                   <p className="text-sm md:text-base leading-relaxed text-gray-700">

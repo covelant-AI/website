@@ -1,23 +1,23 @@
 {
-    "title": "Warum andere Tools nicht funktionieren",
-    "manualAnalysis": {
+  "title": "Warum andere Tools nicht funktionieren",
+  "manualAnalysis": {
     "title": "Manuelle Analyse",
     "description": "Endlose Stunden, in denen man sich immer wieder Spielaufnahmen anschaut"
-    },
-    "costlySoftwareLicenses": {
+  },
+  "costlySoftwareLicenses": {
     "title": "Teure Softwarelizenzen",
     "description": "Traditionelle Tools sind für gut finanzierte Teams mit Analysten konzipiert"
-    },
-    "mastersDegreeNeeded": {
+  },
+  "mastersDegreeNeeded": {
     "title": "Masterabschluss erforderlich",
     "description": "Komplexe Benutzeroberflächen und steile Lernkurven schränken die Nutzbarkeit ein"
-    },
-    "missedOpportunities": {
+  },
+  "missedOpportunities": {
     "title": "Verpasste Chancen",
     "description": "Ohne Datenunterstützung werden entscheidende Momente übersehen"
-    },
-    "wasNeverBuiltForYou": {
+  },
+  "wasNeverBuiltForYou": {
     "title": "Wurde nie für dich entwickelt",
     "description": "Eingeschränkter Zugang zu Analysen auf Profi-Niveau"
-    }
+  }
 }

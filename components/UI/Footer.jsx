@@ -36,9 +36,6 @@ export default function Footer() {
 
           {/* Right: link columns */}
           <div className="grid grid-cols-2 gap-y-3 justify-items-start text-sm text-gray-600">
-            <Link href="https://www.covelant.com/contact" className="hover:text-gray-900">
-              Whitelist Now
-            </Link>
             <Link href="/privacy" className="hover:text-gray-900">
               Privacy Policy
             </Link>
@@ -47,9 +44,6 @@ export default function Footer() {
             </Link>
             <Link href="/terms" className="hover:text-gray-900">
               Terms of Service
-            </Link>
-            <Link href="/contact" className="hover:text-gray-900">
-              Contact Us
             </Link>
             <Link href="/imprint" className="hover:text-gray-900">
               Imprint
@@ -76,4 +70,3 @@ export default function Footer() {
     </footer>
   );
 }
-

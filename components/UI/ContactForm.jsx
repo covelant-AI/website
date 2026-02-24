@@ -58,7 +58,9 @@ export default function ContactForm() {
         </div>
 
         <div>
-          <label className="block text-black font-medium font-semibold">Email</label>
+          <label className="block text-black font-medium font-semibold">
+            Email
+          </label>
           <input
             type="email"
             name="email"
@@ -68,7 +70,10 @@ export default function ContactForm() {
         </div>
 
         <div>
-          <label className="block text-black font-medium font-semibold">Company Name <span className='font-medium text-gray-400'>(if applicable)</span></label>
+          <label className="block text-black font-medium font-semibold">
+            Company Name{" "}
+            <span className="font-medium text-gray-400">(if applicable)</span>
+          </label>
           <input
             type="text"
             name="companyName"
@@ -78,12 +83,14 @@ export default function ContactForm() {
         </div>
 
         <div>
-          <label className="block text-black font-medium font-semibold">Inquiry Type</label>
+          <label className="block text-black font-medium font-semibold">
+            Inquiry Type
+          </label>
           <select
             className="w-full text-black px-4 py-4 shadow-sm border border-gray-200 rounded-2xl focus:outline-none focus:ring-1 focus:ring-teal-100 appearance-none"
             name="inquiryType"
           >
-            <option className='text-gray-400'>None Selected</option>
+            <option className="text-gray-400">None Selected</option>
             <option>General Inquiry</option>
             <option>Partnership</option>
             <option>Support</option>
@@ -91,7 +98,9 @@ export default function ContactForm() {
         </div>
 
         <div>
-          <label className="block text-black font-medium font-semibold">Your Message</label>
+          <label className="block text-black font-medium font-semibold">
+            Your Message
+          </label>
           <textarea
             placeholder="Type your message"
             name="message"
@@ -103,7 +112,9 @@ export default function ContactForm() {
         <button
           type="submit"
           className={`w-full text-2xl font-semibold py-3 rounded-2xl transition ${
-            loading ? "bg-teal-300 cursor-not-allowed" : "bg-[#42B6B1] hover:bg-teal-600 text-white"
+            loading
+              ? "bg-teal-300 cursor-not-allowed"
+              : "bg-[#42B6B1] hover:bg-teal-600 text-white"
           }`}
           disabled={loading}
         >

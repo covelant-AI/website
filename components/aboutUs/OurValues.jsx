@@ -21,14 +21,18 @@ export default function OurValues() {
           <div
             key={index}
             className={`relative h-60 w-full md:w-1/4 flex flex-col justify-end items-center p-4 rounded-lg transition-all duration-300 bg-white/30 ${
-              hoverIndex === index ? "backdrop-blur-xl bg-opacity-70" : "backdrop-blur-[4px] bg-opacity-50"
+              hoverIndex === index
+                ? "backdrop-blur-xl bg-opacity-70"
+                : "backdrop-blur-[4px] bg-opacity-50"
             }`}
             onMouseEnter={() => setHoverIndex(index)}
             onMouseLeave={() => setHoverIndex(null)}
           >
             <div className="absolute inset-0 flex justify-center items-center p-4 hover:cursor-default">
               {hoverIndex === index ? (
-                <p className="text-md text-black font-normal text-center max-sm:text-sm">{value.paragraph}</p>
+                <p className="text-md text-black font-normal text-center max-sm:text-sm">
+                  {value.paragraph}
+                </p>
               ) : (
                 <p className="text-2xl font-normal text-black">{value.title}</p>
               )}

@@ -1,8 +1,8 @@
 import Image from "next/image";
-import { useTranslations } from 'next-intl';
+import { useTranslations } from "next-intl";
 
 export default function Awards() {
-  const t = useTranslations('components.mainPage.community');
+  const t = useTranslations("components.mainPage.community");
 
   return (
     <section className="flex flex-col items-center justify-center gap-2 px-4 md:px-20 lg:px-40 font-Figtree overflow-hidden py-10">
@@ -13,7 +13,6 @@ export default function Awards() {
       <section className="flex flex-col items-center justify-center gap-10 px-4 md:px-10 md:mb-20 font-Figtree overflow-hidden">
         {/* Main row */}
         <div className="flex w-full flex-col md:flex-row items-start justify-between md:gap-12">
-          
           {/* --- Left Award --- */}
           <div className="w-full md:w-full px-2 flex flex-col items-center justify-start">
             <div className="w-full">
@@ -96,4 +95,3 @@ export default function Awards() {
     </section>
   );
 }
-

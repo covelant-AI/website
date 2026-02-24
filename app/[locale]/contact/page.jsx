@@ -3,7 +3,6 @@ import Image from "next/image";
 import { useState } from "react";
 
 export default function ContactUsPage() {
-  
   const [submissionStatus, setSubmissionStatus] = useState("");
 
   const handleSubmit = async (event) => {
@@ -66,7 +65,8 @@ export default function ContactUsPage() {
           <div
             className="relative text-center pt-10 font-figtree text-[26px] font-semibold leading-normal flex justify-center flex-shrink-0"
             style={{
-              background: "linear-gradient(180deg, #FFF -15.97%, #A5DFFF 126.39%)",
+              background:
+                "linear-gradient(180deg, #FFF -15.97%, #A5DFFF 126.39%)",
               backgroundClip: "text",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
@@ -107,7 +107,8 @@ export default function ContactUsPage() {
             </div>
             <div>
               <label className="text-black font-semibold text-sm">
-                Company Name <span className="text-gray-500">(if applicable)</span>
+                Company Name{" "}
+                <span className="text-gray-500">(if applicable)</span>
               </label>
               <input
                 type="text"
@@ -161,4 +162,3 @@ export default function ContactUsPage() {
     </section>
   );
 }
-

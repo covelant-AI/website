@@ -1,23 +1,23 @@
 {
-    "title": "Why other tools don’t work",
-    "manualAnalysis": {
-        "title": "Manual analysis",
-        "description": "Endless hours watching match footage over and over again"
-    },
-    "costlySoftwareLicenses": {
-        "title": "Costly software licenses",
-        "description": "Traditional tools are designed for well funded teams with analysts"
-    },
-    "mastersDegreeNeeded": {
-        "title": "Masters degree needed",
-        "description": "Complex interfaces and steep learning curves limit usability"
-    },
-    "missedOpportunities": {
-        "title": "Missed opportunities",
-        "description": "Critical moments missed without data support"
-    },
-    "wasNeverBuiltForYou": {
-        "title": "Was never built for you",
-        "description": "Limited access to professional-level analytics"
-    }
+  "title": "Why other tools don’t work",
+  "manualAnalysis": {
+    "title": "Manual analysis",
+    "description": "Endless hours watching match footage over and over again"
+  },
+  "costlySoftwareLicenses": {
+    "title": "Costly software licenses",
+    "description": "Traditional tools are designed for well funded teams with analysts"
+  },
+  "mastersDegreeNeeded": {
+    "title": "Masters degree needed",
+    "description": "Complex interfaces and steep learning curves limit usability"
+  },
+  "missedOpportunities": {
+    "title": "Missed opportunities",
+    "description": "Critical moments missed without data support"
+  },
+  "wasNeverBuiltForYou": {
+    "title": "Was never built for you",
+    "description": "Limited access to professional-level analytics"
+  }
 }

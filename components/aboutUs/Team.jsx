@@ -1,12 +1,15 @@
 import React from "react";
-import { DraggableCardBody, DraggableCardContainer } from "@/components/UI/Draggable-card";
+import {
+  DraggableCardBody,
+  DraggableCardContainer,
+} from "@/components/UI/Draggable-card";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { getTeamData } from "@/data/StaticData";
 
 export default function Team() {
   const t = useTranslations("components.aboutUs.team");
-  const items = getTeamData(t); 
+  const items = getTeamData(t);
   console.log(items);
 
   return (
@@ -24,7 +27,8 @@ export default function Team() {
 
       <DraggableCardContainer className="relative flex min-h-screen w-full items-center justify-center overflow-clip">
         <p className="absolute top-1/2 mx-auto max-w-sm -translate-y-3/4 text-center text-2xl font-black text-neutral-400 md:text-4xl dark:text-neutral-800">
-          {t("quote.text")}<br/>- {t("quote.author")}
+          {t("quote.text")}
+          <br />- {t("quote.author")}
         </p>
 
         {items.map((item, idx) => (

@@ -7,10 +7,8 @@
   },
   "cta": "LinkedIn-Profil",
   "members": [
-    { "name": "Eric Steffen", "role": "Produktmanager" },
     { "name": "Amit Amanna", "role": "CTO" },
     { "name": "Raul Cuza", "role": "Account Executive" },
-    { "name": "Nicolò Forti", "role": "CDO" },
-    { "name": "Omar Badawy", "role": "CEO" }
+    { "name": "Nicolò Forti", "role": "CDO" }
   ]
 }

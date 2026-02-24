@@ -20,28 +20,28 @@ export const getCards = (t) => [
 ];
 
 export const Statistics = [
-  { percentage: "40%", label: "Preformance"},
-  { percentage: "90%", label: "Time Saved"},
-  { percentage: "30%", label: "Analysis Accuracy"},
-  { percentage: "20%", label: "Passing Accuracy"},
+  { percentage: "40%", label: "Preformance" },
+  { percentage: "90%", label: "Time Saved" },
+  { percentage: "30%", label: "Analysis Accuracy" },
+  { percentage: "20%", label: "Passing Accuracy" },
   { percentage: "30%", label: "Shot Accuracy" },
   { percentage: "8%", label: "Sprint speed" },
-  { percentage: "15%", label: "Touches/minute"},
-  { percentage: "20%", label: "Dribbles Rate"},
-  { percentage: "25%", label: "Defensive Actions"},
-  { percentage: "15%", label: "Raly Win Rate"},
+  { percentage: "15%", label: "Touches/minute" },
+  { percentage: "20%", label: "Dribbles Rate" },
+  { percentage: "25%", label: "Defensive Actions" },
+  { percentage: "15%", label: "Raly Win Rate" },
   { percentage: "10%", label: "Possession %" },
   { percentage: "20%", label: "Passing Networks" },
-  { percentage: "25%", label: "Attacking Zones"},
-  { percentage: "25%", label: "Defensive Zones"},
-  { percentage: "15%", label: "Expected Goals"},
-  { percentage: "20%", label: "Expected Assists"},
+  { percentage: "25%", label: "Attacking Zones" },
+  { percentage: "25%", label: "Defensive Zones" },
+  { percentage: "15%", label: "Expected Goals" },
+  { percentage: "20%", label: "Expected Assists" },
   { percentage: "30%", label: "Pressure Applied" },
   { percentage: "20%", label: "Offensive Efficiency" },
-  { percentage: "15%", label: "Transition Speed"},
-  { percentage: "25%", label: "Player Positioning"},
-  { percentage: "40%", label: "Player Movement"},
-  { percentage: "15%", label: "Spacing"},
+  { percentage: "15%", label: "Transition Speed" },
+  { percentage: "25%", label: "Player Positioning" },
+  { percentage: "40%", label: "Player Movement" },
+  { percentage: "15%", label: "Spacing" },
   { percentage: "40%", label: "Player Fatigue Levels" },
   { percentage: "20%", label: "Recovery Time" },
 ];
@@ -50,7 +50,7 @@ export const getStatistics = (t) =>
   Statistics.map((s, i) => ({
     percentage: s.percentage,
     label: t(`stats.${i}.label`), // localized label
-}));
+  }));
 
 export const getValues = (t) => [
   {
@@ -73,49 +73,49 @@ export const getValues = (t) => [
 
 export const getPricingData = (t) => [
   {
-    title: t('free.title'),
-    monthlyPrice: t('free.monthlyPrice'),   // e.g., "Free"
-    yearlyPrice:  t('free.yearlyPrice'),    // e.g., "Free"
-    period: '',                             
+    title: t("free.title"),
+    monthlyPrice: t("free.monthlyPrice"), // e.g., "Free"
+    yearlyPrice: t("free.yearlyPrice"), // e.g., "Free"
+    period: "",
     description: [
-      t('free.desc.0'),
-      t('free.desc.1'),
-      t('free.desc.2'),
-      t('free.desc.3'),
+      t("free.desc.0"),
+      t("free.desc.1"),
+      t("free.desc.2"),
+      t("free.desc.3"),
     ],
   },
   {
-    title: t('athlete.title'),
-    monthlyPrice: t('athlete.monthlyPrice'), // "12.99€"
-    previousPrice: '',
-    yearlyPrice:  t('athlete.yearlyPrice'),  // "3.75€"
-    period: '/w',
-    badge: '',
+    title: t("athlete.title"),
+    monthlyPrice: t("athlete.monthlyPrice"), // "12.99€"
+    previousPrice: "",
+    yearlyPrice: t("athlete.yearlyPrice"), // "3.75€"
+    period: "/w",
+    badge: "",
     description: [
-      t('athlete.desc.0'),
-      t('athlete.desc.1'),
-      t('athlete.desc.2'),
-      t('athlete.desc.3'),
-      t('athlete.desc.4'),
-      t('athlete.desc.5'),
-      t('athlete.desc.6'),
+      t("athlete.desc.0"),
+      t("athlete.desc.1"),
+      t("athlete.desc.2"),
+      t("athlete.desc.3"),
+      t("athlete.desc.4"),
+      t("athlete.desc.5"),
+      t("athlete.desc.6"),
     ],
   },
   {
-    title: t('federation.title'),
-    monthlyPrice: t('federation.monthlyPrice'), // "Federation+"
-    previousPrice: '',
-    yearlyPrice:  t('federation.yearlyPrice'),  // "Federation+"
-    period: '',
-    badge: '',
+    title: t("federation.title"),
+    monthlyPrice: t("federation.monthlyPrice"), // "Federation+"
+    previousPrice: "",
+    yearlyPrice: t("federation.yearlyPrice"), // "Federation+"
+    period: "",
+    badge: "",
     description: [
-      t('federation.desc.0'),
-      t('federation.desc.1'),
-      t('federation.desc.2'),
-      t('federation.desc.3'),
-      t('federation.desc.4'),
-      t('federation.desc.5'),
-      t('federation.desc.6'),
+      t("federation.desc.0"),
+      t("federation.desc.1"),
+      t("federation.desc.2"),
+      t("federation.desc.3"),
+      t("federation.desc.4"),
+      t("federation.desc.5"),
+      t("federation.desc.6"),
     ],
   },
 ];
@@ -126,36 +126,63 @@ export const adStepsData = (t) => {
       imageSrc:
         "https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2Fupload.jpg?alt=media&token=5a1bcb52-0a7d-4f2e-83a8-e2c3d1ee0916",
       stepNumber: "1",
-      title: t('step1.title'),
-      description: t('step1.description'),
+      title: t("step1.title"),
+      description: t("step1.description"),
       bulletPoints: [
-        { heading: t('step1.bullets.0.heading'), text: t('step1.bullets.0.text') },
-        { heading: t('step1.bullets.1.heading'), text: t('step1.bullets.1.text') },
-        { heading: t('step1.bullets.2.heading'), text: t('step1.bullets.2.text') },
+        {
+          heading: t("step1.bullets.0.heading"),
+          text: t("step1.bullets.0.text"),
+        },
+        {
+          heading: t("step1.bullets.1.heading"),
+          text: t("step1.bullets.1.text"),
+        },
+        {
+          heading: t("step1.bullets.2.heading"),
+          text: t("step1.bullets.2.text"),
+        },
       ],
     },
     {
       imageSrc:
         "https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2FAI.jpg?alt=media&token=07dcb22a-dd6d-485e-83b5-b0ff275d5931",
       stepNumber: "2",
-      title: t('step2.title'),
-      description: t('step2.description'),
+      title: t("step2.title"),
+      description: t("step2.description"),
       bulletPoints: [
-        { heading: t('step2.bullets.0.heading'), text: t('step2.bullets.0.text') },
-        { heading: t('step2.bullets.1.heading'), text: t('step2.bullets.1.text') },
-        { heading: t('step2.bullets.2.heading'), text: t('step2.bullets.2.text') },
+        {
+          heading: t("step2.bullets.0.heading"),
+          text: t("step2.bullets.0.text"),
+        },
+        {
+          heading: t("step2.bullets.1.heading"),
+          text: t("step2.bullets.1.text"),
+        },
+        {
+          heading: t("step2.bullets.2.heading"),
+          text: t("step2.bullets.2.text"),
+        },
       ],
     },
     {
       imageSrc:
         "https://firebasestorage.googleapis.com/v0/b/fir-auth-f8ffb.firebasestorage.app/o/website%2Fimages%2FtennisArial.jpg?alt=media&token=36c68600-c392-42af-898b-9e89f6b6c8d7",
       stepNumber: "3",
-      title: t('step3.title'),
-      description: t('step3.description'),
+      title: t("step3.title"),
+      description: t("step3.description"),
       bulletPoints: [
-        { heading: t('step3.bullets.0.heading'), text: t('step3.bullets.0.text') },
-        { heading: t('step3.bullets.1.heading'), text: t('step3.bullets.1.text') },
-        { heading: t('step3.bullets.2.heading'), text: t('step3.bullets.2.text') },
+        {
+          heading: t("step3.bullets.0.heading"),
+          text: t("step3.bullets.0.text"),
+        },
+        {
+          heading: t("step3.bullets.1.heading"),
+          text: t("step3.bullets.1.text"),
+        },
+        {
+          heading: t("step3.bullets.2.heading"),
+          text: t("step3.bullets.2.text"),
+        },
       ],
     },
   ];
@@ -265,25 +292,11 @@ export const getTimelineData = (t) => [
 
 export const teamData = [
   {
-    title: "Eric Steffen",
-    jobTitle: "Product Manager",
-    image: "/images/member3.png",
-    className: "absolute top-20 right-[35%] rotate-[2deg]",
-    Link: "https://www.linkedin.com/in/eric-steffen-18ba79253/",
-  },
-  {
     title: "Amit Amanna",
     jobTitle: "CTO",
     image: "/images/member5.jpeg",
     className: "absolute top-5 left-[40%] rotate-[8deg]",
     Link: "https://www.linkedin.com/in/amit-amanna-54a151152/",
-  },
-    {
-    title: "Omar Badawy",
-    jobTitle: "CEO",
-    image: "./images/member1.jpeg",
-    className: "absolute top-10 left-[20%] rotate-[-5deg]",
-    Link: "https://www.linkedin.com/in/osbadawy",
   },
   {
     title: "Raul Cuza",
@@ -299,16 +312,6 @@ export const teamData = [
     className: "absolute top-40 left-[25%] rotate-[-7deg]",
     Link: "https://www.linkedin.com/in/nicol%C3%B2-forti-47698019b/",
   },
-<<<<<<< HEAD
-=======
-  {
-    title: "Omar Badawy",
-    jobTitle: "CEO",
-    image: "/images/member1.jpeg",
-    className: "absolute top-10 left-[20%] rotate-[-5deg]",
-    Link: "https://www.linkedin.com/in/osbadawy",
-  },
->>>>>>> 1e0a0d942076642de741a81297de7b461773d1e6
 ];
 
 export const getTeamData = (t) =>
@@ -318,5 +321,3 @@ export const getTeamData = (t) =>
     title: t.optional ? t(`members.${i}.name`) : m.title, // (or just `t(\`members.${i}.name\`)` if you will translate names)
     jobTitle: t(`members.${i}.role`), // e.g., "Chief Technology Officer" in other languages
   }));
-
-

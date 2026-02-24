@@ -1,10 +1,10 @@
-import ExplainedStepCard from '../UI/ExplainedStepCard';
-import { adStepsData } from '../../data/StaticData';
-import { useTranslations } from 'next-intl';
+import ExplainedStepCard from "../UI/ExplainedStepCard";
+import { adStepsData } from "../../data/StaticData";
+import { useTranslations } from "next-intl";
 
 export default function ProcessExplained() {
-  const t = useTranslations('components.mainPage.processSteps'); 
-  const steps = adStepsData(t); 
+  const t = useTranslations("components.mainPage.processSteps");
+  const steps = adStepsData(t);
 
   return (
     <>

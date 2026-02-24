@@ -1,17 +1,17 @@
-'use client';
-import { useEffect } from 'react';
-import '../../global.css';
+"use client";
+import { useEffect } from "react";
+import "../../global.css";
 
 export default function PrivacyPolicyPage() {
   useEffect(() => {
     // Hide header and footer when component mounts
-    const footer = document.querySelector('footer');
-    
-    if (footer) footer.style.display = 'none';
+    const footer = document.querySelector("footer");
+
+    if (footer) footer.style.display = "none";
 
     // Cleanup function to show header and footer when component unmounts
     return () => {
-      if (footer) footer.style.display = '';
+      if (footer) footer.style.display = "";
     };
   }, []);
 
@@ -22,9 +22,9 @@ export default function PrivacyPolicyPage() {
         className="w-full h-screen border-0"
         title="Privacy Policy"
         style={{
-          border: 'none',
-          outline: 'none',
-          overflow: 'hidden'
+          border: "none",
+          outline: "none",
+          overflow: "hidden",
         }}
       />
       <style jsx global>{`
@@ -42,5 +42,4 @@ export default function PrivacyPolicyPage() {
       `}</style>
     </div>
   );
-
 }

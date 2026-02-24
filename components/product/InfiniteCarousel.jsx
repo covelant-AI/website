@@ -38,7 +38,9 @@ export default function InfiniteCarousel() {
       />
 
       <h2 className="text-6xl font-semibold text-black text-left px-96 max-lg:px-2 max-md:text-4xl mb-8 mt-9 border-b border-black pb-4 w-full relative z-10">
-        {t("title1")}<br />{t("title2")}
+        {t("title1")}
+        <br />
+        {t("title2")}
       </h2>
 
       <div className={styles.carousel} ref={carouselRef}>
@@ -46,7 +48,12 @@ export default function InfiniteCarousel() {
           {[...items, ...items].map((item, index) => (
             <div key={index} className={styles.card}>
               <div className="flex items-center gap-2">
-                <Image src="/icons/arrow.png" alt="Icon" width={34} height={34} />
+                <Image
+                  src="/icons/arrow.png"
+                  alt="Icon"
+                  width={34}
+                  height={34}
+                />
                 <h3 className={styles.percentage}>{item.percentage}</h3>
               </div>
               <p className={styles.label}>{item.label}</p>
@@ -59,4 +66,3 @@ export default function InfiniteCarousel() {
     </section>
   );
 }
-

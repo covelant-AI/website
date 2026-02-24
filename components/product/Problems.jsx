@@ -4,13 +4,13 @@ import GlowingEffect from "@/components/UI/GlowingEffect";
 import { useTranslations } from "next-intl";
 
 export default function Problems() {
-  const t = useTranslations('components.product.problems');
+  const t = useTranslations("components.product.problems");
 
   return (
     <section className="w-full flex flex-col items-center justify-center relative overflow-hidden isolate">
       {/* Section Title */}
       <h2 className="font-Figtree text-center text-2xl font-semibold text-black dark:text-white md:text-4xl mb-10">
-        {t('title')}
+        {t("title")}
       </h2>
 
       {/* Bento Grid */}
@@ -18,32 +18,32 @@ export default function Problems() {
         <GridItem
           area="md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]"
           icon="/icons/problem/clock.svg"
-          title={t('manualAnalysis.title')}
-          description={t('manualAnalysis.description')}
+          title={t("manualAnalysis.title")}
+          description={t("manualAnalysis.description")}
         />
         <GridItem
           area="md:[grid-area:1/7/2/13] xl:[grid-area:2/1/3/5]"
           icon="/icons/problem/gear.svg"
-          title={t('costlySoftwareLicenses.title')}
-          description={t('costlySoftwareLicenses.description')}
+          title={t("costlySoftwareLicenses.title")}
+          description={t("costlySoftwareLicenses.description")}
         />
         <GridItem
           area="md:[grid-area:2/1/3/7] xl:[grid-area:1/5/3/8]"
           icon="/icons/problem/lock.svg"
-          title={t('mastersDegreeNeeded.title')}
-          description={t('mastersDegreeNeeded.description')}
+          title={t("mastersDegreeNeeded.title")}
+          description={t("mastersDegreeNeeded.description")}
         />
         <GridItem
           area="md:[grid-area:2/7/3/13] xl:[grid-area:1/8/2/13]"
           icon="/icons/problem/graph.svg"
-          title={t('missedOpportunities.title')}
-          description={t('missedOpportunities.description')}
+          title={t("missedOpportunities.title")}
+          description={t("missedOpportunities.description")}
         />
         <GridItem
           area="md:[grid-area:3/1/4/13] xl:[grid-area:2/8/3/13]"
           icon="/icons/problem/money.svg"
-          title={t('wasNeverBuiltForYou.title')}
-          description={t('wasNeverBuiltForYou.description')}
+          title={t("wasNeverBuiltForYou.title")}
+          description={t("wasNeverBuiltForYou.description")}
         />
       </ul>
     </section>

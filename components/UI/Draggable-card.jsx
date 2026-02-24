@@ -11,10 +11,7 @@ import {
   useAnimationControls,
 } from "motion/react";
 
-export const DraggableCardBody = ({
-  className,
-  children
-}) => {
+export const DraggableCardBody = ({ className, children }) => {
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
   const cardRef = useRef(null);
@@ -36,12 +33,24 @@ export const DraggableCardBody = ({
     mass: 0.5,
   };
 
-  const rotateX = useSpring(useTransform(mouseY, [-300, 300], [25, -25]), springConfig);
-  const rotateY = useSpring(useTransform(mouseX, [-300, 300], [-25, 25]), springConfig);
+  const rotateX = useSpring(
+    useTransform(mouseY, [-300, 300], [25, -25]),
+    springConfig,
+  );
+  const rotateY = useSpring(
+    useTransform(mouseX, [-300, 300], [-25, 25]),
+    springConfig,
+  );
 
-  const opacity = useSpring(useTransform(mouseX, [-300, 0, 300], [0.8, 1, 0.8]), springConfig);
+  const opacity = useSpring(
+    useTransform(mouseX, [-300, 0, 300], [0.8, 1, 0.8]),
+    springConfig,
+  );
 
-  const glareOpacity = useSpring(useTransform(mouseX, [-300, 0, 300], [0.2, 0, 0.2]), springConfig);
+  const glareOpacity = useSpring(
+    useTransform(mouseX, [-300, 0, 300], [0.2, 0, 0.2]),
+    springConfig,
+  );
 
   useEffect(() => {
     // Update constraints when component mounts or window resizes
@@ -111,8 +120,10 @@ export const DraggableCardBody = ({
         const currentVelocityX = velocityX.get();
         const currentVelocityY = velocityY.get();
 
-        const velocityMagnitude = Math.sqrt(currentVelocityX * currentVelocityX +
-          currentVelocityY * currentVelocityY);
+        const velocityMagnitude = Math.sqrt(
+          currentVelocityX * currentVelocityX +
+            currentVelocityY * currentVelocityY,
+        );
         const bounce = Math.min(0.8, velocityMagnitude / 1000);
 
         animate(info.point.x, info.point.x + currentVelocityX * 0.3, {
@@ -147,21 +158,22 @@ export const DraggableCardBody = ({
       onMouseLeave={handleMouseLeave}
       className={cn(
         "relative min-h-96 w-80 overflow-hidden rounded-md bg-neutral-100 p-6 shadow-2xl transform-3d dark:bg-neutral-900",
-        className
-      )}>
+        className,
+      )}
+    >
       {children}
       <motion.div
         style={{
           opacity: glareOpacity,
         }}
-        className="pointer-events-none absolute inset-0 bg-white select-none" />
+        className="pointer-events-none absolute inset-0 bg-white select-none"
+      />
     </motion.div>
   );
 };
 
-export const DraggableCardContainer = ({
-  className,
-  children
-}) => {
-  return (<div className={cn("[perspective:3000px]", className)}>{children}</div>);
+export const DraggableCardContainer = ({ className, children }) => {
+  return (
+    <div className={cn("[perspective:3000px]", className)}>{children}</div>
+  );
 };
